@@ -13,31 +13,79 @@
 - Work in progress, see comments in the Node Red Flows for endpoints.
 - Create, Update, and Delete Functions can also be triggered by publishing to the appropriate topics.
 - See below for an Example of a Recipe JSON object that is used to create a new recipe:
+- Try publishing the JSON Recipe to the topic `Recipe/Create`.
 
 ```json
 {
-	"outputMaterial_id": 6,
-	"equipmentType": "Mixer",
-	"material": [
-		{
-			"id": 1,
-			"quantity": 0.5
-		},
-		{
-			"id": 2,
-			"quantity": 0.3
-		}
-	],
-	"parameters": [
-		{
-			"id": 1,
-			"quantity": 0.5
-		},
-		{
-			"id": 2,
-			"quantity": 0.3
-		}
-	]
+    "outputMaterial_id": 1,
+    "equipmentType": "Mixer",
+    "material": [
+        {
+            "id": 1,
+            "name": "Flour",
+            "quantity": "0.50",
+            "uom": "kg",
+            "numberFormat": "#,##0.0"
+        },
+        {
+            "id": 2,
+            "name": "Water",
+            "quantity": "0.30",
+            "uom": "liters",
+            "numberFormat": "#,##0.0"
+        },
+        {
+            "id": 3,
+            "name": "Yeast",
+            "quantity": "0.01",
+            "uom": "grams",
+            "numberFormat": "#,##0.0"
+        },
+        {
+            "id": 4,
+            "name": "Salt",
+            "quantity": "0.01",
+            "uom": "grams",
+            "numberFormat": "#,##0.0"
+        },
+        {
+            "id": 5,
+            "name": "Sugar",
+            "quantity": "0.02",
+            "uom": "grams",
+            "numberFormat": "#,##0.0"
+        }
+    ],
+    "parameters": [
+        {
+            "id": 1,
+            "name": "Batch Size",
+            "quantity": "1.00",
+            "uom": "lbs",
+            "numberFormat": "#,##0"
+        },
+        {
+            "id": 2,
+            "name": "Mixing Time",
+            "quantity": "15.00",
+            "uom": "minutes",
+            "numberFormat": "#,##0"
+        },
+        {
+            "id": 3,
+            "name": "Mixing Speed",
+            "quantity": "60.00",
+            "uom": "rpm",
+            "numberFormat": "#"
+        },
+        {
+            "id": 4,
+            "name": "Proof Time",
+            "quantity": "30.00",
+            "uom": "minutes",
+            "numberFormat": "#,##0"
+        }
+    ]
 }
 ```
 
