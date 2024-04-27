@@ -58,7 +58,7 @@ CREATE TABLE recipe_parameters (
 -- Create Views
 ----------------------------------------------------------------------------------------------------
 
--- Create View for Recipe Details, using equipment type directly
+-- View Recipe Details
 CREATE OR REPLACE VIEW view_recipe_details AS
  SELECT r.id AS recipe_id,
     m.name AS product_material,
@@ -67,7 +67,8 @@ CREATE OR REPLACE VIEW view_recipe_details AS
     rm.material_id AS field_id,
     mat.name AS field_name,
     rm.material_quantity AS field_value,
-    mat.uom AS field_uom
+    mat.uom,
+    mat.number_format
    FROM recipe_master r
      JOIN materials m ON r.material_id = m.id
      JOIN recipe_materials rm ON r.id = rm.recipe_id
@@ -80,7 +81,8 @@ UNION ALL
     p.id AS field_id,
     p.name AS field_name,
     rp.parameter_value AS field_value,
-    p.uom AS field_uom
+    p.uom,
+    p.number_format
    FROM recipe_master r
      JOIN materials m ON r.material_id = m.id
      JOIN recipe_parameters rp ON r.id = rp.recipe_id

@@ -3,7 +3,7 @@
 - The intent of this project is to learn patterns for incorporating Transactional Data in an event driven IIOT Architecture.
 
 ### Quick Notes
-- **Node Red Backend**, this holds the current iteration of the API and services that interact with the Postgres Database.
+- **Node Red Backend**, this holds the current iteration of the API and services that interact with the Postgres Database. You will need to update the username and password for the Broker and the database connections in Node Red.
 - **Node Red Frontend**, this is planned as the UI to interact with the API Endpoints.
 - **pg-uns-bridge**, this is a first pass at a service to listin to Notify Events from Postgres and Publish the event to the MQTT Broker.
 - **postgres**, this is what it sounds like... A postgres database.
