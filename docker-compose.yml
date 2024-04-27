@@ -1,0 +1,121 @@
+
+x-default-logging:
+  &default-logging
+  logging:
+    options:
+      max-size: '100m'
+      max-file: '5'
+    driver: json-file
+
+services:
+
+  # Mosquitto - MQTT Broker
+  broker-standalone:
+    <<: *default-logging
+    build: ./mosquitto
+    image: my-mosquitto
+    container_name: uns-recipe-Broker
+    hostname: broker
+    restart: unless-stopped
+    ports:
+      - "1993:1883"
+      - "9001:9001"
+    networks:
+      - uns-recipe-network
+    environment:
+      MOSQUITTO_USERNAME: ${MOSQUITTO_USERNAME:-admin}
+      MOSQUITTO_PASSWORD: ${MOSQUITTO_PASSWORD:-password}
+    volumes:
+      - uns-recipe_broker_config:/mosquitto/config:rw
+      - uns-recipe_broker_data:/mosquitto/data:rw
+      - uns-recipe_broker_logs:/mosquitto/log:rw
+
+  # Postgres - Database
+  postgres:
+    <<: *default-logging
+    image: postgres:${POSTGRES_VERSION:-latest}
+    restart: unless-stopped
+    container_name: uns-recipe-Database
+    hostname: database
+    ports:
+      - "5432:5432"
+    networks:
+      - uns-recipe-network
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-iiot}
+      POSTGRES_USER: ${POSTGRES_USER:-admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+    volumes:
+      - uns-recipe_database_data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d
+
+  # Node Red - Backend - DB Service
+  node-red-backend:
+    <<: *default-logging
+    build: ./node-red-backend
+    restart: unless-stopped
+    container_name: uns-recipe-NodeRed-Backend
+    hostname: backend
+    ports:
+      - 1880:1880
+    networks:
+      - uns-recipe-network
+    volumes:
+      - uns-recipe_server_data:/data
+    environment:
+      TZ: ${TIMEZONE:-America/Chicago}
+      NODE_RED_USERNAME: ${NODE_RED_USERNAME:-admin}
+      NODE_RED_PASSWORD: ${NODE_RED_PASSWORD:-password}
+
+  # Node Red - Frontend - DB Service
+  node-red-frontend:
+    <<: *default-logging
+    build: ./node-red-frontend
+    restart: unless-stopped
+    container_name: uns-recipe-NodeRed-Frontend
+    hostname: frontend
+    ports:
+      - 1890:1880
+    networks:
+      - uns-recipe-network
+    volumes:
+      - uns-recipe_frontend_data:/data
+    environment:
+      TZ: ${TIMEZONE:-America/Chicago}
+      NODE_RED_USERNAME: ${NODE_RED_USERNAME:-admin}
+      NODE_RED_PASSWORD: ${NODE_RED_PASSWORD:-password}
+
+  # Postgres to MQTT - CDC Service
+  pg-uns-bridge:
+    <<: *default-logging
+    build:
+      context: ./pgMqttBridge
+    container_name: pg-uns-bridge
+    depends_on:
+      - broker-standalone
+      - postgres
+    hostname: listener
+    networks:
+      - uns-recipe-network
+    environment:
+      DB_NAME: ${POSTGRES_DB:-iiot}
+      DB_USER: ${POSTGRES_USER:-admin}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      DB_HOST: database
+      DB_PORT: 5432
+      MQTT_BROKER: broker
+      MQTT_PORT: 1883
+      MQTT_USER: ${MOSQUITTO_USERNAME:-admin}
+      MQTT_PASSWORD: ${MOSQUITTO_PASSWORD:-password}
+      MQTT_TOPIC: database/notifications
+
+networks:
+  uns-recipe-network:
+
+volumes:
+  uns-recipe_broker_config:
+  uns-recipe_broker_data:
+  uns-recipe_broker_logs:
+  uns-recipe_database_data:
+  uns-recipe_server_data:
+  uns-recipe_frontend_data:

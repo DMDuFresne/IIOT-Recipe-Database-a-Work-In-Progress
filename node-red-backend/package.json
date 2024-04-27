@@ -1,0 +1,11 @@
+{
+    "name": "ming-node-red",
+    "description": "Node Red in the MING Stack",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "node-red": "~3.1.6",
+        "node-red-contrib-postgresql": "~0.14.0"
+    }
+}
+

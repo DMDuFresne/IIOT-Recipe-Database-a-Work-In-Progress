@@ -1,0 +1,100 @@
+[
+    {
+        "id": "a10fa1734907ae12",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "16d8818276faa3ad",
+        "type": "mqtt-broker",
+        "name": "mosquitto",
+        "broker": "broker-standalone",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dca0ae5d81e72e1c",
+        "type": "ui-base",
+        "name": "UI",
+        "path": "/dashboard",
+        "showPathInSidebar": false
+    },
+    {
+        "id": "b3b1950c2462930c",
+        "type": "ui-theme",
+        "name": "Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        }
+    },
+    {
+        "id": "1bdc46cea813d08b",
+        "type": "ui-page",
+        "name": "Tasks",
+        "ui": "dca0ae5d81e72e1c",
+        "path": "/",
+        "icon": "",
+        "layout": "notebook",
+        "theme": "b3b1950c2462930c",
+        "order": -1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0e7a899e9067fa98",
+        "type": "ui-group",
+        "name": "Tasks",
+        "page": "1bdc46cea813d08b",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "bf1b567a6e314ea3",
+        "type": "ui-group",
+        "name": "Today",
+        "page": "1bdc46cea813d08b",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    }
+]
