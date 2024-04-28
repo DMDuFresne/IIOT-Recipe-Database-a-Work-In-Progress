@@ -1,25 +1,867 @@
 [
     {
-        "id": "9818e10bfd732910",
-        "type": "mqtt in",
+        "id": "ef07378eb445016a",
+        "type": "tab",
+        "label": "Equipment",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a10fa1734907ae12",
+        "type": "tab",
+        "label": "Material",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e1f10cd86822e66",
+        "type": "tab",
+        "label": "Parameter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c597369fd55a8b79",
+        "type": "tab",
+        "label": "Recipe",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "49dd9a6e92e62904",
+        "type": "tab",
+        "label": "MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5777e384656ffee1",
+        "type": "subflow",
+        "name": "Object Validation",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "611814464a327f13"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 440,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "622b63160cd4f9c0",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 440,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "622b63160cd4f9c0",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "expectedKeys",
+                "type": "json",
+                "value": "[]",
+                "ui": {
+                    "label": {
+                        "en-US": "Key List"
+                    }
+                }
+            },
+            {
+                "name": "idLocation",
+                "type": "str",
+                "value": "payload.id",
+                "ui": {
+                    "label": {
+                        "en-US": "ID Location"
+                    }
+                }
+            },
+            {
+                "name": "allowMissingKeys",
+                "type": "bool",
+                "value": "false",
+                "ui": {
+                    "label": {
+                        "en-US": "Allow Missing"
+                    }
+                }
+            },
+            {
+                "name": "allowExtraKeys",
+                "type": "bool",
+                "value": "false",
+                "ui": {
+                    "label": {
+                        "en-US": "Allow Extra"
+                    }
+                }
+            },
+            {
+                "name": "includeId",
+                "type": "bool",
+                "value": "false",
+                "ui": {
+                    "label": {
+                        "en-US": "include ID"
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "394ae49779a2d4d1",
+        "type": "group",
+        "z": "a10fa1734907ae12",
+        "name": "POST: http://localhost:1880/material (Create)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "f13ce832c4edfafc",
+            "9e30727ef45623af",
+            "fd157bec354064a0",
+            "f39c3d30b024d0bb",
+            "b1631835c6ca6e5e",
+            "ab45bdd19eb4f444",
+            "cd15bad31e8d1bad",
+            "01e2f0b8b7994a91",
+            "613816f54e3e3142",
+            "f5a86b0be9bda989",
+            "aabd9c2ab50fe59b",
+            "6f6161fb1f98840f",
+            "ecc69f3a9c19f681",
+            "d5eb5958f6b117ea"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 1472,
+        "h": 182
+    },
+    {
+        "id": "22df7bb83466ab7e",
+        "type": "group",
+        "z": "a10fa1734907ae12",
+        "name": "GET: http://localhost:1880/material (Read All)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "5306a4a0216df652",
+            "c1af6416b07b38f3",
+            "809eed5beda8486a",
+            "9bb9a3ac89bbaaba"
+        ],
+        "x": 54,
+        "y": 639,
+        "w": 1332,
+        "h": 122
+    },
+    {
+        "id": "2f7bc39827855b18",
+        "type": "group",
+        "z": "a10fa1734907ae12",
+        "name": "GET: http://localhost:1880/material/:id (Read One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "d95bafd7cb22c476",
+            "8cd0b852ca337725",
+            "a6c899ae0d20a2c3",
+            "4b8592d3f8c5be14",
+            "a6889e1fb5fca67f",
+            "de37c2ca6d04fb7d"
+        ],
+        "x": 54,
+        "y": 779,
+        "w": 1332,
+        "h": 122
+    },
+    {
+        "id": "8e5f8acd8dead7b0",
+        "type": "group",
+        "z": "a10fa1734907ae12",
+        "name": "GET: http://localhost:1880/material/type/:type (Read By Type)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "344adb293d0bdb48",
+            "7336ed3c4095a46a",
+            "ba8d825e4e871355",
+            "9cfb65d8378f619c",
+            "e20aef4c499035cf",
+            "5337ce838bcb2e3e"
+        ],
+        "x": 54,
+        "y": 919,
+        "w": 1332,
+        "h": 122
+    },
+    {
+        "id": "f9070270e87d84ea",
+        "type": "group",
+        "z": "a10fa1734907ae12",
+        "name": "PATCH: http://localhost:1880/material/:id (Update)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "040648abd494d4a9",
+            "b90ad9b54c151f0c",
+            "930fd906486e06f5",
+            "10bf923628591319",
+            "88348fc1015b6747",
+            "2634dfb23adf8454",
+            "5cf36bf3268589fe",
+            "f12abbd1883562cf",
+            "88b8f69a12d4fe6c",
+            "4cbf13d37ba65cd0",
+            "78ccf1271de9121b",
+            "d1655476a2ec9dc3",
+            "58b1370a245f20aa",
+            "731bcc988c0cfe4d"
+        ],
+        "x": 54,
+        "y": 239,
+        "w": 1472,
+        "h": 182
+    },
+    {
+        "id": "07c0d7b321e21426",
+        "type": "group",
+        "z": "a10fa1734907ae12",
+        "name": "DELETE: http://localhost:1880/material/:id (Delete One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "6d1491418c8303ca",
+            "23f0f5d7b1b1463a",
+            "6ef01e6a840c9db1",
+            "2963b91a25e7efc3",
+            "2eb09a9e33b02fa3",
+            "20a29bc6c45ec6d7",
+            "19fb23e16bdcb3c2",
+            "6bc006e639542c16",
+            "25fd163e2ba3c716",
+            "10f1fd128be51ea7",
+            "77139fbf91179845",
+            "e40f4bfa19d0dae7",
+            "c2b8ddc0d97e0f2d",
+            "4ec31fc728df4df4"
+        ],
+        "x": 54,
+        "y": 439,
+        "w": 1462,
+        "h": 182
+    },
+    {
+        "id": "21a32cb53564db91",
+        "type": "group",
+        "z": "4e1f10cd86822e66",
+        "name": "POST: http://localhost:1880/parameter (Create)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "c8ea60f1819c0e26",
+            "27d05df1e032506b",
+            "767cefc3d6649f09",
+            "7e092547e0fbf181",
+            "f13683ca430d019e",
+            "e337937e9d856fc9",
+            "290ec3ebb64fbaf9",
+            "a3c83666cd55fc79",
+            "ac93ba1bc637ae8f",
+            "e9b8f4a4c43423a7",
+            "eda84cd984fd89f8",
+            "593a0af07507c122",
+            "974a824aa0e8eb71",
+            "99ca2f63de106f14"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 1472,
+        "h": 182
+    },
+    {
+        "id": "08653bcc25355e75",
+        "type": "group",
+        "z": "4e1f10cd86822e66",
+        "name": "GET: http://localhost:1880/material (Read All)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "fa1ab1212e54300f",
+            "568bbd28aeb61433",
+            "2b1f3267e454cb9f",
+            "7a581b84d5214b29"
+        ],
+        "x": 54,
+        "y": 639,
+        "w": 1332,
+        "h": 122
+    },
+    {
+        "id": "9a8da64c40b306a2",
+        "type": "group",
+        "z": "4e1f10cd86822e66",
+        "name": "GET: http://localhost:1880/material/:id (Read One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "71032d6855b333d0",
+            "b3680321e2e0f2f0",
+            "901991728c7a09df",
+            "911c30e0546b06a0",
+            "8e256067ccffae1a",
+            "b72b1cc21779d469"
+        ],
+        "x": 54,
+        "y": 779,
+        "w": 1332,
+        "h": 122
+    },
+    {
+        "id": "6c81ad0b0cd53796",
+        "type": "group",
+        "z": "4e1f10cd86822e66",
+        "name": "PATCH: http://localhost:1880/parameter/:id (Update)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "630217f41da3eff4",
+            "95195166fa91b4c4",
+            "c2667c3e218fbcfd",
+            "52524c3f22e92d02",
+            "e5b996eb22792e79",
+            "6546a6e92a7c4a95",
+            "01863c1661f02344",
+            "0895a6eb87c8436f",
+            "96fa084191ad07b6",
+            "609f09e1c79d2aca",
+            "688d5d26e6b38d97",
+            "bc1bf6758c53300f",
+            "fd8d1b233e54c02a",
+            "cf9ba7b5f4a11176"
+        ],
+        "x": 54,
+        "y": 239,
+        "w": 1462,
+        "h": 182
+    },
+    {
+        "id": "406155f7b27b3670",
+        "type": "group",
+        "z": "4e1f10cd86822e66",
+        "name": "DELETE: http://localhost:1880/parameter/:id (Delete One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "6b39d2fc896df067",
+            "5efe25c61130727d",
+            "d5c8b6ba4150a26c",
+            "38245e8d9f3285cb",
+            "d532d0dfb9fbd24b",
+            "3eb7984169d4654e",
+            "e373eef5fee6eab4",
+            "47d6f667558c266e",
+            "edcf0e5913db27dd",
+            "1fe85d05fa40fb4c",
+            "0be894c6d4f65b1e",
+            "04c1a622b11af4b7",
+            "1db60a7694f02988",
+            "841c19773c131e2a"
+        ],
+        "x": 54,
+        "y": 439,
+        "w": 1472,
+        "h": 182
+    },
+    {
+        "id": "838d933c344f89c7",
+        "type": "group",
         "z": "ef07378eb445016a",
-        "g": "838d933c344f89c7",
-        "name": "",
-        "topic": "Equipment/Create",
-        "qos": "0",
-        "datatype": "auto-detect",
-        "broker": "9de860f85bb6fd04",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 270,
-        "y": 140,
-        "wires": [
-            [
-                "17fa3187b192c6a5"
-            ]
-        ]
+        "name": "POST: http://localhost:1880/equipment (Create)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "2db21c1c070b4f0e",
+            "3e4d6b347764ab56",
+            "9135dd70f0ef4332",
+            "393bdc4904502335",
+            "fea2ca9ea7ba5ad7",
+            "b1c4fd4c012de134",
+            "9818e10bfd732910",
+            "e2eff945569c44d7",
+            "3f0af4949159328b",
+            "811ab7dd35b701e3",
+            "17fa3187b192c6a5",
+            "992a002c27799799",
+            "99ea816cb020bacc",
+            "20da8424cfb202b9"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 1452,
+        "h": 182
+    },
+    {
+        "id": "a9e2a7f670e2509c",
+        "type": "group",
+        "z": "ef07378eb445016a",
+        "name": "GET: http://localhost:1880/equipment (Read All)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "4d21df89dc8d7927",
+            "15f938826765a76f",
+            "b8f8ea2cce18a6d5",
+            "e5c74a8b01f38948"
+        ],
+        "x": 54,
+        "y": 639,
+        "w": 1312,
+        "h": 122
+    },
+    {
+        "id": "73228cf12d0a225c",
+        "type": "group",
+        "z": "ef07378eb445016a",
+        "name": "GET: http://localhost:1880/equipment/:id (Read One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "542b9d57abc105a0",
+            "d22d5b9b9d4e518e",
+            "c38520b56b918320",
+            "7265f5893c00cb4b",
+            "06057cc8f674f198",
+            "71369587ae8c98ad"
+        ],
+        "x": 54,
+        "y": 779,
+        "w": 1312,
+        "h": 122
+    },
+    {
+        "id": "18c6976640c8ca58",
+        "type": "group",
+        "z": "ef07378eb445016a",
+        "name": "GET: http://localhost:1880/equipment/type/:type (Read By Type)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "d172505f801afc6e",
+            "19a49c96762079a7",
+            "a9479843103d32f1",
+            "8f441aae48242306",
+            "510a57f56814eb64",
+            "67c61d54b30ca97b"
+        ],
+        "x": 54,
+        "y": 919,
+        "w": 1312,
+        "h": 122
+    },
+    {
+        "id": "c32e557c335d826a",
+        "type": "group",
+        "z": "ef07378eb445016a",
+        "name": "PATCH: http://localhost:1880/equipment/:id (Update)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "09f14c272b38d9c4",
+            "84f5643d8030d5ac",
+            "9a4346c7c848520f",
+            "cc2f617390e5fe70",
+            "0a9c88da77980e9e",
+            "6f2e95497fc14eb6",
+            "37202dc7607be793",
+            "b6749302cae8f7d8",
+            "07d5bb3a2ef568dc",
+            "9d90c826f6771aa0",
+            "b2d53f182d46db4d",
+            "08dd12d9986bc031",
+            "f9bfd40456d55e3d",
+            "0bc2548ca8be9f97"
+        ],
+        "x": 54,
+        "y": 239,
+        "w": 1472,
+        "h": 182
+    },
+    {
+        "id": "3ed275df32a66c63",
+        "type": "group",
+        "z": "ef07378eb445016a",
+        "name": "DELETE: http://localhost:1880/equipment/:id (Delete One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "ec657c04ad261ed8",
+            "a427eeccfb356d2c",
+            "6b260c4d0b5338e0",
+            "16143cb4264ce8e1",
+            "f3959ecf2a3ae226",
+            "ae7c4277b5f0096f",
+            "008cc0a31bc71b16",
+            "ca84f6ba5bb6738a",
+            "df82f9033ae344bf",
+            "d3025a5910fa7b36",
+            "4620d06bb7bdca3f",
+            "84cde588ea8c47fb",
+            "96fb4409546ba5d1",
+            "f6279c42e67b789d"
+        ],
+        "x": 54,
+        "y": 439,
+        "w": 1452,
+        "h": 182
+    },
+    {
+        "id": "89b683b5eaeec2c4",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "POST: http://localhost:1880/recipe (Create)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "aaa21826945d9a9d",
+            "528b186a2a7139fc",
+            "9e88593ccd17a33f",
+            "7abc7eef655c859a",
+            "ce035983f3f05798",
+            "d6be1acf5540eda8",
+            "136c37f78841b8dd",
+            "7a16e9f501483bce",
+            "2d6dce19175991e7",
+            "7b3b7e48690d3a42",
+            "bf543c47f79627f6",
+            "bda256deb034d404",
+            "81de75e644af5ff3",
+            "87b73d080379918b",
+            "1b52d31324266ab5",
+            "6d2364b0453ba759",
+            "af55492e9de3785b",
+            "7d75824151059f46",
+            "8750f278610d293d",
+            "bc0d47082795a67f",
+            "0f978d2a693d44d8",
+            "1ee067b57f1a573a",
+            "5340ef7d5d563f17",
+            "8eebeab081de9df4",
+            "21413a24b793ceb8",
+            "cb434e9c3d0120b6",
+            "29a4229b16ec6ed4",
+            "57ed382b8763f1f5",
+            "4acf7802bdbe5cae",
+            "75fa7915ebc73ef0",
+            "3cf9b92bf699f912",
+            "49c1866c84b44dc8",
+            "c744f73a1080a7e5"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 1412,
+        "h": 462
+    },
+    {
+        "id": "42a292f8120221d2",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "GET: http://localhost:1880/recipe (Read All)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "63a39e652a733da2",
+            "48bc25f17c6cfdf4",
+            "eb5049bbe630e12a",
+            "8d8c1b058a0b16fa"
+        ],
+        "x": 54,
+        "y": 739,
+        "w": 1392,
+        "h": 122
+    },
+    {
+        "id": "118919b3e2fd7d53",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "DELETE: http://localhost:1880/recipe/:id (Delete One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "8035d8420264afd0",
+            "e0d3434cdec6f768",
+            "ea6285291b034a55",
+            "d81aca34d5d94ef6",
+            "6edb07db980394e5",
+            "0e7065d77384cc40",
+            "fc64e4c563287228",
+            "de398e8f8a7f7811",
+            "3c4f7768d296d413",
+            "6bf24d2c873db047",
+            "75691bca75d8e685",
+            "a9f12a95342566a6"
+        ],
+        "x": 54,
+        "y": 519,
+        "w": 1412,
+        "h": 202
+    },
+    {
+        "id": "b4b59170858fd3ec",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "POST: http://localhost:1880/recipe/:id/material (Add One Material)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "36927b869c636a4a",
+            "8f4b151ae0c34aa8",
+            "3f68ef75eb6a5432",
+            "0ae5b1e352fc0383",
+            "047a754b55be059b",
+            "c689b12983f546f7",
+            "5d4f7021a9ec7cb0",
+            "5cde8ecbcb9d17d4",
+            "7f3acea5d58ddb07",
+            "166d5ed4cffd99ef",
+            "3a266770262be116",
+            "618a1168857cae5a"
+        ],
+        "x": 54,
+        "y": 1019,
+        "w": 1452,
+        "h": 202
+    },
+    {
+        "id": "38720bcfb800919e",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "POST: http://localhost:1880/recipe/:id/parameter (Add One Parameter)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "abdfd69613b58714",
+            "07423b05db2b2f7d",
+            "d34feb7d5b832297",
+            "efa6e66389ef5710",
+            "9c2fab11f60f662e",
+            "12ee10b2782168c0",
+            "a6d7c9a1d9ece64b",
+            "21cb14ebf7cd6293",
+            "1ddea80c8dafadcc",
+            "e28ebf737ad43de4",
+            "1aac2cb0e09073e4",
+            "8cf0c911ad50a8dc"
+        ],
+        "x": 54,
+        "y": 1679,
+        "w": 1472,
+        "h": 202
+    },
+    {
+        "id": "22f86d1acb8e3f13",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "PATCH: http://localhost:1880/recipe/:id/material/:material_id (Update One Material)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "3790860f7af655d7",
+            "71eaf3f3a21b09b1",
+            "1283ce4221b4cace",
+            "3ef4beeffbfcb0a9",
+            "7ecb46bfcf7a6fbd",
+            "3efeb017d45bc20d",
+            "7c8282aafc592e43",
+            "65cf4dc637be41f8",
+            "a718a2f8158cff92",
+            "efa8d90afc4c3411",
+            "7e1f2ba52fae01a5",
+            "dcb2badc67bf4957"
+        ],
+        "x": 54,
+        "y": 1239,
+        "w": 1472,
+        "h": 202
+    },
+    {
+        "id": "bd7e03636ffad15d",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "PATCH: http://localhost:1880/recipe/:id/parameter (Update One Parameter)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "18e0ecf261856402",
+            "9ebaadeb9bd8ee4e",
+            "622a5efa3c5a25c3",
+            "6f6ff1c5b8c0edbd",
+            "356f76042df8406d",
+            "68b9a30805711352",
+            "b77dcb5f72cf6f83",
+            "75346e7cda1f7518",
+            "ed0ff0593fa4d83d",
+            "b95366710f515f4e",
+            "328928654d82e216",
+            "7f82eca290387a4b",
+            "d658ab53d3713495"
+        ],
+        "x": 54,
+        "y": 1899,
+        "w": 1492,
+        "h": 202
+    },
+    {
+        "id": "2248f87a73036dd1",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "DELETE: http://localhost:1880/recipe/:id/material/:material_id (Delete One Material)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "abf294f334ed3669",
+            "dc5e2ae4a3860b60",
+            "78ad319c3b9e7bf0",
+            "8e0f750f5e6ab7ea",
+            "2d30885d10bb5c3b",
+            "cd7042ba92defae1",
+            "969e5c05bf8de968",
+            "5994f9e2d419c376",
+            "fdb71c1ec772885a",
+            "e85d9507fcc70f5c",
+            "58fb1003bc983bc7",
+            "6d76b28d3326ccf5"
+        ],
+        "x": 54,
+        "y": 1459,
+        "w": 1472,
+        "h": 202
+    },
+    {
+        "id": "051ccabbbfa69646",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "DELETE: http://localhost:1880/recipe/:id/parameter/:parameter_id (Delete One Parameter)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "ff9d8eecbd861330",
+            "53b0d560c50f398c",
+            "4432ee342ac2bac5",
+            "17fb673c4b7a9fb9",
+            "a8ed6e7b9acb241d",
+            "69388d0ffd84ae81",
+            "e8f7b5f9216259d5",
+            "1115eb29fa4465ec",
+            "1c659ae6e4d345fb",
+            "161c2051f0861002",
+            "eac3d037c8d62f93",
+            "8cfc127af3fb5082",
+            "506615bdc72f45cf"
+        ],
+        "x": 54,
+        "y": 2119,
+        "w": 1492,
+        "h": 202
+    },
+    {
+        "id": "925a6517ba6ef007",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "GET: http://localhost:1880/recipe/:id (Read One)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "46322b82c63960fa",
+            "d7f4a02ad1d5c0d9",
+            "bfed8ce1024d06da",
+            "c05164fe92566ae0",
+            "13c5353f41b4bf64",
+            "730477c7e9668d07",
+            "50494cec4bc848e5"
+        ],
+        "x": 54,
+        "y": 879,
+        "w": 1392,
+        "h": 122
     },
     {
         "id": "9de860f85bb6fd04",
@@ -51,5 +893,6426 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
+    },
+    {
+        "id": "a19b9ada5feb9e84",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "database",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "iiot",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "admin",
+        "userFieldType": "str",
+        "password": "password",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "611814464a327f13",
+        "type": "function",
+        "z": "5777e384656ffee1",
+        "name": "Validation",
+        "func": "// Retrieve configurations from environment variables or passed parameters\nconst expectedKeys = env.get(\"expectedKeys\") || msg.expectedKeys;\nconst allowMissingKeys = env.get(\"allowMissingKeys\");\nconst allowExtraKeys = env.get(\"allowExtraKeys\");\nconst includeId = env.get(\"includeId\");\nconst idLocation = env.get(\"idLocation\") || msg.idLocation;\n\n// Function to safely retrieve nested properties by path (handles dot notation)\nfunction getNestedValue(obj, path) {\n    return path.split('.').reduce((acc, part) => acc && acc[part], obj);\n}\n\nlet id = null; // Initialize id variable\n\n// Optionally get 'id' from its dynamic location if idLocation is not empty\nif (idLocation) {\n    id = getNestedValue(msg, idLocation);\n\n    // Validate ID if required\n    if (id === undefined || id === null) {\n        msg.payload = { error: \"Missing or invalid 'id' key at specified location: \" + idLocation };\n        msg.statusCode = 400; // HTTP status code for Bad Request\n        return msg; // Output to error handling flow\n    }\n\n    // Conditionally remove 'id' from payload if not included\n    if (!includeId && idLocation === \"payload.id\") {\n        delete msg.payload.id;\n    }\n}\n\n// Check for missing or extra keys\nconst payloadKeys = Object.keys(msg.payload);\nconst missingKeys = expectedKeys.filter(key => !payloadKeys.includes(key));\nconst extraKeys = payloadKeys.filter(key => !expectedKeys.includes(key));\n\nlet errorMessage = \"\";\nif (!allowMissingKeys && missingKeys.length > 0) {\n    errorMessage += \"Missing keys: \" + missingKeys.join(\", \") + \". \";\n}\nif (!allowExtraKeys && extraKeys.length > 0) {\n    errorMessage += \"Extra keys: \" + extraKeys.join(\", \") + \".\";\n}\n\n// Report missing and extra keys even if they are allowed\nif (allowMissingKeys && missingKeys.length > 0) {\n    console.log(\"Notice: Missing keys (ignored): \" + missingKeys.join(\", \"));\n}\nif (allowExtraKeys && extraKeys.length > 0) {\n    console.log(\"Notice: Extra keys (ignored): \" + extraKeys.join(\", \"));\n}\n\n// Set error message if any issues are found\nif (errorMessage.length > 0) {\n    msg.payload = { error: errorMessage };\n    msg.statusCode = 400; // HTTP status code for Bad Request\n    return msg; // Output to error handling flow\n}\n\n// Proceed with no errors\nreturn msg; // Continue with next node in success path\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "622b63160cd4f9c0"
+            ]
+        ]
+    },
+    {
+        "id": "622b63160cd4f9c0",
+        "type": "switch",
+        "z": "5777e384656ffee1",
+        "name": "",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "400",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2db21c1c070b4f0e",
+        "type": "postgresql",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "Create",
+        "query": "INSERT INTO equipment (name, description, type)\nVALUES ($1, $2, $3)\nRETURNING id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 80,
+        "wires": [
+            [
+                "811ab7dd35b701e3"
+            ]
+        ]
+    },
+    {
+        "id": "3e4d6b347764ab56",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "deconstruct",
+        "func": "const { name, description, type } = msg.payload;\nmsg.params = [name, description, type];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "2db21c1c070b4f0e"
+            ]
+        ]
+    },
+    {
+        "id": "9135dd70f0ef4332",
+        "type": "http in",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "Create",
+        "url": "/equipment",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "20da8424cfb202b9"
+            ]
+        ]
+    },
+    {
+        "id": "393bdc4904502335",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "fea2ca9ea7ba5ad7",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b1c4fd4c012de134",
+        "type": "debug",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "Debug Create",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "9818e10bfd732910",
+        "type": "mqtt in",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "topic": "Equipment/Create",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "17fa3187b192c6a5"
+            ]
+        ]
+    },
+    {
+        "id": "e2eff945569c44d7",
+        "type": "mqtt out",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "topic": "Equipment/Create/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1360,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3f0af4949159328b",
+        "type": "switch",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 160,
+        "wires": [
+            [
+                "fea2ca9ea7ba5ad7"
+            ],
+            [
+                "e2eff945569c44d7"
+            ]
+        ]
+    },
+    {
+        "id": "811ab7dd35b701e3",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            [
+                "3f0af4949159328b",
+                "b1c4fd4c012de134"
+            ]
+        ]
+    },
+    {
+        "id": "17fa3187b192c6a5",
+        "type": "subflow:5777e384656ffee1",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"name\",\"description\",\"type\"]",
+                "type": "json"
+            },
+            {
+                "name": "idLocation",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "3e4d6b347764ab56"
+            ],
+            [
+                "992a002c27799799"
+            ]
+        ]
+    },
+    {
+        "id": "992a002c27799799",
+        "type": "switch",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "393bdc4904502335"
+            ],
+            [
+                "99ea816cb020bacc"
+            ]
+        ]
+    },
+    {
+        "id": "99ea816cb020bacc",
+        "type": "mqtt out",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "",
+        "topic": "Equipment/Create/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 930,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "20da8424cfb202b9",
+        "type": "change",
+        "z": "ef07378eb445016a",
+        "g": "838d933c344f89c7",
+        "name": "Set Params",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "17fa3187b192c6a5"
+            ]
+        ]
+    },
+    {
+        "id": "4d21df89dc8d7927",
+        "type": "http in",
+        "z": "ef07378eb445016a",
+        "g": "a9e2a7f670e2509c",
+        "name": "Read All",
+        "url": "/equipment",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 720,
+        "wires": [
+            [
+                "e5c74a8b01f38948"
+            ]
+        ]
+    },
+    {
+        "id": "15f938826765a76f",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "a9e2a7f670e2509c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "b8f8ea2cce18a6d5",
+        "type": "debug",
+        "z": "ef07378eb445016a",
+        "g": "a9e2a7f670e2509c",
+        "name": "Debug Read All",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e5c74a8b01f38948",
+        "type": "postgresql",
+        "z": "ef07378eb445016a",
+        "g": "a9e2a7f670e2509c",
+        "name": "Read All",
+        "query": "SELECT * FROM equipment;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 720,
+        "wires": [
+            [
+                "b8f8ea2cce18a6d5",
+                "15f938826765a76f"
+            ]
+        ]
+    },
+    {
+        "id": "542b9d57abc105a0",
+        "type": "http in",
+        "z": "ef07378eb445016a",
+        "g": "73228cf12d0a225c",
+        "name": "Read One",
+        "url": "/equipment/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "71369587ae8c98ad"
+            ]
+        ]
+    },
+    {
+        "id": "d22d5b9b9d4e518e",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "73228cf12d0a225c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "c38520b56b918320",
+        "type": "debug",
+        "z": "ef07378eb445016a",
+        "g": "73228cf12d0a225c",
+        "name": "Debug Read One",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7265f5893c00cb4b",
+        "type": "postgresql",
+        "z": "ef07378eb445016a",
+        "g": "73228cf12d0a225c",
+        "name": "Read One",
+        "query": "SELECT * FROM equipment WHERE id = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 860,
+        "wires": [
+            [
+                "c38520b56b918320",
+                "d22d5b9b9d4e518e"
+            ]
+        ]
+    },
+    {
+        "id": "06057cc8f674f198",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "73228cf12d0a225c",
+        "name": "deconstruct",
+        "func": "const { id } = msg.req.params;\nmsg.params = [id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 860,
+        "wires": [
+            [
+                "7265f5893c00cb4b"
+            ]
+        ]
+    },
+    {
+        "id": "71369587ae8c98ad",
+        "type": "change",
+        "z": "ef07378eb445016a",
+        "g": "73228cf12d0a225c",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 860,
+        "wires": [
+            [
+                "06057cc8f674f198"
+            ]
+        ]
+    },
+    {
+        "id": "d172505f801afc6e",
+        "type": "http in",
+        "z": "ef07378eb445016a",
+        "g": "18c6976640c8ca58",
+        "name": "Read by Type",
+        "url": "/equipment/type/:type",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 1000,
+        "wires": [
+            [
+                "67c61d54b30ca97b"
+            ]
+        ]
+    },
+    {
+        "id": "19a49c96762079a7",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "18c6976640c8ca58",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "a9479843103d32f1",
+        "type": "debug",
+        "z": "ef07378eb445016a",
+        "g": "18c6976640c8ca58",
+        "name": "Debug Read By Type",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "8f441aae48242306",
+        "type": "postgresql",
+        "z": "ef07378eb445016a",
+        "g": "18c6976640c8ca58",
+        "name": "Read Status",
+        "query": "SELECT * FROM equipment WHERE type = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 1000,
+        "wires": [
+            [
+                "a9479843103d32f1",
+                "19a49c96762079a7"
+            ]
+        ]
+    },
+    {
+        "id": "510a57f56814eb64",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "18c6976640c8ca58",
+        "name": "deconstruct",
+        "func": "const { type } = msg.req.params;\nmsg.params = [type];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1000,
+        "wires": [
+            [
+                "8f441aae48242306"
+            ]
+        ]
+    },
+    {
+        "id": "67c61d54b30ca97b",
+        "type": "change",
+        "z": "ef07378eb445016a",
+        "g": "18c6976640c8ca58",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "req.params.type",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1000,
+        "wires": [
+            [
+                "510a57f56814eb64"
+            ]
+        ]
+    },
+    {
+        "id": "09f14c272b38d9c4",
+        "type": "http in",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "Update",
+        "url": "/equipment/:id",
+        "method": "patch",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "f9bfd40456d55e3d"
+            ]
+        ]
+    },
+    {
+        "id": "84f5643d8030d5ac",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9a4346c7c848520f",
+        "type": "debug",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "Debug Update",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cc2f617390e5fe70",
+        "type": "postgresql",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "Update",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 280,
+        "wires": [
+            [
+                "07d5bb3a2ef568dc"
+            ]
+        ]
+    },
+    {
+        "id": "0a9c88da77980e9e",
+        "type": "mqtt in",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "topic": "Equipment/Update",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "b2d53f182d46db4d"
+            ]
+        ]
+    },
+    {
+        "id": "6f2e95497fc14eb6",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "37202dc7607be793",
+        "type": "mqtt out",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "topic": "Equipment/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1370,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b6749302cae8f7d8",
+        "type": "switch",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 360,
+        "wires": [
+            [
+                "6f2e95497fc14eb6"
+            ],
+            [
+                "37202dc7607be793"
+            ]
+        ]
+    },
+    {
+        "id": "07d5bb3a2ef568dc",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 280,
+        "wires": [
+            [
+                "b6749302cae8f7d8",
+                "9a4346c7c848520f"
+            ]
+        ]
+    },
+    {
+        "id": "9d90c826f6771aa0",
+        "type": "mqtt out",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "topic": "Equipment/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 930,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b2d53f182d46db4d",
+        "type": "subflow:5777e384656ffee1",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\",\"name\",\"description\",\"type\",\"uom\",\"number_format\"]",
+                "type": "json"
+            },
+            {
+                "name": "allowMissingKeys",
+                "value": "true",
+                "type": "bool"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "0bc2548ca8be9f97"
+            ],
+            [
+                "08dd12d9986bc031"
+            ]
+        ]
+    },
+    {
+        "id": "08dd12d9986bc031",
+        "type": "switch",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 360,
+        "wires": [
+            [
+                "84f5643d8030d5ac"
+            ],
+            [
+                "9d90c826f6771aa0"
+            ]
+        ]
+    },
+    {
+        "id": "f9bfd40456d55e3d",
+        "type": "change",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "b2d53f182d46db4d"
+            ]
+        ]
+    },
+    {
+        "id": "0bc2548ca8be9f97",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "c32e557c335d826a",
+        "name": "deconstruct",
+        "func": "// List of valid column names for the tasks table\nconst validColumns = ['name', 'description', 'type'];\n\n// Initialize the base update SQL statement\nlet sql = \"UPDATE equipment SET \";\nlet params = [];\nlet counter = 1;\n\n// Extract the 'id' from the payload if it exists\nconst id = msg.payload.id;\ndelete msg.payload.id; // Remove the 'id' from payload to avoid updating it\n\nif (!id || isNaN(Number(id))) {\n    node.error(\"Invalid or missing task ID.\");\n    return; // Stop execution if ID is invalid or missing\n}\n\n// Validate and dynamically add fields to update based on remaining msg.payload\nObject.keys(msg.payload).forEach(key => {\n    if (validColumns.includes(key)) { // Check if the key is a valid column\n        sql += `${key} = $${counter}, `;\n        params.push(msg.payload[key]);\n        counter++;\n    }\n});\n\n// Remove the trailing comma and space if there were valid columns\nif (params.length > 0) {\n    sql = sql.slice(0, -2); // Adjust for trailing characters\n} else {\n    // If no valid columns were included, handle as error or ignore\n    node.error(\"No valid columns provided in payload.\");\n    return; // Stop execution or handle accordingly\n}\n\n// Add the WHERE clause to target the correct task using the isolated 'id'\nsql += \" WHERE id = $\" + counter;\nsql += \" RETURNING id;\";\nparams.push(Number(id)); // Add the validated and converted id to the params\n\n// Correctly assign the SQL query and parameters for the PostgreSQL node\nmsg.query = sql;\nmsg.params = params; // Assign dynamic parameters to msg.params for the node-red-contrib-postgresql node\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "cc2f617390e5fe70"
+            ]
+        ]
+    },
+    {
+        "id": "ec657c04ad261ed8",
+        "type": "http in",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "Delete",
+        "url": "/equipment/:id",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "84cde588ea8c47fb"
+            ]
+        ]
+    },
+    {
+        "id": "a427eeccfb356d2c",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6b260c4d0b5338e0",
+        "type": "debug",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "Debug Update",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "16143cb4264ce8e1",
+        "type": "mqtt in",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "topic": "Equipment/Delete",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "d3025a5910fa7b36"
+            ]
+        ]
+    },
+    {
+        "id": "f3959ecf2a3ae226",
+        "type": "http response",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "ae7c4277b5f0096f",
+        "type": "mqtt out",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "topic": "Equipment/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1360,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "008cc0a31bc71b16",
+        "type": "switch",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 560,
+        "wires": [
+            [
+                "f3959ecf2a3ae226"
+            ],
+            [
+                "ae7c4277b5f0096f"
+            ]
+        ]
+    },
+    {
+        "id": "ca84f6ba5bb6738a",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 480,
+        "wires": [
+            [
+                "6b260c4d0b5338e0",
+                "008cc0a31bc71b16"
+            ]
+        ]
+    },
+    {
+        "id": "df82f9033ae344bf",
+        "type": "mqtt out",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "topic": "Equipment/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 930,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d3025a5910fa7b36",
+        "type": "subflow:5777e384656ffee1",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 500,
+        "y": 500,
+        "wires": [
+            [
+                "96fb4409546ba5d1"
+            ],
+            [
+                "4620d06bb7bdca3f"
+            ]
+        ]
+    },
+    {
+        "id": "4620d06bb7bdca3f",
+        "type": "switch",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 560,
+        "wires": [
+            [
+                "a427eeccfb356d2c"
+            ],
+            [
+                "df82f9033ae344bf"
+            ]
+        ]
+    },
+    {
+        "id": "84cde588ea8c47fb",
+        "type": "change",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "d3025a5910fa7b36"
+            ]
+        ]
+    },
+    {
+        "id": "96fb4409546ba5d1",
+        "type": "function",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nmsg.params = [id];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 480,
+        "wires": [
+            [
+                "f6279c42e67b789d"
+            ]
+        ]
+    },
+    {
+        "id": "f6279c42e67b789d",
+        "type": "postgresql",
+        "z": "ef07378eb445016a",
+        "g": "3ed275df32a66c63",
+        "name": "Delete",
+        "query": "DELETE FROM equipment WHERE id = $1\nRETURNING id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 480,
+        "wires": [
+            [
+                "ca84f6ba5bb6738a"
+            ]
+        ]
+    },
+    {
+        "id": "f13ce832c4edfafc",
+        "type": "postgresql",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "Create",
+        "query": "INSERT INTO materials (name, description, type, uom, number_format)\nVALUES ($1, $2, $3, $4, $5)\nRETURNING id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 80,
+        "wires": [
+            [
+                "f5a86b0be9bda989"
+            ]
+        ]
+    },
+    {
+        "id": "9e30727ef45623af",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "deconstruct",
+        "func": "const { name, description, type, uom, number_format } = msg.payload;\nmsg.params = [name, description, type, uom, number_format];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "f13ce832c4edfafc"
+            ]
+        ]
+    },
+    {
+        "id": "fd157bec354064a0",
+        "type": "http in",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "Create",
+        "url": "/material",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "d5eb5958f6b117ea"
+            ]
+        ]
+    },
+    {
+        "id": "f39c3d30b024d0bb",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b1631835c6ca6e5e",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ab45bdd19eb4f444",
+        "type": "debug",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "Debug Create",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5306a4a0216df652",
+        "type": "http in",
+        "z": "a10fa1734907ae12",
+        "g": "22df7bb83466ab7e",
+        "name": "Read All",
+        "url": "/material",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 720,
+        "wires": [
+            [
+                "9bb9a3ac89bbaaba"
+            ]
+        ]
+    },
+    {
+        "id": "c1af6416b07b38f3",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "22df7bb83466ab7e",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "809eed5beda8486a",
+        "type": "debug",
+        "z": "a10fa1734907ae12",
+        "g": "22df7bb83466ab7e",
+        "name": "Debug Read All",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "9bb9a3ac89bbaaba",
+        "type": "postgresql",
+        "z": "a10fa1734907ae12",
+        "g": "22df7bb83466ab7e",
+        "name": "Read All",
+        "query": "SELECT * FROM materials;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 720,
+        "wires": [
+            [
+                "809eed5beda8486a",
+                "c1af6416b07b38f3"
+            ]
+        ]
+    },
+    {
+        "id": "d95bafd7cb22c476",
+        "type": "http in",
+        "z": "a10fa1734907ae12",
+        "g": "2f7bc39827855b18",
+        "name": "Read One",
+        "url": "/material/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "de37c2ca6d04fb7d"
+            ]
+        ]
+    },
+    {
+        "id": "8cd0b852ca337725",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "2f7bc39827855b18",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "a6c899ae0d20a2c3",
+        "type": "debug",
+        "z": "a10fa1734907ae12",
+        "g": "2f7bc39827855b18",
+        "name": "Debug Read One",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "4b8592d3f8c5be14",
+        "type": "postgresql",
+        "z": "a10fa1734907ae12",
+        "g": "2f7bc39827855b18",
+        "name": "Read One",
+        "query": "SELECT * FROM materials WHERE id = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 860,
+        "wires": [
+            [
+                "a6c899ae0d20a2c3",
+                "8cd0b852ca337725"
+            ]
+        ]
+    },
+    {
+        "id": "a6889e1fb5fca67f",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "2f7bc39827855b18",
+        "name": "deconstruct",
+        "func": "const { id } = msg.req.params;\nmsg.params = [id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 860,
+        "wires": [
+            [
+                "4b8592d3f8c5be14"
+            ]
+        ]
+    },
+    {
+        "id": "344adb293d0bdb48",
+        "type": "http in",
+        "z": "a10fa1734907ae12",
+        "g": "8e5f8acd8dead7b0",
+        "name": "Read by Type",
+        "url": "/material/type/:type",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 1000,
+        "wires": [
+            [
+                "5337ce838bcb2e3e"
+            ]
+        ]
+    },
+    {
+        "id": "7336ed3c4095a46a",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "8e5f8acd8dead7b0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "ba8d825e4e871355",
+        "type": "debug",
+        "z": "a10fa1734907ae12",
+        "g": "8e5f8acd8dead7b0",
+        "name": "Debug Read By Type",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "9cfb65d8378f619c",
+        "type": "postgresql",
+        "z": "a10fa1734907ae12",
+        "g": "8e5f8acd8dead7b0",
+        "name": "Read Status",
+        "query": "SELECT * FROM materials WHERE type = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 1000,
+        "wires": [
+            [
+                "ba8d825e4e871355",
+                "7336ed3c4095a46a"
+            ]
+        ]
+    },
+    {
+        "id": "e20aef4c499035cf",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "8e5f8acd8dead7b0",
+        "name": "deconstruct",
+        "func": "const { type } = msg.req.params;\nmsg.params = [type];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1000,
+        "wires": [
+            [
+                "9cfb65d8378f619c"
+            ]
+        ]
+    },
+    {
+        "id": "cd15bad31e8d1bad",
+        "type": "mqtt in",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "topic": "Material/Create",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "aabd9c2ab50fe59b"
+            ]
+        ]
+    },
+    {
+        "id": "01e2f0b8b7994a91",
+        "type": "mqtt out",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "topic": "Material/Create/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1380,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "613816f54e3e3142",
+        "type": "switch",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 160,
+        "wires": [
+            [
+                "b1631835c6ca6e5e"
+            ],
+            [
+                "01e2f0b8b7994a91"
+            ]
+        ]
+    },
+    {
+        "id": "f5a86b0be9bda989",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            [
+                "613816f54e3e3142",
+                "ab45bdd19eb4f444"
+            ]
+        ]
+    },
+    {
+        "id": "aabd9c2ab50fe59b",
+        "type": "subflow:5777e384656ffee1",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"name\",\"description\",\"type\",\"uom\",\"number_format\"]",
+                "type": "json"
+            },
+            {
+                "name": "idLocation",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "9e30727ef45623af"
+            ],
+            [
+                "6f6161fb1f98840f"
+            ]
+        ]
+    },
+    {
+        "id": "6f6161fb1f98840f",
+        "type": "switch",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "f39c3d30b024d0bb"
+            ],
+            [
+                "ecc69f3a9c19f681"
+            ]
+        ]
+    },
+    {
+        "id": "ecc69f3a9c19f681",
+        "type": "mqtt out",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "",
+        "topic": "Material/Create/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 920,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "040648abd494d4a9",
+        "type": "http in",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "Update",
+        "url": "/material/:id",
+        "method": "patch",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "58b1370a245f20aa"
+            ]
+        ]
+    },
+    {
+        "id": "b90ad9b54c151f0c",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "930fd906486e06f5",
+        "type": "debug",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "Debug Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "10bf923628591319",
+        "type": "postgresql",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "Update",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 280,
+        "wires": [
+            [
+                "88b8f69a12d4fe6c"
+            ]
+        ]
+    },
+    {
+        "id": "88348fc1015b6747",
+        "type": "mqtt in",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "topic": "Material/Update",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "78ccf1271de9121b"
+            ]
+        ]
+    },
+    {
+        "id": "2634dfb23adf8454",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5cf36bf3268589fe",
+        "type": "mqtt out",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "topic": "Material/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1380,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f12abbd1883562cf",
+        "type": "switch",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 360,
+        "wires": [
+            [
+                "2634dfb23adf8454"
+            ],
+            [
+                "5cf36bf3268589fe"
+            ]
+        ]
+    },
+    {
+        "id": "88b8f69a12d4fe6c",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 280,
+        "wires": [
+            [
+                "f12abbd1883562cf",
+                "930fd906486e06f5"
+            ]
+        ]
+    },
+    {
+        "id": "4cbf13d37ba65cd0",
+        "type": "mqtt out",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "topic": "Material/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 920,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "78ccf1271de9121b",
+        "type": "subflow:5777e384656ffee1",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\",\"name\",\"description\",\"type\",\"uom\",\"number_format\"]",
+                "type": "json"
+            },
+            {
+                "name": "allowMissingKeys",
+                "value": "true",
+                "type": "bool"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "731bcc988c0cfe4d"
+            ],
+            [
+                "d1655476a2ec9dc3"
+            ]
+        ]
+    },
+    {
+        "id": "d1655476a2ec9dc3",
+        "type": "switch",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 360,
+        "wires": [
+            [
+                "b90ad9b54c151f0c"
+            ],
+            [
+                "4cbf13d37ba65cd0"
+            ]
+        ]
+    },
+    {
+        "id": "58b1370a245f20aa",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "78ccf1271de9121b"
+            ]
+        ]
+    },
+    {
+        "id": "731bcc988c0cfe4d",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "f9070270e87d84ea",
+        "name": "deconstruct",
+        "func": "// List of valid column names for the tasks table\nconst validColumns = ['name', 'description', 'type', 'uom', 'number_format'];\n\n// Initialize the base update SQL statement\nlet sql = \"UPDATE materials SET \";\nlet params = [];\nlet counter = 1;\n\n// Extract the 'id' from the payload if it exists\nconst id = msg.payload.id;\ndelete msg.payload.id; // Remove the 'id' from payload to avoid updating it\n\nif (!id || isNaN(Number(id))) {\n    node.error(\"Invalid ID.\");\n    return; // Stop execution if ID is invalid or missing\n}\n\n// Validate and dynamically add fields to update based on remaining msg.payload\nObject.keys(msg.payload).forEach(key => {\n    if (validColumns.includes(key)) { // Check if the key is a valid column\n        sql += `${key} = $${counter}, `;\n        params.push(msg.payload[key]);\n        counter++;\n    }\n});\n\n// Remove the trailing comma and space if there were valid columns\nif (params.length > 0) {\n    sql = sql.slice(0, -2); // Adjust for trailing characters\n} else {\n    // If no valid columns were included, handle as error or ignore\n    node.error(\"No valid columns provided in payload.\");\n    return; // Stop execution or handle accordingly\n}\n\n// Add the WHERE clause to target the correct task using the isolated 'id'\nsql += \" WHERE id = $\" + counter;\nsql += \" RETURNING id;\";\nparams.push(Number(id)); // Add the validated and converted id to the params\n\n// Correctly assign the SQL query and parameters for the PostgreSQL node\nmsg.query = sql;\nmsg.params = params; // Assign dynamic parameters to msg.params for the node-red-contrib-postgresql node\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "10bf923628591319"
+            ]
+        ]
+    },
+    {
+        "id": "6d1491418c8303ca",
+        "type": "http in",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "Delete",
+        "url": "/material/:id",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "e40f4bfa19d0dae7"
+            ]
+        ]
+    },
+    {
+        "id": "23f0f5d7b1b1463a",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6ef01e6a840c9db1",
+        "type": "debug",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "Debug Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2963b91a25e7efc3",
+        "type": "mqtt in",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "topic": "Material/Delete",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 540,
+        "wires": [
+            [
+                "10f1fd128be51ea7"
+            ]
+        ]
+    },
+    {
+        "id": "2eb09a9e33b02fa3",
+        "type": "http response",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "20a29bc6c45ec6d7",
+        "type": "mqtt out",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "topic": "Material/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1380,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "19fb23e16bdcb3c2",
+        "type": "switch",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 560,
+        "wires": [
+            [
+                "2eb09a9e33b02fa3"
+            ],
+            [
+                "20a29bc6c45ec6d7"
+            ]
+        ]
+    },
+    {
+        "id": "6bc006e639542c16",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 480,
+        "wires": [
+            [
+                "19fb23e16bdcb3c2",
+                "6ef01e6a840c9db1"
+            ]
+        ]
+    },
+    {
+        "id": "25fd163e2ba3c716",
+        "type": "mqtt out",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "topic": "Material/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 920,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "10f1fd128be51ea7",
+        "type": "subflow:5777e384656ffee1",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 500,
+        "y": 500,
+        "wires": [
+            [
+                "c2b8ddc0d97e0f2d"
+            ],
+            [
+                "77139fbf91179845"
+            ]
+        ]
+    },
+    {
+        "id": "77139fbf91179845",
+        "type": "switch",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 560,
+        "wires": [
+            [
+                "23f0f5d7b1b1463a"
+            ],
+            [
+                "25fd163e2ba3c716"
+            ]
+        ]
+    },
+    {
+        "id": "e40f4bfa19d0dae7",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "10f1fd128be51ea7"
+            ]
+        ]
+    },
+    {
+        "id": "c2b8ddc0d97e0f2d",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nmsg.params = [id];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 480,
+        "wires": [
+            [
+                "4ec31fc728df4df4"
+            ]
+        ]
+    },
+    {
+        "id": "4ec31fc728df4df4",
+        "type": "postgresql",
+        "z": "a10fa1734907ae12",
+        "g": "07c0d7b321e21426",
+        "name": "Delete",
+        "query": "DELETE FROM materials WHERE id = $1\nRETURNING id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 480,
+        "wires": [
+            [
+                "6bc006e639542c16"
+            ]
+        ]
+    },
+    {
+        "id": "de37c2ca6d04fb7d",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "2f7bc39827855b18",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 860,
+        "wires": [
+            [
+                "a6889e1fb5fca67f"
+            ]
+        ]
+    },
+    {
+        "id": "5337ce838bcb2e3e",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "8e5f8acd8dead7b0",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "req.params.type",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1000,
+        "wires": [
+            [
+                "e20aef4c499035cf"
+            ]
+        ]
+    },
+    {
+        "id": "d5eb5958f6b117ea",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "394ae49779a2d4d1",
+        "name": "Set Params",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "aabd9c2ab50fe59b"
+            ]
+        ]
+    },
+    {
+        "id": "c8ea60f1819c0e26",
+        "type": "postgresql",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "Create",
+        "query": "INSERT INTO parameters (name, description, uom, number_format)\nVALUES ($1, $2, $3, $4)\nRETURNING id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 80,
+        "wires": [
+            [
+                "e9b8f4a4c43423a7"
+            ]
+        ]
+    },
+    {
+        "id": "27d05df1e032506b",
+        "type": "function",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "deconstruct",
+        "func": "const { name, description, uom, number_format } = msg.payload;\nmsg.params = [name, description, uom, number_format];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "c8ea60f1819c0e26"
+            ]
+        ]
+    },
+    {
+        "id": "767cefc3d6649f09",
+        "type": "http in",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "Create",
+        "url": "/parameter",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "99ca2f63de106f14"
+            ]
+        ]
+    },
+    {
+        "id": "7e092547e0fbf181",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f13683ca430d019e",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e337937e9d856fc9",
+        "type": "debug",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "Debug Create",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "290ec3ebb64fbaf9",
+        "type": "mqtt in",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "",
+        "topic": "Parameter/Create",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "eda84cd984fd89f8"
+            ]
+        ]
+    },
+    {
+        "id": "a3c83666cd55fc79",
+        "type": "mqtt out",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "",
+        "topic": "Parameter/Create/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1380,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ac93ba1bc637ae8f",
+        "type": "switch",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 160,
+        "wires": [
+            [
+                "f13683ca430d019e"
+            ],
+            [
+                "a3c83666cd55fc79"
+            ]
+        ]
+    },
+    {
+        "id": "e9b8f4a4c43423a7",
+        "type": "function",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            [
+                "ac93ba1bc637ae8f",
+                "e337937e9d856fc9"
+            ]
+        ]
+    },
+    {
+        "id": "eda84cd984fd89f8",
+        "type": "subflow:5777e384656ffee1",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"name\",\"description\",\"uom\",\"number_format\"]",
+                "type": "json"
+            },
+            {
+                "name": "idLocation",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "27d05df1e032506b"
+            ],
+            [
+                "593a0af07507c122"
+            ]
+        ]
+    },
+    {
+        "id": "593a0af07507c122",
+        "type": "switch",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "7e092547e0fbf181"
+            ],
+            [
+                "974a824aa0e8eb71"
+            ]
+        ]
+    },
+    {
+        "id": "974a824aa0e8eb71",
+        "type": "mqtt out",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "",
+        "topic": "Parameter/Create/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 920,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "99ca2f63de106f14",
+        "type": "change",
+        "z": "4e1f10cd86822e66",
+        "g": "21a32cb53564db91",
+        "name": "Set Params",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "eda84cd984fd89f8"
+            ]
+        ]
+    },
+    {
+        "id": "fa1ab1212e54300f",
+        "type": "http in",
+        "z": "4e1f10cd86822e66",
+        "g": "08653bcc25355e75",
+        "name": "Read All",
+        "url": "/parameter",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 720,
+        "wires": [
+            [
+                "7a581b84d5214b29"
+            ]
+        ]
+    },
+    {
+        "id": "568bbd28aeb61433",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "08653bcc25355e75",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "2b1f3267e454cb9f",
+        "type": "debug",
+        "z": "4e1f10cd86822e66",
+        "g": "08653bcc25355e75",
+        "name": "Debug Read All",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7a581b84d5214b29",
+        "type": "postgresql",
+        "z": "4e1f10cd86822e66",
+        "g": "08653bcc25355e75",
+        "name": "Read All",
+        "query": "SELECT * FROM parameters;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 720,
+        "wires": [
+            [
+                "2b1f3267e454cb9f",
+                "568bbd28aeb61433"
+            ]
+        ]
+    },
+    {
+        "id": "71032d6855b333d0",
+        "type": "http in",
+        "z": "4e1f10cd86822e66",
+        "g": "9a8da64c40b306a2",
+        "name": "Read One",
+        "url": "/parameter/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "b72b1cc21779d469"
+            ]
+        ]
+    },
+    {
+        "id": "b3680321e2e0f2f0",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "9a8da64c40b306a2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "901991728c7a09df",
+        "type": "debug",
+        "z": "4e1f10cd86822e66",
+        "g": "9a8da64c40b306a2",
+        "name": "Debug Read One",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "911c30e0546b06a0",
+        "type": "postgresql",
+        "z": "4e1f10cd86822e66",
+        "g": "9a8da64c40b306a2",
+        "name": "Read One",
+        "query": "SELECT * FROM parameters WHERE id = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 860,
+        "wires": [
+            [
+                "901991728c7a09df",
+                "b3680321e2e0f2f0"
+            ]
+        ]
+    },
+    {
+        "id": "8e256067ccffae1a",
+        "type": "function",
+        "z": "4e1f10cd86822e66",
+        "g": "9a8da64c40b306a2",
+        "name": "deconstruct",
+        "func": "const { id } = msg.req.params;\nmsg.params = [id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 860,
+        "wires": [
+            [
+                "911c30e0546b06a0"
+            ]
+        ]
+    },
+    {
+        "id": "b72b1cc21779d469",
+        "type": "change",
+        "z": "4e1f10cd86822e66",
+        "g": "9a8da64c40b306a2",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 860,
+        "wires": [
+            [
+                "8e256067ccffae1a"
+            ]
+        ]
+    },
+    {
+        "id": "630217f41da3eff4",
+        "type": "http in",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "Update",
+        "url": "/parameter/:id",
+        "method": "patch",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "fd8d1b233e54c02a"
+            ]
+        ]
+    },
+    {
+        "id": "95195166fa91b4c4",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c2667c3e218fbcfd",
+        "type": "debug",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "Debug Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "52524c3f22e92d02",
+        "type": "postgresql",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "Update",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 280,
+        "wires": [
+            [
+                "96fa084191ad07b6"
+            ]
+        ]
+    },
+    {
+        "id": "e5b996eb22792e79",
+        "type": "mqtt in",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "",
+        "topic": "Parameter/Update",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "688d5d26e6b38d97"
+            ]
+        ]
+    },
+    {
+        "id": "6546a6e92a7c4a95",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "01863c1661f02344",
+        "type": "mqtt out",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "",
+        "topic": "Parameter/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1370,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "0895a6eb87c8436f",
+        "type": "switch",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 360,
+        "wires": [
+            [
+                "6546a6e92a7c4a95"
+            ],
+            [
+                "01863c1661f02344"
+            ]
+        ]
+    },
+    {
+        "id": "96fa084191ad07b6",
+        "type": "function",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 280,
+        "wires": [
+            [
+                "0895a6eb87c8436f",
+                "c2667c3e218fbcfd"
+            ]
+        ]
+    },
+    {
+        "id": "609f09e1c79d2aca",
+        "type": "mqtt out",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "",
+        "topic": "Parameter/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 930,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "688d5d26e6b38d97",
+        "type": "subflow:5777e384656ffee1",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\",\"name\",\"description\",\"uom\",\"number_format\"]",
+                "type": "json"
+            },
+            {
+                "name": "allowMissingKeys",
+                "value": "true",
+                "type": "bool"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "cf9ba7b5f4a11176"
+            ],
+            [
+                "bc1bf6758c53300f"
+            ]
+        ]
+    },
+    {
+        "id": "bc1bf6758c53300f",
+        "type": "switch",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 360,
+        "wires": [
+            [
+                "95195166fa91b4c4"
+            ],
+            [
+                "609f09e1c79d2aca"
+            ]
+        ]
+    },
+    {
+        "id": "fd8d1b233e54c02a",
+        "type": "change",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "688d5d26e6b38d97"
+            ]
+        ]
+    },
+    {
+        "id": "cf9ba7b5f4a11176",
+        "type": "function",
+        "z": "4e1f10cd86822e66",
+        "g": "6c81ad0b0cd53796",
+        "name": "deconstruct",
+        "func": "// List of valid column names for the tasks table\nconst validColumns = ['name', 'description', 'uom', 'number_format'];\n\n// Initialize the base update SQL statement\nlet sql = \"UPDATE parameters SET \";\nlet params = [];\nlet counter = 1;\n\n// Extract the 'id' from the payload if it exists\nconst id = msg.payload.id;\ndelete msg.payload.id; // Remove the 'id' from payload to avoid updating it\n\nif (!id || isNaN(Number(id))) {\n    node.error(\"Invalid or missing task ID.\");\n    return; // Stop execution if ID is invalid or missing\n}\n\n// Validate and dynamically add fields to update based on remaining msg.payload\nObject.keys(msg.payload).forEach(key => {\n    if (validColumns.includes(key)) { // Check if the key is a valid column\n        sql += `${key} = $${counter}, `;\n        params.push(msg.payload[key]);\n        counter++;\n    }\n});\n\n// Remove the trailing comma and space if there were valid columns\nif (params.length > 0) {\n    sql = sql.slice(0, -2); // Adjust for trailing characters\n} else {\n    // If no valid columns were included, handle as error or ignore\n    node.error(\"No valid columns provided in payload.\");\n    return; // Stop execution or handle accordingly\n}\n\n// Add the WHERE clause to target the correct task using the isolated 'id'\nsql += \" WHERE id = $\" + counter;\nsql += \" RETURNING id;\";\nparams.push(Number(id)); // Add the validated and converted id to the params\n\n// Correctly assign the SQL query and parameters for the PostgreSQL node\nmsg.query = sql;\nmsg.params = params; // Assign dynamic parameters to msg.params for the node-red-contrib-postgresql node\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "52524c3f22e92d02"
+            ]
+        ]
+    },
+    {
+        "id": "6b39d2fc896df067",
+        "type": "http in",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "Delete",
+        "url": "/parameter/:id",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "04c1a622b11af4b7"
+            ]
+        ]
+    },
+    {
+        "id": "5efe25c61130727d",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d5c8b6ba4150a26c",
+        "type": "debug",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "Debug Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "38245e8d9f3285cb",
+        "type": "mqtt in",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "",
+        "topic": "Parameter/Delete",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "1fe85d05fa40fb4c"
+            ]
+        ]
+    },
+    {
+        "id": "d532d0dfb9fbd24b",
+        "type": "http response",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1310,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3eb7984169d4654e",
+        "type": "mqtt out",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "",
+        "topic": "Parameter/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1380,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e373eef5fee6eab4",
+        "type": "switch",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 560,
+        "wires": [
+            [
+                "d532d0dfb9fbd24b"
+            ],
+            [
+                "3eb7984169d4654e"
+            ]
+        ]
+    },
+    {
+        "id": "47d6f667558c266e",
+        "type": "function",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 480,
+        "wires": [
+            [
+                "e373eef5fee6eab4",
+                "d5c8b6ba4150a26c"
+            ]
+        ]
+    },
+    {
+        "id": "edcf0e5913db27dd",
+        "type": "mqtt out",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "",
+        "topic": "Parameter/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 920,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1fe85d05fa40fb4c",
+        "type": "subflow:5777e384656ffee1",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 470,
+        "y": 500,
+        "wires": [
+            [
+                "1db60a7694f02988"
+            ],
+            [
+                "0be894c6d4f65b1e"
+            ]
+        ]
+    },
+    {
+        "id": "0be894c6d4f65b1e",
+        "type": "switch",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 560,
+        "wires": [
+            [
+                "5efe25c61130727d"
+            ],
+            [
+                "edcf0e5913db27dd"
+            ]
+        ]
+    },
+    {
+        "id": "04c1a622b11af4b7",
+        "type": "change",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "1fe85d05fa40fb4c"
+            ]
+        ]
+    },
+    {
+        "id": "1db60a7694f02988",
+        "type": "function",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nmsg.params = [id];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 480,
+        "wires": [
+            [
+                "841c19773c131e2a"
+            ]
+        ]
+    },
+    {
+        "id": "841c19773c131e2a",
+        "type": "postgresql",
+        "z": "4e1f10cd86822e66",
+        "g": "406155f7b27b3670",
+        "name": "Delete",
+        "query": "DELETE FROM parameters WHERE id = $1\nRETURNING id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 480,
+        "wires": [
+            [
+                "47d6f667558c266e"
+            ]
+        ]
+    },
+    {
+        "id": "aaa21826945d9a9d",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Create",
+        "url": "/recipe",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "7abc7eef655c859a"
+            ]
+        ]
+    },
+    {
+        "id": "528b186a2a7139fc",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "",
+        "topic": "Recipe/Create",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "9e88593ccd17a33f"
+            ]
+        ]
+    },
+    {
+        "id": "9e88593ccd17a33f",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"outputMaterial_id\",\"equipmentType\",\"material\",\"parameters\"]",
+                "type": "json"
+            },
+            {
+                "name": "idLocation",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "cb434e9c3d0120b6"
+            ],
+            [
+                "bda256deb034d404"
+            ]
+        ]
+    },
+    {
+        "id": "7abc7eef655c859a",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Set Params",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "9e88593ccd17a33f"
+            ]
+        ]
+    },
+    {
+        "id": "ce035983f3f05798",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Check Parameters",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 510,
+        "y": 360,
+        "wires": [
+            [
+                "d6be1acf5540eda8"
+            ]
+        ]
+    },
+    {
+        "id": "d6be1acf5540eda8",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Compare",
+        "func": "// Function node code\n// Extract IDs from the database results\nlet foundIds = msg.payload.map(item => item.id);\nlet requestedIds = msg.params[0];  // This is your original input array of IDs\n\n// Convert found IDs into a Set for easier comparison\nlet foundIdsSet = new Set(foundIds);\n\n// Determine which requested IDs were not found by filtering against the Set\nlet missingIds = requestedIds.filter(id => !foundIdsSet.has(id));\n\n// Check if there are any missing IDs\nif (missingIds.length > 0) {\n    // Convert missing IDs array to a string for inclusion in the message\n    let missingIdsString = missingIds.join(', ');\n\n    // Prepare error response with the missing IDs included in the message string\n    msg.payload = {\n        error: \"Missing IDs\",\n        message: `The following requested parameter IDs were not found in the database: ${missingIdsString}`,\n        missingIds: missingIds  // Array of IDs that were not found\n    };\n    msg.statusCode = 404;  // HTTP status code for Not Found (or 400 for Bad Request)\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 360,
+        "wires": [
+            [
+                "136c37f78841b8dd"
+            ]
+        ]
+    },
+    {
+        "id": "136c37f78841b8dd",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 360,
+        "wires": [
+            [
+                "af55492e9de3785b"
+            ],
+            [
+                "6d2364b0453ba759"
+            ]
+        ]
+    },
+    {
+        "id": "7a16e9f501483bce",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Query",
+        "func": "let recipe = msg.recipe\nmsg.params = [recipe];\nmsg.query = \"SELECT insert_recipe($1) AS id;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 440,
+        "wires": [
+            [
+                "4acf7802bdbe5cae"
+            ]
+        ]
+    },
+    {
+        "id": "2d6dce19175991e7",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7b3b7e48690d3a42",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 440,
+        "wires": [
+            [
+                "2d6dce19175991e7"
+            ],
+            [
+                "bf543c47f79627f6"
+            ]
+        ]
+    },
+    {
+        "id": "bf543c47f79627f6",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "",
+        "topic": "Recipe/Create/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1330,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "bda256deb034d404",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Error 1",
+        "mode": "link",
+        "links": [
+            "87b73d080379918b"
+        ],
+        "x": 635,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "81de75e644af5ff3",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Query",
+        "func": "let parameterIds = msg.recipe.parameters.map(item => item.id);\n\nmsg.statusCode = 200\nmsg.query = \"SELECT id, name FROM parameters WHERE id = ANY($1)\";\nmsg.params = [parameterIds];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "ce035983f3f05798"
+            ]
+        ]
+    },
+    {
+        "id": "87b73d080379918b",
+        "type": "link in",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create End",
+        "links": [
+            "21413a24b793ceb8",
+            "6d2364b0453ba759",
+            "8750f278610d293d",
+            "bda256deb034d404"
+        ],
+        "x": 1035,
+        "y": 440,
+        "wires": [
+            [
+                "7b3b7e48690d3a42"
+            ]
+        ]
+    },
+    {
+        "id": "1b52d31324266ab5",
+        "type": "link in",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 3",
+        "links": [
+            "8eebeab081de9df4"
+        ],
+        "x": 215,
+        "y": 360,
+        "wires": [
+            [
+                "81de75e644af5ff3"
+            ]
+        ]
+    },
+    {
+        "id": "6d2364b0453ba759",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Error 3",
+        "mode": "link",
+        "links": [
+            "87b73d080379918b"
+        ],
+        "x": 925,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "af55492e9de3785b",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 4",
+        "mode": "link",
+        "links": [
+            "7d75824151059f46"
+        ],
+        "x": 925,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7d75824151059f46",
+        "type": "link in",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 4",
+        "links": [
+            "af55492e9de3785b"
+        ],
+        "x": 215,
+        "y": 440,
+        "wires": [
+            [
+                "7a16e9f501483bce"
+            ]
+        ]
+    },
+    {
+        "id": "8750f278610d293d",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 5",
+        "mode": "link",
+        "links": [
+            "87b73d080379918b"
+        ],
+        "x": 865,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bc0d47082795a67f",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Query",
+        "func": "let materialIds = msg.payload.material.map(item => item.id);\n\nmsg.statusCode = 200\nmsg.query = \"SELECT id, name FROM materials WHERE id = ANY($1)\";\nmsg.params = [materialIds];\nmsg.recipe = msg.payload\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "0f978d2a693d44d8"
+            ]
+        ]
+    },
+    {
+        "id": "0f978d2a693d44d8",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Check Materials",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "1ee067b57f1a573a"
+            ]
+        ]
+    },
+    {
+        "id": "1ee067b57f1a573a",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Compare",
+        "func": "// Function node code\n// Extract IDs from the database results\nlet foundIds = msg.payload.map(item => item.id);\nlet requestedIds = msg.params[0];  // This is your original input array of IDs\n\n// Convert found IDs into a Set for easier comparison\nlet foundIdsSet = new Set(foundIds);\n\n// Determine which requested IDs were not found by filtering against the Set\nlet missingIds = requestedIds.filter(id => !foundIdsSet.has(id));\n\n// Check if there are any missing IDs\nif (missingIds.length > 0) {\n    // Convert missing IDs array to a string for inclusion in the message\n    let missingIdsString = missingIds.join(', ');\n\n    // Prepare error response with the missing IDs included in the message string\n    msg.payload = {\n        error: \"Missing IDs\",\n        message: `The following requested material IDs were not found in the database: ${missingIdsString}`,\n        missingIds: missingIds  // Array of IDs that were not found\n    };\n    msg.statusCode = 404;  // HTTP status code for Not Found (or 400 for Bad Request)\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "5340ef7d5d563f17"
+            ]
+        ]
+    },
+    {
+        "id": "5340ef7d5d563f17",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 280,
+        "wires": [
+            [
+                "8eebeab081de9df4"
+            ],
+            [
+                "21413a24b793ceb8"
+            ]
+        ]
+    },
+    {
+        "id": "8eebeab081de9df4",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 3",
+        "mode": "link",
+        "links": [
+            "1b52d31324266ab5"
+        ],
+        "x": 925,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "21413a24b793ceb8",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Error 2",
+        "mode": "link",
+        "links": [
+            "87b73d080379918b"
+        ],
+        "x": 925,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cb434e9c3d0120b6",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 1",
+        "mode": "link",
+        "links": [
+            "49c1866c84b44dc8"
+        ],
+        "x": 635,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "29a4229b16ec6ed4",
+        "type": "link in",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 2",
+        "links": [
+            "c744f73a1080a7e5"
+        ],
+        "x": 215,
+        "y": 280,
+        "wires": [
+            [
+                "bc0d47082795a67f"
+            ]
+        ]
+    },
+    {
+        "id": "57ed382b8763f1f5",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 440,
+        "wires": [
+            [
+                "8750f278610d293d"
+            ]
+        ]
+    },
+    {
+        "id": "4acf7802bdbe5cae",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Write",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "57ed382b8763f1f5"
+            ]
+        ]
+    },
+    {
+        "id": "63a39e652a733da2",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "42a292f8120221d2",
+        "name": "Read All",
+        "url": "/recipe",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 820,
+        "wires": [
+            [
+                "8d8c1b058a0b16fa"
+            ]
+        ]
+    },
+    {
+        "id": "48bc25f17c6cfdf4",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "42a292f8120221d2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "eb5049bbe630e12a",
+        "type": "debug",
+        "z": "c597369fd55a8b79",
+        "g": "42a292f8120221d2",
+        "name": "Debug Read One",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8d8c1b058a0b16fa",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "42a292f8120221d2",
+        "name": "Read All",
+        "query": "SELECT * FROM public.view_recipe_header",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 820,
+        "wires": [
+            [
+                "eb5049bbe630e12a",
+                "48bc25f17c6cfdf4"
+            ]
+        ]
+    },
+    {
+        "id": "75fa7915ebc73ef0",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Validate Materials",
+        "func": "return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "3cf9b92bf699f912"
+            ]
+        ]
+    },
+    {
+        "id": "3cf9b92bf699f912",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Validate Parameters",
+        "func": "return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 200,
+        "wires": [
+            [
+                "c744f73a1080a7e5"
+            ]
+        ]
+    },
+    {
+        "id": "49c1866c84b44dc8",
+        "type": "link in",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 1",
+        "links": [
+            "cb434e9c3d0120b6"
+        ],
+        "x": 215,
+        "y": 200,
+        "wires": [
+            [
+                "75fa7915ebc73ef0"
+            ]
+        ]
+    },
+    {
+        "id": "c744f73a1080a7e5",
+        "type": "link out",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Recipe Create Continue 2",
+        "mode": "link",
+        "links": [
+            "29a4229b16ec6ed4"
+        ],
+        "x": 925,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8035d8420264afd0",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "Delete",
+        "url": "/recipe/:id",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "d81aca34d5d94ef6"
+            ]
+        ]
+    },
+    {
+        "id": "e0d3434cdec6f768",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "Delete",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 580,
+        "wires": [
+            [
+                "75691bca75d8e685"
+            ]
+        ]
+    },
+    {
+        "id": "ea6285291b034a55",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nmsg.params = [id];\nmsg.query = \"SELECT delete_recipe($1);\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 580,
+        "wires": [
+            [
+                "e0d3434cdec6f768"
+            ]
+        ]
+    },
+    {
+        "id": "d81aca34d5d94ef6",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 600,
+        "wires": [
+            [
+                "0e7065d77384cc40"
+            ]
+        ]
+    },
+    {
+        "id": "6edb07db980394e5",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "",
+        "topic": "Recipe/Delete",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 640,
+        "wires": [
+            [
+                "0e7065d77384cc40"
+            ]
+        ]
+    },
+    {
+        "id": "0e7065d77384cc40",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 480,
+        "y": 600,
+        "wires": [
+            [
+                "ea6285291b034a55"
+            ],
+            [
+                "de398e8f8a7f7811"
+            ]
+        ]
+    },
+    {
+        "id": "fc64e4c563287228",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "de398e8f8a7f7811",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 660,
+        "wires": [
+            [
+                "fc64e4c563287228"
+            ],
+            [
+                "3c4f7768d296d413"
+            ]
+        ]
+    },
+    {
+        "id": "3c4f7768d296d413",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "",
+        "topic": "Recipe/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 910,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6bf24d2c873db047",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "75691bca75d8e685",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 580,
+        "wires": [
+            [
+                "6bf24d2c873db047"
+            ],
+            [
+                "a9f12a95342566a6"
+            ]
+        ]
+    },
+    {
+        "id": "a9f12a95342566a6",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "118919b3e2fd7d53",
+        "name": "",
+        "topic": "Recipe/Delete/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1330,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "36927b869c636a4a",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "Add",
+        "url": "/recipe/:id/material",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1100,
+        "wires": [
+            [
+                "0ae5b1e352fc0383"
+            ]
+        ]
+    },
+    {
+        "id": "8f4b151ae0c34aa8",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "Add",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 1080,
+        "wires": [
+            [
+                "3a266770262be116"
+            ]
+        ]
+    },
+    {
+        "id": "3f68ef75eb6a5432",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nconst material_id = msg.payload.material_id;\nconst material_quantity = msg.payload.material_quantity;\nmsg.params = [id, material_id, material_quantity];\nmsg.query = \"SELECT add_recipe_material($1, $2, $3);\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1080,
+        "wires": [
+            [
+                "8f4b151ae0c34aa8"
+            ]
+        ]
+    },
+    {
+        "id": "0ae5b1e352fc0383",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1100,
+        "wires": [
+            [
+                "c689b12983f546f7"
+            ]
+        ]
+    },
+    {
+        "id": "047a754b55be059b",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "",
+        "topic": "Recipe/Add Material",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 1140,
+        "wires": [
+            [
+                "c689b12983f546f7"
+            ]
+        ]
+    },
+    {
+        "id": "c689b12983f546f7",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\", \"material_id\", \"material_quantity\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 480,
+        "y": 1100,
+        "wires": [
+            [
+                "3f68ef75eb6a5432"
+            ],
+            [
+                "5cde8ecbcb9d17d4"
+            ]
+        ]
+    },
+    {
+        "id": "5d4f7021a9ec7cb0",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "5cde8ecbcb9d17d4",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 1160,
+        "wires": [
+            [
+                "5d4f7021a9ec7cb0"
+            ],
+            [
+                "7f3acea5d58ddb07"
+            ]
+        ]
+    },
+    {
+        "id": "7f3acea5d58ddb07",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "",
+        "topic": "Recipe/Add Material/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 930,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "166d5ed4cffd99ef",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "3a266770262be116",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 1080,
+        "wires": [
+            [
+                "166d5ed4cffd99ef"
+            ],
+            [
+                "618a1168857cae5a"
+            ]
+        ]
+    },
+    {
+        "id": "618a1168857cae5a",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "b4b59170858fd3ec",
+        "name": "",
+        "topic": "Recipe/Add Material/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1350,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "abdfd69613b58714",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "Add",
+        "url": "/recipe/:id/parameter",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1760,
+        "wires": [
+            [
+                "efa6e66389ef5710"
+            ]
+        ]
+    },
+    {
+        "id": "07423b05db2b2f7d",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "Add",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 1740,
+        "wires": [
+            [
+                "1aac2cb0e09073e4"
+            ]
+        ]
+    },
+    {
+        "id": "d34feb7d5b832297",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nconst parameter_id = msg.payload.parameter_id;\nconst parameter_value = msg.payload.parameter_value;\nmsg.params = [id, parameter_id, parameter_value];\nmsg.query = \"SELECT add_recipe_parameter($1, $2, $3);\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1740,
+        "wires": [
+            [
+                "07423b05db2b2f7d"
+            ]
+        ]
+    },
+    {
+        "id": "efa6e66389ef5710",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1760,
+        "wires": [
+            [
+                "12ee10b2782168c0"
+            ]
+        ]
+    },
+    {
+        "id": "9c2fab11f60f662e",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "",
+        "topic": "Recipe/Add Parameter",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 1800,
+        "wires": [
+            [
+                "12ee10b2782168c0"
+            ]
+        ]
+    },
+    {
+        "id": "12ee10b2782168c0",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\", \"parameter_id\", \"parameter_value\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 480,
+        "y": 1760,
+        "wires": [
+            [
+                "d34feb7d5b832297"
+            ],
+            [
+                "21cb14ebf7cd6293"
+            ]
+        ]
+    },
+    {
+        "id": "a6d7c9a1d9ece64b",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "21cb14ebf7cd6293",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 1820,
+        "wires": [
+            [
+                "a6d7c9a1d9ece64b"
+            ],
+            [
+                "1ddea80c8dafadcc"
+            ]
+        ]
+    },
+    {
+        "id": "1ddea80c8dafadcc",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "",
+        "topic": "Recipe/Add Parameter/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 940,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "e28ebf737ad43de4",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "1aac2cb0e09073e4",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 1740,
+        "wires": [
+            [
+                "e28ebf737ad43de4"
+            ],
+            [
+                "8cf0c911ad50a8dc"
+            ]
+        ]
+    },
+    {
+        "id": "8cf0c911ad50a8dc",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "38720bcfb800919e",
+        "name": "",
+        "topic": "Recipe/Add Parameter/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1360,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "3790860f7af655d7",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "Update",
+        "url": "/recipe/:id/material/:material_id",
+        "method": "patch",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1320,
+        "wires": [
+            [
+                "3ef4beeffbfcb0a9"
+            ]
+        ]
+    },
+    {
+        "id": "71eaf3f3a21b09b1",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "Update",
+        "query": "UPDATE recipe_materials\nSET material_quantity = $3\nWHERE recipe_id = $1 AND material_id = $2\nRETURNING recipe_id, material_id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 1300,
+        "wires": [
+            [
+                "7e1f2ba52fae01a5"
+            ]
+        ]
+    },
+    {
+        "id": "1283ce4221b4cace",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nconst material_id = msg.payload.material_id;\nconst material_quantity = msg.payload.material_quantity;\nmsg.params = [id, material_id, material_quantity];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1300,
+        "wires": [
+            [
+                "71eaf3f3a21b09b1"
+            ]
+        ]
+    },
+    {
+        "id": "3ef4beeffbfcb0a9",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.material_id",
+                "pt": "msg",
+                "to": "req.params.material_id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1320,
+        "wires": [
+            [
+                "3efeb017d45bc20d"
+            ]
+        ]
+    },
+    {
+        "id": "7ecb46bfcf7a6fbd",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "",
+        "topic": "Recipe/Update Material",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 1360,
+        "wires": [
+            [
+                "3efeb017d45bc20d"
+            ]
+        ]
+    },
+    {
+        "id": "3efeb017d45bc20d",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\", \"material_id\", \"material_quantity\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 480,
+        "y": 1320,
+        "wires": [
+            [
+                "1283ce4221b4cace"
+            ],
+            [
+                "65cf4dc637be41f8"
+            ]
+        ]
+    },
+    {
+        "id": "7c8282aafc592e43",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "65cf4dc637be41f8",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 1380,
+        "wires": [
+            [
+                "7c8282aafc592e43"
+            ],
+            [
+                "a718a2f8158cff92"
+            ]
+        ]
+    },
+    {
+        "id": "a718a2f8158cff92",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "",
+        "topic": "Recipe/Update Material/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 940,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "efa8d90afc4c3411",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "7e1f2ba52fae01a5",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 1300,
+        "wires": [
+            [
+                "efa8d90afc4c3411"
+            ],
+            [
+                "dcb2badc67bf4957"
+            ]
+        ]
+    },
+    {
+        "id": "dcb2badc67bf4957",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "22f86d1acb8e3f13",
+        "name": "",
+        "topic": "Recipe/Update Material/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1360,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "18e0ecf261856402",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "Update",
+        "url": "/recipe/:id/parameter/:parameter_id",
+        "method": "patch",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1980,
+        "wires": [
+            [
+                "6f6ff1c5b8c0edbd"
+            ]
+        ]
+    },
+    {
+        "id": "9ebaadeb9bd8ee4e",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "Update",
+        "query": "UPDATE recipe_parameters\nSET parameter_value = $3\nWHERE recipe_id = $1 AND parameter_id = $2\nRETURNING recipe_id, parameter_id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 1960,
+        "wires": [
+            [
+                "d658ab53d3713495"
+            ]
+        ]
+    },
+    {
+        "id": "622a5efa3c5a25c3",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nconst parameter_id = msg.payload.parameter_id;\nconst parameter_value = msg.payload.parameter_value;\nmsg.params = [id, parameter_id, parameter_value];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1960,
+        "wires": [
+            [
+                "9ebaadeb9bd8ee4e"
+            ]
+        ]
+    },
+    {
+        "id": "6f6ff1c5b8c0edbd",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.parameter_id",
+                "pt": "msg",
+                "to": "req.params.parameter_id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1980,
+        "wires": [
+            [
+                "68b9a30805711352"
+            ]
+        ]
+    },
+    {
+        "id": "356f76042df8406d",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "",
+        "topic": "Recipe/Update Parameter",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 2020,
+        "wires": [
+            [
+                "68b9a30805711352"
+            ]
+        ]
+    },
+    {
+        "id": "68b9a30805711352",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\", \"parameter_id\", \"parameter_value\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 480,
+        "y": 1980,
+        "wires": [
+            [
+                "622a5efa3c5a25c3"
+            ],
+            [
+                "75346e7cda1f7518"
+            ]
+        ]
+    },
+    {
+        "id": "b77dcb5f72cf6f83",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "75346e7cda1f7518",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 2040,
+        "wires": [
+            [
+                "b77dcb5f72cf6f83"
+            ],
+            [
+                "ed0ff0593fa4d83d"
+            ]
+        ]
+    },
+    {
+        "id": "ed0ff0593fa4d83d",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "",
+        "topic": "Recipe/Update Parameter/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 950,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "b95366710f515f4e",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "328928654d82e216",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 1960,
+        "wires": [
+            [
+                "b95366710f515f4e"
+            ],
+            [
+                "7f82eca290387a4b"
+            ]
+        ]
+    },
+    {
+        "id": "7f82eca290387a4b",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "",
+        "topic": "Recipe/Update Parameter/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1370,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "abf294f334ed3669",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "Delete",
+        "url": "/recipe/:id/material/:material_id",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1540,
+        "wires": [
+            [
+                "8e0f750f5e6ab7ea"
+            ]
+        ]
+    },
+    {
+        "id": "dc5e2ae4a3860b60",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "Delete",
+        "query": "DELETE FROM recipe_materials\nWHERE recipe_id = $1 AND material_id = $2\nRETURNING recipe_id, material_id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 1520,
+        "wires": [
+            [
+                "58fb1003bc983bc7"
+            ]
+        ]
+    },
+    {
+        "id": "78ad319c3b9e7bf0",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nconst material_id = msg.payload.material_id;\nmsg.params = [id, material_id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1520,
+        "wires": [
+            [
+                "dc5e2ae4a3860b60"
+            ]
+        ]
+    },
+    {
+        "id": "8e0f750f5e6ab7ea",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.material_id",
+                "pt": "msg",
+                "to": "req.params.material_id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1540,
+        "wires": [
+            [
+                "cd7042ba92defae1"
+            ]
+        ]
+    },
+    {
+        "id": "2d30885d10bb5c3b",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "",
+        "topic": "Recipe/Delete Material",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 1580,
+        "wires": [
+            [
+                "cd7042ba92defae1"
+            ]
+        ]
+    },
+    {
+        "id": "cd7042ba92defae1",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\", \"material_id\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 480,
+        "y": 1540,
+        "wires": [
+            [
+                "78ad319c3b9e7bf0"
+            ],
+            [
+                "5994f9e2d419c376"
+            ]
+        ]
+    },
+    {
+        "id": "969e5c05bf8de968",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "5994f9e2d419c376",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 1600,
+        "wires": [
+            [
+                "969e5c05bf8de968"
+            ],
+            [
+                "fdb71c1ec772885a"
+            ]
+        ]
+    },
+    {
+        "id": "fdb71c1ec772885a",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "",
+        "topic": "Recipe/Delete Material/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 940,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "e85d9507fcc70f5c",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "58fb1003bc983bc7",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 1520,
+        "wires": [
+            [
+                "e85d9507fcc70f5c"
+            ],
+            [
+                "6d76b28d3326ccf5"
+            ]
+        ]
+    },
+    {
+        "id": "6d76b28d3326ccf5",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "2248f87a73036dd1",
+        "name": "",
+        "topic": "Recipe/Delete Material/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1360,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "ff9d8eecbd861330",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "Delete",
+        "url": "/recipe/:id/parameter/:parameter_id",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 2200,
+        "wires": [
+            [
+                "17fb673c4b7a9fb9"
+            ]
+        ]
+    },
+    {
+        "id": "53b0d560c50f398c",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "Delete",
+        "query": "DELETE FROM recipe_parameters\nWHERE recipe_id = $1 AND parameter_id = $2\nRETURNING recipe_id, parameter_id;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 2180,
+        "wires": [
+            [
+                "506615bdc72f45cf"
+            ]
+        ]
+    },
+    {
+        "id": "4432ee342ac2bac5",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "deconstruct",
+        "func": "const id = msg.payload.id;\nconst parameter_id = msg.payload.parameter_id;\nmsg.params = [id, parameter_id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 2180,
+        "wires": [
+            [
+                "53b0d560c50f398c"
+            ]
+        ]
+    },
+    {
+        "id": "17fb673c4b7a9fb9",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.parameter_id",
+                "pt": "msg",
+                "to": "req.params.parameter_id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2200,
+        "wires": [
+            [
+                "69388d0ffd84ae81"
+            ]
+        ]
+    },
+    {
+        "id": "a8ed6e7b9acb241d",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "",
+        "topic": "Recipe/Delete Parameter",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 2240,
+        "wires": [
+            [
+                "69388d0ffd84ae81"
+            ]
+        ]
+    },
+    {
+        "id": "69388d0ffd84ae81",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\", \"parameter_id\"]",
+                "type": "json"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 480,
+        "y": 2200,
+        "wires": [
+            [
+                "4432ee342ac2bac5"
+            ],
+            [
+                "1115eb29fa4465ec"
+            ]
+        ]
+    },
+    {
+        "id": "e8f7b5f9216259d5",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "1115eb29fa4465ec",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 2260,
+        "wires": [
+            [
+                "e8f7b5f9216259d5"
+            ],
+            [
+                "1c659ae6e4d345fb"
+            ]
+        ]
+    },
+    {
+        "id": "1c659ae6e4d345fb",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "",
+        "topic": "Recipe/Delete Parameter/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 950,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "161c2051f0861002",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "eac3d037c8d62f93",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 2180,
+        "wires": [
+            [
+                "161c2051f0861002"
+            ],
+            [
+                "8cfc127af3fb5082"
+            ]
+        ]
+    },
+    {
+        "id": "8cfc127af3fb5082",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "",
+        "topic": "Recipe/Delete Parameter/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1370,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "46322b82c63960fa",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "925a6517ba6ef007",
+        "name": "Read One",
+        "url": "/recipe/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 960,
+        "wires": [
+            [
+                "730477c7e9668d07"
+            ]
+        ]
+    },
+    {
+        "id": "d7f4a02ad1d5c0d9",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "925a6517ba6ef007",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "bfed8ce1024d06da",
+        "type": "debug",
+        "z": "c597369fd55a8b79",
+        "g": "925a6517ba6ef007",
+        "name": "Debug Read One",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "c05164fe92566ae0",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "925a6517ba6ef007",
+        "name": "Read One",
+        "query": "SELECT * FROM public.view_recipe_details\nWHERE recipe_id = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 960,
+        "wires": [
+            [
+                "50494cec4bc848e5"
+            ]
+        ]
+    },
+    {
+        "id": "13c5353f41b4bf64",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "925a6517ba6ef007",
+        "name": "deconstruct",
+        "func": "const { id } = msg.req.params;\nmsg.params = [id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 960,
+        "wires": [
+            [
+                "c05164fe92566ae0"
+            ]
+        ]
+    },
+    {
+        "id": "730477c7e9668d07",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "925a6517ba6ef007",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 960,
+        "wires": [
+            [
+                "13c5353f41b4bf64"
+            ]
+        ]
+    },
+    {
+        "id": "50494cec4bc848e5",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "925a6517ba6ef007",
+        "name": "Transform",
+        "func": "// Extract the payload for transformation\nvar inputPayload = msg.payload;\n\n// Initialize the new structure for the payload\nvar newPayload = {\n    outputMaterial_id: inputPayload[0].recipe_id,\n    outputMaterial: inputPayload[0].product_material,   \n    equipmentType: inputPayload[0].equipment_type,\n    material: [],\n    parameters: []\n};\n\n// Iterate through each entry in the input payload\ninputPayload.forEach(function(item) {\n    if (item.field_type === \"Material\") {\n        // Add to the material array\n        newPayload.material.push({\n            id: item.field_id,\n            name: item.field_name,\n            quantity: item.field_value,\n            uom: item.uom,\n            numberFormat: item.number_format\n        });\n    } else if (item.field_type === \"Parameter\") {\n        // Add to the parameters array\n        newPayload.parameters.push({\n            id: item.field_id,\n            name: item.field_name,\n            quantity: item.field_value,\n            uom: item.uom,\n            numberFormat: item.number_format\n        });\n    }\n});\n\n// Set the transformed payload back to msg.payload\nmsg.payload = newPayload;\n\n// Return the modified message\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 960,
+        "wires": [
+            [
+                "bfed8ce1024d06da",
+                "d7f4a02ad1d5c0d9"
+            ]
+        ]
+    },
+    {
+        "id": "506615bdc72f45cf",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "051ccabbbfa69646",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 2180,
+        "wires": [
+            [
+                "eac3d037c8d62f93"
+            ]
+        ]
+    },
+    {
+        "id": "d658ab53d3713495",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "bd7e03636ffad15d",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 1960,
+        "wires": [
+            [
+                "328928654d82e216"
+            ]
+        ]
     }
 ]

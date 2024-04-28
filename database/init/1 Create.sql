@@ -58,6 +58,18 @@ CREATE TABLE recipe_parameters (
 -- Create Views
 ----------------------------------------------------------------------------------------------------
 
+-- View Recipe Header
+CREATE OR REPLACE VIEW view_recipe_header AS
+SELECT 
+    rm.id AS recipe_id,
+    m.id AS material_id,
+    m.name AS material_name,
+    rm.equipment_type
+FROM 
+    recipe_master rm
+JOIN 
+    materials m ON rm.material_id = m.id
+
 -- View Recipe Details
 CREATE OR REPLACE VIEW view_recipe_details AS
  SELECT r.id AS recipe_id,
@@ -366,9 +378,9 @@ BEGIN
 
     -- Loop through each parameter in the JSON array
     FOR v_parameter IN SELECT * FROM json_array_elements(data->'parameters') LOOP
-        RAISE NOTICE 'Parameter ID: %, Value: %', (v_parameter->>'id')::INT, (v_parameter->>'quantity')::NUMERIC;
+        RAISE NOTICE 'Parameter ID: %, Value: %', (v_parameter->>'id')::INT, (v_parameter->>'value')::NUMERIC;
         INSERT INTO recipe_parameters (recipe_id, parameter_id, parameter_value)
-        VALUES (v_recipe_id, (v_parameter->>'id')::INT, (v_parameter->>'quantity')::NUMERIC);
+        VALUES (v_recipe_id, (v_parameter->>'id')::INT, (v_parameter->>'value')::NUMERIC);
     END LOOP;
 
     -- Return the new recipe ID as text
