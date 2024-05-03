@@ -16,12 +16,15 @@ log_level = os.getenv('LOG_LEVEL', 'INFO')
 logger.remove()
 logger.add(sys.stderr, level=log_level)
 
-# MQTT Settings
+# Settings
 MQTT_BROKER = os.getenv('MQTT_BROKER')
 MQTT_PORT = int(os.getenv('MQTT_PORT'))
 MQTT_TOPIC = os.getenv('MQTT_TOPIC')
+
 DB_DSN = (f"dbname={os.getenv('DB_NAME')} user={os.getenv('DB_USER')} "
           f"password={os.getenv('DB_PASSWORD')} host={os.getenv('DB_HOST')}")
+
+LISTEN_TOPICS = os.getenv('LISTEN_TOPICS', 'audit_notifications').split(',')
 
 # Initialize MQTT client
 mqtt_client = mqtt.Client(protocol=mqtt.MQTTv5, callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
@@ -47,7 +50,9 @@ async def listen_pg_and_publish():
                     # Establish a new database connection
                     conn = await aiopg.connect(dsn=DB_DSN)
                     async with conn.cursor() as cur:
-                        await cur.execute("LISTEN audit_notifications;")
+                        for topic in LISTEN_TOPICS:
+                            await cur.execute(f"LISTEN {topic};")
+                            logger.info(f"Listening to {topic}")
                         logger.info("Connected to PostgreSQL and listening for notifications.")
 
                 # Wait for notifications with a timeout

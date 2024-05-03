@@ -103,11 +103,12 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD:-password}
       DB_HOST: database
       DB_PORT: 5432
+      LISTEN_TOPICS: ${LISTEN_TOPICS:-audit_notifications}
       MQTT_BROKER: broker
       MQTT_PORT: 1883
       MQTT_USER: ${MOSQUITTO_USERNAME:-admin}
       MQTT_PASSWORD: ${MOSQUITTO_PASSWORD:-password}
-      MQTT_TOPIC: database/notifications
+      MQTT_TOPIC: Database/Notification
 
 networks:
   iiot-recipe-network:

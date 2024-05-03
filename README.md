@@ -31,10 +31,10 @@ Below is an example of a Recipe JSON object
         {"id": 5, "name": "Sugar", "quantity": "0.02", "uom": "grams", "numberFormat": "#,##0.0"}
     ],
     "parameters": [
-        {"id": 1, "name": "Batch Size", "quantity": "1.00", "uom": "lbs", "numberFormat": "#,##0"},
-        {"id": 2, "name": "Mixing Time", "quantity": "15.00", "uom": "minutes", "numberFormat": "#,##0"},
-        {"id": 3, "name": "Mixing Speed", "quantity": "60.00", "uom": "rpm", "numberFormat": "#"},
-        {"id": 4, "name": "Proof Time", "quantity": "30.00", "uom": "minutes", "numberFormat": "#,##0"}
+        {"id": 1, "name": "Batch Size", "value": "1.00", "uom": "lbs", "numberFormat": "#,##0"},
+        {"id": 2, "name": "Mixing Time", "value": "15.00", "uom": "minutes", "numberFormat": "#,##0"},
+        {"id": 3, "name": "Mixing Speed", "value": "60.00", "uom": "rpm", "numberFormat": "#"},
+        {"id": 4, "name": "Proof Time", "value": "30.00", "uom": "minutes", "numberFormat": "#,##0"}
     ]
 }
 ```
@@ -289,6 +289,19 @@ This document provides comprehensive API documentation for managing equipment, m
 - **Endpoint**: `DELETE /recipe/:id`
 - **Parameters**: `id` (integer)
 - **Success**: `200 OK` with `{"message": "Recipe deleted successfully"}`
+
+### Update Recipe
+- **Endpoint**: `PATCH /recipe/:id`
+- **Parameters**: `id` (integer)
+- **Body**:
+  ```json
+  {
+    "name": "string",
+    "material_id": "string",
+    "equipment_type": "string"
+  }
+  ```
+- **Success**: `200 OK` with `{"id": integer}`
 
 ### Add a Material to a Recipe
 - **Endpoint**: `POST /recipe/:id/material`

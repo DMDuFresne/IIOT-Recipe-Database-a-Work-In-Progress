@@ -1,11 +1,436 @@
 [
     {
-        "id": "a10fa1734907ae12",
+        "id": "18d4935f1ab7959e",
         "type": "tab",
-        "label": "Dashboard",
+        "label": "UI",
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "a5b79de6acd3ef9b",
+        "type": "tab",
+        "label": "Recipe UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a137126ce3aceac2",
+        "type": "tab",
+        "label": "Recipe Edit UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a10fa1734907ae12",
+        "type": "tab",
+        "label": "Equipment UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ef861fd9693eb173",
+        "type": "tab",
+        "label": "Material UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "10f68b5d132759c9",
+        "type": "tab",
+        "label": "Parameters UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "84f6f75a9be75934",
+        "type": "tab",
+        "label": "API Example",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "77c6d4cc80f8731a",
+        "type": "group",
+        "z": "84f6f75a9be75934",
+        "name": "Equipment CRUD",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "a86a5ea13a87cb33",
+            "6f6ec7b10b35d3fd",
+            "80f66cc4fd0b1c3f",
+            "7650e322843c5148",
+            "2b787b4174db256f",
+            "9fd519b13933b0f5",
+            "7da995948fef3a99",
+            "90af44c1242fbceb",
+            "6bc0c9f5abf5f3b9",
+            "40cd4cc37c20c39f",
+            "8cd35b08be627d6c",
+            "e966f939e1b4595f",
+            "4a139cf4c4f072e6",
+            "4ff56d1eb190d503",
+            "04ce8e91531b9c72",
+            "9425d4ea0c2a7242",
+            "bf5e03409fbdaa9a",
+            "1a5b664baf3c4e9f"
+        ],
+        "x": 74,
+        "y": 39,
+        "w": 812,
+        "h": 262
+    },
+    {
+        "id": "561faa154a13dc09",
+        "type": "group",
+        "z": "84f6f75a9be75934",
+        "name": "Material CRUD",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "f487cb9e44968155",
+            "06f7473a098548f9",
+            "87644ac860cd98c8",
+            "607d2e668c5e073b",
+            "fa542f7aac052a32",
+            "604b1395621db037",
+            "bb7840cf5b98573e",
+            "53c4f7a4b9b4d2c9",
+            "f8d653c35df9e523",
+            "b8dd83aaac5bcde6",
+            "ce611e6d03bee9d8",
+            "1cf115e956879eb2",
+            "5c1f9aebd06247a2",
+            "8bf1660c3c154cd1",
+            "4ddf81880bba6dd0",
+            "8850177a09538d1d",
+            "23d40c4e8d99a68f",
+            "f5eade707e4cba5c"
+        ],
+        "x": 74,
+        "y": 319,
+        "w": 812,
+        "h": 262
+    },
+    {
+        "id": "8754411990682c53",
+        "type": "group",
+        "z": "84f6f75a9be75934",
+        "name": "Parameter CRUD",
+        "style": {
+            "label": true,
+            "fill": "#ffffff"
+        },
+        "nodes": [
+            "930582b938612877",
+            "5bbb7ec98416b8b1",
+            "d7fc8043efb63d4e",
+            "18b27a0ed4d71cee",
+            "a7bf0a0f90de72ec",
+            "9e78a4025b1072e2",
+            "c292993fe2d27723",
+            "ea953e08298590d6",
+            "719a3c91cde9ab24",
+            "26ceaf71aa683f35",
+            "6199064e3432f3ef",
+            "a402ffaa5ebaa8c4",
+            "bcd43e22a6af2bcf",
+            "9f56f623cae5dc70",
+            "d71df6b0b61c91f1",
+            "2e346eef4ef2d1ea",
+            "8d0a8b91fd07eb7d",
+            "3cc7677c66bc8c47"
+        ],
+        "x": 74,
+        "y": 599,
+        "w": 812,
+        "h": 262
+    },
+    {
+        "id": "716e76ce338ab224",
+        "type": "group",
+        "z": "84f6f75a9be75934",
+        "name": "Recipe CRUD",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "0e6e4a2b4ff30886",
+            "426383e60788b1a0",
+            "3254095d09c60711",
+            "1cdbe83b13671c36",
+            "c1dd55f55bef55cc",
+            "5b9064bb5c454fae",
+            "7f844bf3500ac351",
+            "d39b979e3fe53622",
+            "da340f38171751e2",
+            "f808d0e8e34acba0",
+            "669bb68d0f5305d9",
+            "08d7064d30a15edc",
+            "320697973290c6c4",
+            "bf2d0edf6d085290",
+            "397cb0bad58170f2",
+            "a3ada01f5dc2d363",
+            "46afa326987cc4bd",
+            "2f27d3dad1c65068",
+            "33a756f899dad6c5",
+            "5a26b90d737f2051",
+            "e7340473d966bff2",
+            "af05841559962232",
+            "a4659388c6df0a0c",
+            "f5296a436ff1f237",
+            "5a5c57e537404e04",
+            "4046079096723078",
+            "9041654d548be4a5",
+            "5e55d3fbd80c6dca",
+            "75b528a961405c0b",
+            "65353c75cd1cf6c1",
+            "89a6ec9ccedbf680",
+            "1d9da8f64c0b2a1d",
+            "4a95e3d26c7aa31d",
+            "01ef5eafd9cd802d",
+            "04fef348272a6a6e",
+            "346702b25a78e46f",
+            "7ba3b06aaefae463",
+            "18402eae0f526eb1",
+            "9b22eb4469668615",
+            "951dd77295351d48",
+            "fb00849c486e3ac8",
+            "0cfc70041894c16b",
+            "1a76c370f71851b7",
+            "4e3fa2bb76456c23",
+            "c05fd9bee57e30c7",
+            "8a8714dfab5a861b",
+            "ea1cfa5ec50ba49e",
+            "47e443b76a56f967",
+            "27e213b41fcc1360",
+            "61aae8275b9de1dd",
+            "c467bb8b164ace31",
+            "d086ad8351a41307",
+            "f13bed1f6009da08",
+            "6fd8d0704a6dfaa0",
+            "19ca6cf23cb60533",
+            "69dc785d9165608f",
+            "f6e843afaedbaecf",
+            "c69313ea4dabd939"
+        ],
+        "x": 74,
+        "y": 879,
+        "w": 812,
+        "h": 702
+    },
+    {
+        "id": "96571bc6b3294fe7",
+        "type": "group",
+        "z": "a10fa1734907ae12",
+        "name": "Equipment UI",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "62c538c22d81f7aa",
+            "b5738f7951349c88",
+            "cae89ce1e38969c9",
+            "837d29c370aa6b05",
+            "1669ea7d8386699b",
+            "97cbb4c140ececb2",
+            "0baf7c471ecf5dbd",
+            "462747ba8f60b660",
+            "abc31aa443b6c7b6",
+            "4d2c1cd5893a4beb",
+            "368478dc81445ca1",
+            "f4d4714620b161e3",
+            "8e021a7b2373ab53",
+            "ba0df5ad4233fba2",
+            "a829f0f63297cb41",
+            "b04bb1c875dac152",
+            "6f75e5fe3ced31eb",
+            "84dd5f67fe1d7844",
+            "3e07f25e3514eb51",
+            "94fb8021ee871cae",
+            "0d67ca0a4cb8d6af",
+            "1d3ae55ece6e918e",
+            "546c931c9e26d791",
+            "034340cbdced80b4",
+            "bac05d2e58ac39bf",
+            "42849475b8183970",
+            "ddcca97c77cb3dd1",
+            "c7940c01d0e05715",
+            "19cedb24c6a49372",
+            "613a548053950b9b",
+            "2e907691d069f705",
+            "ca526802e486331c",
+            "09daa473e778cd44",
+            "2f217bc3436de7ea",
+            "435afebac3a132b5",
+            "443df00e6f31659c",
+            "3e30732dcdfbf0b1",
+            "8847e7f75dc2f89d",
+            "29e5c75561be85de",
+            "05010d26232bda43"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 1292,
+        "h": 562
+    },
+    {
+        "id": "0ff21ae99f2653c1",
+        "type": "group",
+        "z": "ef861fd9693eb173",
+        "name": "Material UI",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "e77ba837704d489a",
+            "7033ec92969f12a5",
+            "5179f8237816aedd",
+            "5879407204ee77c4",
+            "0b2a7991c3acfbd0",
+            "f1d7d0c061c2afef",
+            "7ec821f3e7a55227",
+            "c188c7d0459a8002",
+            "5cee6efc21e88e7d",
+            "60decbe0b5b9ce1d",
+            "67ec67de66185fd5",
+            "493da3cac2ed56e4",
+            "42287ba773c4f03e",
+            "0c9338c4bb270684",
+            "c71339187105b538",
+            "cdf0d36807fc34f6",
+            "5c528675653ae7bf",
+            "806ef3ccb2f93b95",
+            "e450768d3d06b35c",
+            "56140d8ce14953da",
+            "696f25e925024d6b",
+            "20d1170e21b7cdb4",
+            "cdab2bd55cab576f",
+            "91aa15afec7dd37a",
+            "b204e91702b68ce2",
+            "b89a67bd277949eb",
+            "49c191405958fcf5",
+            "a202e2b46768c3ba",
+            "55d431ea99462b91",
+            "166038ae70fbf2f5",
+            "9756773744bbeda7",
+            "fb18b447a6939c6d",
+            "9d334e6394323ec6",
+            "1e81fee08a0ac7ef",
+            "0a7ccd82c7f20fda",
+            "bbc726a2a9592e5d",
+            "66c579266a3754c2",
+            "295cb21857bcf341",
+            "79181c4b4cf10ead",
+            "be0e869c66ae7146",
+            "9e06aa51018a85c6",
+            "d2a64f97f28b9742",
+            "1ad643a6b642b693",
+            "2acfa6dbaffadec7",
+            "f0343fe5fd33a1fd",
+            "51933591b177fce5"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 1292,
+        "h": 642
+    },
+    {
+        "id": "44b275e0349a1dcf",
+        "type": "group",
+        "z": "10f68b5d132759c9",
+        "name": "Parameters UI",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "c650e7771c7cc958",
+            "c641b7d17b385062",
+            "6789b499aaca90e3",
+            "e3b9b362afa3fd79",
+            "bf288e07452c7729",
+            "8b84f54b546a2987",
+            "9aaaed11f090deb8",
+            "85d492f988448647",
+            "7ef89d199d03f67b",
+            "ae86268b1657b890",
+            "4ae20770d8306af8",
+            "e867d32d2f5b7e98",
+            "5fcc8bd8cd9ba315",
+            "e650e8142d2313ca",
+            "5b1db43529d17e6d",
+            "eece77a734583c15",
+            "b4e6c53e533074a2",
+            "3b74edd4f58387d0",
+            "4620186d057a9dc7",
+            "38c5330f7d606e50",
+            "260d46e927f5b4ef",
+            "18e93c72e9d0989f",
+            "3864ba74462dcd9f",
+            "9392ee60765fa967",
+            "d4d21f49c2e7e26e",
+            "8c0b0389234c71a7",
+            "850893d6aad15544",
+            "5e74e80118250754",
+            "7c091ae182b1b775",
+            "00cf5bbc32bef86f",
+            "cc952041b4fa9031",
+            "7ec0e475ab558381",
+            "f0b9def754e5d7cb",
+            "891c5e65f4b6ae38",
+            "48f31c2d591cf720",
+            "72d12eb0670b8876",
+            "0662ca94717ed909",
+            "c5a283144031abfa",
+            "9297acee818b47fa",
+            "6c813472037ff2b7",
+            "1b06be21931ad860",
+            "aeb9865e127d7644",
+            "4873d5a47488114e"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 1292,
+        "h": 602
+    },
+    {
+        "id": "1e5e9bc35c857f6f",
+        "type": "group",
+        "z": "a5b79de6acd3ef9b",
+        "name": "Parameters UI",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "4ae4bc07b6f0c0d3",
+            "10ee5e0abe132664",
+            "39887a1608b60506",
+            "c4ddd9128c583cfe",
+            "0f4a9598d39c1a04",
+            "f04af9266e164eef",
+            "b5090e84f5876a5f",
+            "1a61cd43aec6f49c"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 1212,
+        "h": 122
     },
     {
         "id": "16d8818276faa3ad",
@@ -39,13 +464,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "dca0ae5d81e72e1c",
-        "type": "ui-base",
-        "name": "UI",
-        "path": "/dashboard",
-        "showPathInSidebar": false
-    },
-    {
         "id": "b3b1950c2462930c",
         "type": "ui-theme",
         "name": "Theme",
@@ -55,46 +473,6355 @@
             "bgPage": "#eeeeee",
             "groupBg": "#ffffff",
             "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
         }
     },
     {
-        "id": "1bdc46cea813d08b",
+        "id": "bbd308391b97fcd0",
+        "type": "ui-base",
+        "name": "Recipe Management",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "e9df35d396aac262",
         "type": "ui-page",
-        "name": "Tasks",
-        "ui": "dca0ae5d81e72e1c",
-        "path": "/",
-        "icon": "",
+        "name": "Equipment",
+        "ui": "bbd308391b97fcd0",
+        "path": "/Equipment",
+        "icon": "home",
         "layout": "notebook",
         "theme": "b3b1950c2462930c",
-        "order": -1,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "0e7a899e9067fa98",
-        "type": "ui-group",
-        "name": "Tasks",
-        "page": "1bdc46cea813d08b",
-        "width": "6",
-        "height": "1",
         "order": 2,
-        "showTitle": true,
         "className": "",
         "visible": "true",
         "disabled": "false"
     },
     {
-        "id": "bf1b567a6e314ea3",
+        "id": "f368f155baddb059",
         "type": "ui-group",
-        "name": "Today",
-        "page": "1bdc46cea813d08b",
+        "name": "All",
+        "page": "e9df35d396aac262",
         "width": "6",
         "height": "1",
-        "order": 1,
-        "showTitle": true,
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "1dc9cf9cfbea58a7",
+        "type": "ui-group",
+        "name": "Update",
+        "page": "e9df35d396aac262",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "d254f94a78f2bed1",
+        "type": "ui-group",
+        "name": "New",
+        "page": "e9df35d396aac262",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false"
+    },
+    {
+        "id": "61acf84aa2a6bb1f",
+        "type": "ui-page",
+        "name": "Materials",
+        "ui": "bbd308391b97fcd0",
+        "path": "/Materials",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "b3b1950c2462930c",
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5efb2c505c9a5923",
+        "type": "ui-group",
+        "name": "All",
+        "page": "61acf84aa2a6bb1f",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "206c72259649e69a",
+        "type": "ui-group",
+        "name": "Update",
+        "page": "61acf84aa2a6bb1f",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ac9d661c25b186ae",
+        "type": "ui-group",
+        "name": "New",
+        "page": "61acf84aa2a6bb1f",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7280c97d5c3cd374",
+        "type": "ui-page",
+        "name": "Parameters",
+        "ui": "bbd308391b97fcd0",
+        "path": "/Parameters",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "b3b1950c2462930c",
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7d8acf3ee1cb1f11",
+        "type": "ui-group",
+        "name": "All",
+        "page": "7280c97d5c3cd374",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c1cc14ec713ea0e3",
+        "type": "ui-group",
+        "name": "Update",
+        "page": "7280c97d5c3cd374",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "8dd7f85d95353ed7",
+        "type": "ui-group",
+        "name": "New",
+        "page": "7280c97d5c3cd374",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0e4e0aebb37ebdef",
+        "type": "ui-page",
+        "name": "Recipes",
+        "ui": "bbd308391b97fcd0",
+        "path": "/",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "b3b1950c2462930c",
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "3a523452cb5dcb07",
+        "type": "ui-group",
+        "name": "Dashboard",
+        "page": "0e4e0aebb37ebdef",
+        "width": "9",
+        "height": "1",
+        "order": -1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "779069106594833f",
+        "type": "ui-template",
+        "z": "18d4935f1ab7959e",
+        "group": "",
+        "page": "",
+        "ui": "bbd308391b97fcd0",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <Teleport v-if=\"mounted\" to=\"#app-bar-actions\">\n        <v-btn>My Action</v-btn>\n    </Teleport>\n</template>\n\n<script>\n    export default {\n        data() {\n            return {\n                mounted: false\n            }\n        },\n        mounted() {\n            this.mounted = true\n        }\n    }\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "widget:ui",
+        "className": "",
+        "x": 260,
+        "y": 60,
+        "wires": [
+            [
+                "bd59e787e155b3eb"
+            ]
+        ]
+    },
+    {
+        "id": "b2f6a0794fa48e38",
+        "type": "inject",
+        "z": "18d4935f1ab7959e",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "779069106594833f"
+            ]
+        ]
+    },
+    {
+        "id": "bd59e787e155b3eb",
+        "type": "debug",
+        "z": "18d4935f1ab7959e",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4ae4bc07b6f0c0d3",
+        "type": "mqtt in",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "name": "",
+        "topic": "Recipes/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "1a61cd43aec6f49c"
+            ]
+        ]
+    },
+    {
+        "id": "10ee5e0abe132664",
+        "type": "http request",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 850,
+        "y": 80,
+        "wires": [
+            [
+                "0f4a9598d39c1a04",
+                "f04af9266e164eef"
+            ]
+        ]
+    },
+    {
+        "id": "39887a1608b60506",
+        "type": "function",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload;\n    msg.payload = null;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 80,
+        "wires": [
+            [
+                "10ee5e0abe132664"
+            ]
+        ]
+    },
+    {
+        "id": "c4ddd9128c583cfe",
+        "type": "ui-template",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "group": "3a523452cb5dcb07",
+        "page": "",
+        "ui": "",
+        "name": "Details",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <v-row>\n\n    <!-- Materials Column -->\n    <v-col cols=\"9\" sm=\"6\">\n      <v-card>\n        <v-card-title>Materials</v-card-title>\n        <v-divider :thickness=\"2\"></v-divider>\n        <v-list>\n          <v-list-item v-for=\"material in recipe.materials\" :key=\"material.id\">\n            <v-list-item-content>\n              <v-list-item-title>{{ material.name }}</v-list-item-title>\n              <v-list-item-subtitle>{{ material.quantity }} {{ material.uom }}</v-list-item-subtitle>\n            </v-list-item-content>\n          </v-list-item>\n        </v-list>\n      </v-card>\n    </v-col>\n\n    <!-- Parameters Column -->\n    <v-col cols=\"9\" sm=\"6\">\n      <v-card>\n        <v-card-title>Parameters</v-card-title>\n        <v-divider :thickness=\"2\"></v-divider>\n        <v-list>\n          <v-list-item v-for=\"parameter in recipe.parameters\" :key=\"parameter.id\">\n            <v-list-item-content>\n              <v-list-item-title>{{ parameter.name }}</v-list-item-title>\n              <v-list-item-subtitle>{{ parameter.value }} {{ parameter.uom }}</v-list-item-subtitle>\n            </v-list-item-content>\n          </v-list-item>\n        </v-list>\n      </v-card>\n    </v-col>\n\n  </v-row>\n</template>\n\n<script>\nexport default {\n  computed: {\n    recipe() {\n      return this.msg.payload || { materials: [], parameters: [] };\n    }\n  }\n};\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1170,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f4a9598d39c1a04",
+        "type": "ui-template",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "group": "3a523452cb5dcb07",
+        "page": "",
+        "ui": "",
+        "name": "Header",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <v-row>\n\n    <!-- Materials Column -->\n    <v-col cols=\"12\">\n      <v-card>\n        <v-card-title>Recipe</v-card-title>\n        <v-divider :thickness=\"2\"></v-divider>\n      </v-card>\n    </v-col>\n    \n  </v-row>\n</template>\n\n<script>\nexport default {\n  computed: {\n    recipe() {\n      return this.msg.payload || {};\n    }\n  }\n};\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1020,
+        "y": 80,
+        "wires": [
+            [
+                "c4ddd9128c583cfe"
+            ]
+        ]
+    },
+    {
+        "id": "f04af9266e164eef",
+        "type": "debug",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b5090e84f5876a5f",
+        "type": "ui-dropdown",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "group": "3a523452cb5dcb07",
+        "name": "",
+        "label": "Select Option:",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 460,
+        "y": 80,
+        "wires": [
+            [
+                "39887a1608b60506"
+            ]
+        ]
+    },
+    {
+        "id": "1a61cd43aec6f49c",
+        "type": "function",
+        "z": "a5b79de6acd3ef9b",
+        "g": "1e5e9bc35c857f6f",
+        "name": "function 1",
+        "func": "let options = msg.payload.recipes.map(item => ({\n    value: String(item.recipe_id),\n    label: item.material_name\n}));\n\nmsg.options = options;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 80,
+        "wires": [
+            [
+                "b5090e84f5876a5f"
+            ]
+        ]
+    },
+    {
+        "id": "62c538c22d81f7aa",
+        "type": "ui-table",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "f368f155baddb059",
+        "name": "Incomplete Tasks",
+        "label": "text",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": "10",
+        "autocols": false,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Name",
+                "key": "Name"
+            },
+            {
+                "title": "Description",
+                "key": "Description"
+            },
+            {
+                "title": "Type",
+                "key": "Type"
+            }
+        ],
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "b04bb1c875dac152",
+                "546c931c9e26d791",
+                "42849475b8183970",
+                "94fb8021ee871cae"
+            ]
+        ]
+    },
+    {
+        "id": "b5738f7951349c88",
+        "type": "mqtt in",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "topic": "Equipment/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "cae89ce1e38969c9"
+            ]
+        ]
+    },
+    {
+        "id": "cae89ce1e38969c9",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Format",
+        "func": "msg.payload = msg.payload.equipment\n    .map(equipment => ({\n        \"ID\": equipment.id,\n        \"Name\": equipment.name,\n        \"Description\": equipment.description,\n        \"Type\": equipment.type\n    }))\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "62c538c22d81f7aa"
+            ]
+        ]
+    },
+    {
+        "id": "837d29c370aa6b05",
+        "type": "ui-button",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "1dc9cf9cfbea58a7",
+        "name": "",
+        "label": "Delete",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "19cedb24c6a49372"
+            ]
+        ]
+    },
+    {
+        "id": "1669ea7d8386699b",
+        "type": "http request",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "ca526802e486331c",
+                "05010d26232bda43"
+            ]
+        ]
+    },
+    {
+        "id": "97cbb4c140ececb2",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Equipment:Update', 'Equipment:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 120,
+        "wires": [
+            [
+                "3e07f25e3514eb51"
+            ]
+        ]
+    },
+    {
+        "id": "0baf7c471ecf5dbd",
+        "type": "inject",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 930,
+        "y": 80,
+        "wires": [
+            [
+                "97cbb4c140ececb2",
+                "368478dc81445ca1"
+            ]
+        ]
+    },
+    {
+        "id": "462747ba8f60b660",
+        "type": "ui-button",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "1dc9cf9cfbea58a7",
+        "name": "",
+        "label": "Update",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "abc31aa443b6c7b6"
+            ]
+        ]
+    },
+    {
+        "id": "abc31aa443b6c7b6",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Format Request",
+        "func": "let payload = {};\nlet id = flow.get(\"ID\");\n\nif (flow.get(\"Name\") !== undefined && flow.get(\"Name\") !== \"\") {\n    payload.name = flow.get(\"Name\");\n}\n\nif (flow.get(\"Description\") !== undefined && flow.get(\"Description\") !== \"\") {\n    payload.description = flow.get(\"Description\");\n}\n\nif (flow.get(\"Type\") !== undefined && flow.get(\"Type\") !== \"\") {\n    payload.type = flow.get(\"Type\");\n}\n\nif (Object.keys(payload).length === 0) {\n    node.error(\"No Updates provided\", msg);\n    return null; // Stop the flow\n}\n\nmsg.payload = payload;\nmsg.method = \"PATCH\"\n\nif (id) {\n    msg.url = \"backend:1880/equipment/\" + id;\n    return msg;\n} else {\n    node.error(\"No ID provided\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 520,
+        "wires": [
+            [
+                "4d2c1cd5893a4beb"
+            ]
+        ]
+    },
+    {
+        "id": "4d2c1cd5893a4beb",
+        "type": "http request",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 520,
+        "wires": [
+            [
+                "ca526802e486331c",
+                "05010d26232bda43"
+            ]
+        ]
+    },
+    {
+        "id": "368478dc81445ca1",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Type",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4d4714620b161e3",
+        "type": "ui-form",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Create",
+        "group": "d254f94a78f2bed1",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "key": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Description",
+                "key": "description",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Type",
+                "key": "type",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "description": "",
+            "type": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "8e021a7b2373ab53"
+            ]
+        ]
+    },
+    {
+        "id": "8e021a7b2373ab53",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\nmsg.url = \"backend:1880/equipment\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 480,
+        "wires": [
+            [
+                "ba0df5ad4233fba2"
+            ]
+        ]
+    },
+    {
+        "id": "ba0df5ad4233fba2",
+        "type": "http request",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 480,
+        "wires": [
+            [
+                "ca526802e486331c",
+                "05010d26232bda43"
+            ]
+        ]
+    },
+    {
+        "id": "a829f0f63297cb41",
+        "type": "ui-markdown",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "f368f155baddb059",
+        "name": "Equipment Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Equipment\n\n---",
+        "className": "",
+        "x": 490,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b04bb1c875dac152",
+        "type": "ui-markdown",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "1dc9cf9cfbea58a7",
+        "name": "Update Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Update: {{ msg.payload.Name || 'Equipment' }}\n\n---\n",
+        "className": "",
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "6f75e5fe3ced31eb"
+            ]
+        ]
+    },
+    {
+        "id": "6f75e5fe3ced31eb",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "payload.ID",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "84dd5f67fe1d7844"
+            ]
+        ]
+    },
+    {
+        "id": "84dd5f67fe1d7844",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Show",
+        "func": "msg.payload = {\n    groups: {\n        show: ['Equipment:Update']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 160,
+        "wires": [
+            [
+                "3e07f25e3514eb51"
+            ]
+        ]
+    },
+    {
+        "id": "3e07f25e3514eb51",
+        "type": "ui-control",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "ui": "bbd308391b97fcd0",
+        "events": "all",
+        "x": 1240,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94fb8021ee871cae",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Type",
+        "func": "msg.payload = msg.payload.Type\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "0d67ca0a4cb8d6af"
+            ]
+        ]
+    },
+    {
+        "id": "0d67ca0a4cb8d6af",
+        "type": "ui-text-input",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "1dc9cf9cfbea58a7",
+        "name": "Type",
+        "label": "Type",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 910,
+        "y": 300,
+        "wires": [
+            [
+                "1d3ae55ece6e918e"
+            ]
+        ]
+    },
+    {
+        "id": "1d3ae55ece6e918e",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Type",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "546c931c9e26d791",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Task",
+        "func": "msg.payload = msg.payload.Name\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 220,
+        "wires": [
+            [
+                "bac05d2e58ac39bf"
+            ]
+        ]
+    },
+    {
+        "id": "034340cbdced80b4",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bac05d2e58ac39bf",
+        "type": "ui-text-input",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "1dc9cf9cfbea58a7",
+        "name": "Name",
+        "label": "Name",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 910,
+        "y": 220,
+        "wires": [
+            [
+                "034340cbdced80b4"
+            ]
+        ]
+    },
+    {
+        "id": "42849475b8183970",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Description",
+        "func": "msg.payload = msg.payload.Description\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "c7940c01d0e05715"
+            ]
+        ]
+    },
+    {
+        "id": "ddcca97c77cb3dd1",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7940c01d0e05715",
+        "type": "ui-text-input",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "1dc9cf9cfbea58a7",
+        "name": "Description",
+        "label": "Description",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "ddcca97c77cb3dd1"
+            ]
+        ]
+    },
+    {
+        "id": "19cedb24c6a49372",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nlet id = flow.get(\"ID\");\n\nif (id) {\n    msg.url = \"backend:1880/equipment/\" + id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 560,
+        "wires": [
+            [
+                "1669ea7d8386699b"
+            ]
+        ]
+    },
+    {
+        "id": "613a548053950b9b",
+        "type": "ui-button",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "1dc9cf9cfbea58a7",
+        "name": "Close Update",
+        "label": "Cancel",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 440,
+        "wires": [
+            [
+                "05010d26232bda43"
+            ]
+        ]
+    },
+    {
+        "id": "2e907691d069f705",
+        "type": "link in",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Hide",
+        "links": [
+            "a87666aafdcb9cec",
+            "da2eeeab50aab477",
+            "73c206b975fa63cd"
+        ],
+        "x": 985,
+        "y": 120,
+        "wires": [
+            [
+                "97cbb4c140ececb2"
+            ]
+        ]
+    },
+    {
+        "id": "ca526802e486331c",
+        "type": "debug",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Debug CRUD",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "09daa473e778cd44",
+        "type": "ui-button",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "f368f155baddb059",
+        "name": "Add",
+        "label": "Add",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "right",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "435afebac3a132b5"
+            ]
+        ]
+    },
+    {
+        "id": "2f217bc3436de7ea",
+        "type": "ui-control",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "ui": "bbd308391b97fcd0",
+        "events": "all",
+        "x": 1100,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "435afebac3a132b5",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Show",
+        "func": "msg.payload = {\n    groups: {\n        show: ['Equipment:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 360,
+        "wires": [
+            [
+                "2f217bc3436de7ea"
+            ]
+        ]
+    },
+    {
+        "id": "443df00e6f31659c",
+        "type": "ui-markdown",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "d254f94a78f2bed1",
+        "name": "Add Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Add: New Equipment\n\n---",
+        "className": "",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e30732dcdfbf0b1",
+        "type": "ui-button",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "group": "d254f94a78f2bed1",
+        "name": "Close Add",
+        "label": "Cancel",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "29e5c75561be85de"
+            ]
+        ]
+    },
+    {
+        "id": "8847e7f75dc2f89d",
+        "type": "change",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Type",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29e5c75561be85de",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Equipment:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 400,
+        "wires": [
+            [
+                "2f217bc3436de7ea",
+                "8847e7f75dc2f89d"
+            ]
+        ]
+    },
+    {
+        "id": "05010d26232bda43",
+        "type": "function",
+        "z": "a10fa1734907ae12",
+        "g": "96571bc6b3294fe7",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Equipment:Update']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 440,
+        "wires": [
+            [
+                "2f217bc3436de7ea",
+                "8847e7f75dc2f89d"
+            ]
+        ]
+    },
+    {
+        "id": "e77ba837704d489a",
+        "type": "ui-table",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "5efb2c505c9a5923",
+        "name": "Incomplete Tasks",
+        "label": "text",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": "10",
+        "autocols": false,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Name",
+                "key": "Name"
+            },
+            {
+                "title": "Description",
+                "key": "Description"
+            },
+            {
+                "title": "Type",
+                "key": "Type"
+            }
+        ],
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "cdf0d36807fc34f6",
+                "cdab2bd55cab576f",
+                "b89a67bd277949eb",
+                "56140d8ce14953da",
+                "9e06aa51018a85c6",
+                "2acfa6dbaffadec7"
+            ]
+        ]
+    },
+    {
+        "id": "7033ec92969f12a5",
+        "type": "mqtt in",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "topic": "Materials/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "5179f8237816aedd"
+            ]
+        ]
+    },
+    {
+        "id": "5179f8237816aedd",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Format",
+        "func": "msg.payload = msg.payload.materials\n    .map(materials => ({\n        \"ID\": materials.id,\n        \"Name\": materials.name,\n        \"Description\": materials.description,\n        \"Type\": materials.type,\n        \"UoM\": materials.uom,\n        \"Format\": materials.number_format\n    }))\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "e77ba837704d489a"
+            ]
+        ]
+    },
+    {
+        "id": "5879407204ee77c4",
+        "type": "ui-button",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "",
+        "label": "Delete",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 640,
+        "wires": [
+            [
+                "55d431ea99462b91"
+            ]
+        ]
+    },
+    {
+        "id": "0b2a7991c3acfbd0",
+        "type": "http request",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 640,
+        "wires": [
+            [
+                "fb18b447a6939c6d",
+                "be0e869c66ae7146"
+            ]
+        ]
+    },
+    {
+        "id": "f1d7d0c061c2afef",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Materials:Update', 'Materials:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 120,
+        "wires": [
+            [
+                "e450768d3d06b35c"
+            ]
+        ]
+    },
+    {
+        "id": "7ec821f3e7a55227",
+        "type": "inject",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 930,
+        "y": 80,
+        "wires": [
+            [
+                "f1d7d0c061c2afef",
+                "67ec67de66185fd5"
+            ]
+        ]
+    },
+    {
+        "id": "c188c7d0459a8002",
+        "type": "ui-button",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "",
+        "label": "Update",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 600,
+        "wires": [
+            [
+                "5cee6efc21e88e7d"
+            ]
+        ]
+    },
+    {
+        "id": "5cee6efc21e88e7d",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Format Request",
+        "func": "let payload = {};\nlet id = flow.get(\"ID\");\n\nif (flow.get(\"Name\") !== undefined && flow.get(\"Name\") !== \"\") {\n    payload.name = flow.get(\"Name\");\n}\n\nif (flow.get(\"Description\") !== undefined && flow.get(\"Description\") !== \"\") {\n    payload.description = flow.get(\"Description\");\n}\n\nif (flow.get(\"Type\") !== undefined && flow.get(\"Type\") !== \"\") {\n    payload.type = flow.get(\"Type\");\n}\n\nif (flow.get(\"UoM\") !== undefined && flow.get(\"UoM\") !== \"\") {\n    payload.uom = flow.get(\"UoM\");\n}\n\nif (flow.get(\"Format\") !== undefined && flow.get(\"Format\") !== \"\") {\n    payload.number_format = flow.get(\"Format\");\n}\n\nif (Object.keys(payload).length === 0) {\n    node.error(\"No Updates provided\", msg);\n    return null; // Stop the flow\n}\n\nmsg.payload = payload;\nmsg.method = \"PATCH\"\n\nif (id) {\n    msg.url = \"backend:1880/material/\" + id;\n    return msg;\n} else {\n    node.error(\"No ID provided\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 600,
+        "wires": [
+            [
+                "60decbe0b5b9ce1d"
+            ]
+        ]
+    },
+    {
+        "id": "60decbe0b5b9ce1d",
+        "type": "http request",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 600,
+        "wires": [
+            [
+                "fb18b447a6939c6d",
+                "be0e869c66ae7146"
+            ]
+        ]
+    },
+    {
+        "id": "67ec67de66185fd5",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Type",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "UoM",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Format",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "493da3cac2ed56e4",
+        "type": "ui-form",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Create",
+        "group": "ac9d661c25b186ae",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "key": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Description",
+                "key": "description",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Type",
+                "key": "type",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "UoM",
+                "key": "uom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Number Format",
+                "key": "number_format",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "description": "",
+            "type": "",
+            "uom": "",
+            "number_format": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "42287ba773c4f03e"
+            ]
+        ]
+    },
+    {
+        "id": "42287ba773c4f03e",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\nmsg.url = \"backend:1880/material\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 560,
+        "wires": [
+            [
+                "0c9338c4bb270684"
+            ]
+        ]
+    },
+    {
+        "id": "0c9338c4bb270684",
+        "type": "http request",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "fb18b447a6939c6d",
+                "be0e869c66ae7146"
+            ]
+        ]
+    },
+    {
+        "id": "c71339187105b538",
+        "type": "ui-markdown",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "5efb2c505c9a5923",
+        "name": "Materials Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Materials\n\n---",
+        "className": "",
+        "x": 490,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cdf0d36807fc34f6",
+        "type": "ui-markdown",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "Update Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Update: {{ msg.payload.Name || 'Material' }}\n\n---\n",
+        "className": "",
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "5c528675653ae7bf"
+            ]
+        ]
+    },
+    {
+        "id": "5c528675653ae7bf",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "payload.ID",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "806ef3ccb2f93b95"
+            ]
+        ]
+    },
+    {
+        "id": "806ef3ccb2f93b95",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Show",
+        "func": "msg.payload = {\n    groups: {\n        show: ['Materials:Update']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 160,
+        "wires": [
+            [
+                "e450768d3d06b35c"
+            ]
+        ]
+    },
+    {
+        "id": "e450768d3d06b35c",
+        "type": "ui-control",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "ui": "bbd308391b97fcd0",
+        "events": "all",
+        "x": 1240,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56140d8ce14953da",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Type",
+        "func": "msg.payload = msg.payload.Type\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "696f25e925024d6b"
+            ]
+        ]
+    },
+    {
+        "id": "696f25e925024d6b",
+        "type": "ui-text-input",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "Type",
+        "label": "Type",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 910,
+        "y": 300,
+        "wires": [
+            [
+                "20d1170e21b7cdb4"
+            ]
+        ]
+    },
+    {
+        "id": "20d1170e21b7cdb4",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Type",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cdab2bd55cab576f",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Task",
+        "func": "msg.payload = msg.payload.Name\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 220,
+        "wires": [
+            [
+                "b204e91702b68ce2"
+            ]
+        ]
+    },
+    {
+        "id": "91aa15afec7dd37a",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b204e91702b68ce2",
+        "type": "ui-text-input",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "Name",
+        "label": "Name",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 910,
+        "y": 220,
+        "wires": [
+            [
+                "91aa15afec7dd37a"
+            ]
+        ]
+    },
+    {
+        "id": "b89a67bd277949eb",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Description",
+        "func": "msg.payload = msg.payload.Description\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "a202e2b46768c3ba"
+            ]
+        ]
+    },
+    {
+        "id": "49c191405958fcf5",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a202e2b46768c3ba",
+        "type": "ui-text-input",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "Description",
+        "label": "Description",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "49c191405958fcf5"
+            ]
+        ]
+    },
+    {
+        "id": "55d431ea99462b91",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nlet id = flow.get(\"ID\");\n\nif (id) {\n    msg.url = \"backend:1880/material/\" + id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 640,
+        "wires": [
+            [
+                "0b2a7991c3acfbd0"
+            ]
+        ]
+    },
+    {
+        "id": "166038ae70fbf2f5",
+        "type": "ui-button",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "Close Update",
+        "label": "Cancel",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "be0e869c66ae7146"
+            ]
+        ]
+    },
+    {
+        "id": "9756773744bbeda7",
+        "type": "link in",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Hide",
+        "links": [
+            "a87666aafdcb9cec",
+            "da2eeeab50aab477",
+            "73c206b975fa63cd"
+        ],
+        "x": 985,
+        "y": 120,
+        "wires": [
+            [
+                "f1d7d0c061c2afef"
+            ]
+        ]
+    },
+    {
+        "id": "fb18b447a6939c6d",
+        "type": "debug",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Debug CRUD",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "9d334e6394323ec6",
+        "type": "ui-button",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "5efb2c505c9a5923",
+        "name": "Add",
+        "label": "Add",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "right",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "0a7ccd82c7f20fda"
+            ]
+        ]
+    },
+    {
+        "id": "1e81fee08a0ac7ef",
+        "type": "ui-control",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "ui": "bbd308391b97fcd0",
+        "events": "all",
+        "x": 1100,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a7ccd82c7f20fda",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Show",
+        "func": "msg.payload = {\n    groups: {\n        show: ['Materials:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 440,
+        "wires": [
+            [
+                "1e81fee08a0ac7ef"
+            ]
+        ]
+    },
+    {
+        "id": "bbc726a2a9592e5d",
+        "type": "ui-markdown",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "ac9d661c25b186ae",
+        "name": "Add Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Add: New Material\n\n---",
+        "className": "",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66c579266a3754c2",
+        "type": "ui-button",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "ac9d661c25b186ae",
+        "name": "Close Add",
+        "label": "Cancel",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "79181c4b4cf10ead"
+            ]
+        ]
+    },
+    {
+        "id": "295cb21857bcf341",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Type",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "UoM",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Format",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79181c4b4cf10ead",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Materials:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "1e81fee08a0ac7ef",
+                "295cb21857bcf341"
+            ]
+        ]
+    },
+    {
+        "id": "be0e869c66ae7146",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Materials:Update']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "1e81fee08a0ac7ef",
+                "295cb21857bcf341"
+            ]
+        ]
+    },
+    {
+        "id": "9e06aa51018a85c6",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "UoM",
+        "func": "msg.payload = msg.payload.UoM\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "d2a64f97f28b9742"
+            ]
+        ]
+    },
+    {
+        "id": "d2a64f97f28b9742",
+        "type": "ui-text-input",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "UoM",
+        "label": "UoM",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "1ad643a6b642b693"
+            ]
+        ]
+    },
+    {
+        "id": "1ad643a6b642b693",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "UoM",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2acfa6dbaffadec7",
+        "type": "function",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "Format",
+        "func": "msg.payload = msg.payload.Format\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 380,
+        "wires": [
+            [
+                "f0343fe5fd33a1fd"
+            ]
+        ]
+    },
+    {
+        "id": "f0343fe5fd33a1fd",
+        "type": "ui-text-input",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "group": "206c72259649e69a",
+        "name": "Format",
+        "label": "Format",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 920,
+        "y": 380,
+        "wires": [
+            [
+                "51933591b177fce5"
+            ]
+        ]
+    },
+    {
+        "id": "51933591b177fce5",
+        "type": "change",
+        "z": "ef861fd9693eb173",
+        "g": "0ff21ae99f2653c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Format",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c650e7771c7cc958",
+        "type": "ui-table",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "7d8acf3ee1cb1f11",
+        "name": "Incomplete Tasks",
+        "label": "text",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": "10",
+        "autocols": false,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Name",
+                "key": "Name"
+            },
+            {
+                "title": "Description",
+                "key": "Description"
+            },
+            {
+                "title": "Type",
+                "key": "Type"
+            }
+        ],
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "eece77a734583c15",
+                "38c5330f7d606e50",
+                "3864ba74462dcd9f",
+                "c5a283144031abfa",
+                "1b06be21931ad860"
+            ]
+        ]
+    },
+    {
+        "id": "c641b7d17b385062",
+        "type": "mqtt in",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "topic": "Parameters/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "6789b499aaca90e3"
+            ]
+        ]
+    },
+    {
+        "id": "6789b499aaca90e3",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Format",
+        "func": "msg.payload = msg.payload.parameters\n    .map(parameters => ({\n        \"ID\": parameters.id,\n        \"Name\": parameters.name,\n        \"Description\": parameters.description,\n        \"UoM\": parameters.uom,\n        \"Format\": parameters.number_format\n    }))\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "c650e7771c7cc958"
+            ]
+        ]
+    },
+    {
+        "id": "e3b9b362afa3fd79",
+        "type": "ui-button",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "",
+        "label": "Delete",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "8c0b0389234c71a7"
+            ]
+        ]
+    },
+    {
+        "id": "bf288e07452c7729",
+        "type": "http request",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 600,
+        "wires": [
+            [
+                "7c091ae182b1b775",
+                "0662ca94717ed909"
+            ]
+        ]
+    },
+    {
+        "id": "8b84f54b546a2987",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Parameters:Update', 'Parameters:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 120,
+        "wires": [
+            [
+                "4620186d057a9dc7"
+            ]
+        ]
+    },
+    {
+        "id": "9aaaed11f090deb8",
+        "type": "inject",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 930,
+        "y": 80,
+        "wires": [
+            [
+                "8b84f54b546a2987",
+                "4ae20770d8306af8"
+            ]
+        ]
+    },
+    {
+        "id": "85d492f988448647",
+        "type": "ui-button",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "",
+        "label": "Update",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "7ef89d199d03f67b"
+            ]
+        ]
+    },
+    {
+        "id": "7ef89d199d03f67b",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Format Request",
+        "func": "let payload = {};\nlet id = flow.get(\"ID\");\n\nif (flow.get(\"Name\") !== undefined && flow.get(\"Name\") !== \"\") {\n    payload.name = flow.get(\"Name\");\n}\n\nif (flow.get(\"Description\") !== undefined && flow.get(\"Description\") !== \"\") {\n    payload.description = flow.get(\"Description\");\n}\n\nif (flow.get(\"UoM\") !== undefined && flow.get(\"UoM\") !== \"\") {\n    payload.uom = flow.get(\"UoM\");\n}\n\nif (flow.get(\"Format\") !== undefined && flow.get(\"Format\") !== \"\") {\n    payload.number_format = flow.get(\"Format\");\n}\n\nif (Object.keys(payload).length === 0) {\n    node.error(\"No Updates provided\", msg);\n    return null; // Stop the flow\n}\n\nmsg.payload = payload;\nmsg.method = \"PATCH\"\n\nif (id) {\n    msg.url = \"backend:1880/parameter/\" + id;\n    return msg;\n} else {\n    node.error(\"No ID provided\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 560,
+        "wires": [
+            [
+                "ae86268b1657b890"
+            ]
+        ]
+    },
+    {
+        "id": "ae86268b1657b890",
+        "type": "http request",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "7c091ae182b1b775",
+                "0662ca94717ed909"
+            ]
+        ]
+    },
+    {
+        "id": "4ae20770d8306af8",
+        "type": "change",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "UoM",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Format",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e867d32d2f5b7e98",
+        "type": "ui-form",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Create",
+        "group": "8dd7f85d95353ed7",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "key": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Description",
+                "key": "description",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "UoM",
+                "key": "uom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Number Format",
+                "key": "number_format",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "description": "",
+            "uom": "",
+            "number_format": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "5fcc8bd8cd9ba315"
+            ]
+        ]
+    },
+    {
+        "id": "5fcc8bd8cd9ba315",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\nmsg.url = \"backend:1880/parameter\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 520,
+        "wires": [
+            [
+                "e650e8142d2313ca"
+            ]
+        ]
+    },
+    {
+        "id": "e650e8142d2313ca",
+        "type": "http request",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 730,
+        "y": 520,
+        "wires": [
+            [
+                "7c091ae182b1b775",
+                "0662ca94717ed909"
+            ]
+        ]
+    },
+    {
+        "id": "5b1db43529d17e6d",
+        "type": "ui-markdown",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "7d8acf3ee1cb1f11",
+        "name": "Parameters Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Parameters\n\n---",
+        "className": "",
+        "x": 500,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eece77a734583c15",
+        "type": "ui-markdown",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "Update Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Update: {{ msg.payload.Name || 'Parameter' }}\n\n---\n",
+        "className": "",
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "b4e6c53e533074a2"
+            ]
+        ]
+    },
+    {
+        "id": "b4e6c53e533074a2",
+        "type": "change",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "payload.ID",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "3b74edd4f58387d0"
+            ]
+        ]
+    },
+    {
+        "id": "3b74edd4f58387d0",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Show",
+        "func": "msg.payload = {\n    groups: {\n        show: ['Parameters:Update']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 160,
+        "wires": [
+            [
+                "4620186d057a9dc7"
+            ]
+        ]
+    },
+    {
+        "id": "4620186d057a9dc7",
+        "type": "ui-control",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "ui": "bbd308391b97fcd0",
+        "events": "all",
+        "x": 1240,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38c5330f7d606e50",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Task",
+        "func": "msg.payload = msg.payload.Name\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 220,
+        "wires": [
+            [
+                "18e93c72e9d0989f"
+            ]
+        ]
+    },
+    {
+        "id": "260d46e927f5b4ef",
+        "type": "change",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18e93c72e9d0989f",
+        "type": "ui-text-input",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "Name",
+        "label": "Name",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 910,
+        "y": 220,
+        "wires": [
+            [
+                "260d46e927f5b4ef"
+            ]
+        ]
+    },
+    {
+        "id": "3864ba74462dcd9f",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Description",
+        "func": "msg.payload = msg.payload.Description\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "d4d21f49c2e7e26e"
+            ]
+        ]
+    },
+    {
+        "id": "9392ee60765fa967",
+        "type": "change",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4d21f49c2e7e26e",
+        "type": "ui-text-input",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "Description",
+        "label": "Description",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "9392ee60765fa967"
+            ]
+        ]
+    },
+    {
+        "id": "8c0b0389234c71a7",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nlet id = flow.get(\"ID\");\n\nif (id) {\n    msg.url = \"backend:1880/parameter/\" + id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 600,
+        "wires": [
+            [
+                "bf288e07452c7729"
+            ]
+        ]
+    },
+    {
+        "id": "850893d6aad15544",
+        "type": "ui-button",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "Close Update",
+        "label": "Cancel",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "0662ca94717ed909"
+            ]
+        ]
+    },
+    {
+        "id": "5e74e80118250754",
+        "type": "link in",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Hide",
+        "links": [
+            "a87666aafdcb9cec",
+            "da2eeeab50aab477",
+            "73c206b975fa63cd"
+        ],
+        "x": 985,
+        "y": 120,
+        "wires": [
+            [
+                "8b84f54b546a2987"
+            ]
+        ]
+    },
+    {
+        "id": "7c091ae182b1b775",
+        "type": "debug",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Debug CRUD",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "00cf5bbc32bef86f",
+        "type": "ui-button",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "7d8acf3ee1cb1f11",
+        "name": "Add",
+        "label": "Add",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "right",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "7ec0e475ab558381"
+            ]
+        ]
+    },
+    {
+        "id": "cc952041b4fa9031",
+        "type": "ui-control",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "ui": "bbd308391b97fcd0",
+        "events": "all",
+        "x": 1100,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ec0e475ab558381",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Show",
+        "func": "msg.payload = {\n    groups: {\n        show: ['Parameters:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 400,
+        "wires": [
+            [
+                "cc952041b4fa9031"
+            ]
+        ]
+    },
+    {
+        "id": "f0b9def754e5d7cb",
+        "type": "ui-markdown",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "8dd7f85d95353ed7",
+        "name": "Add Header",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "content": "# Add: New Parameter\n\n---",
+        "className": "",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "891c5e65f4b6ae38",
+        "type": "ui-button",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "8dd7f85d95353ed7",
+        "name": "Close Add",
+        "label": "Cancel",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "72d12eb0670b8876"
+            ]
+        ]
+    },
+    {
+        "id": "48f31c2d591cf720",
+        "type": "change",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ID",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Name",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Description",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "UoM",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Format",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72d12eb0670b8876",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Parameters:New']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 440,
+        "wires": [
+            [
+                "cc952041b4fa9031",
+                "48f31c2d591cf720"
+            ]
+        ]
+    },
+    {
+        "id": "0662ca94717ed909",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Hide",
+        "func": "msg.payload = {\n    groups: {\n        hide: ['Parameters:Update']\n    }\n}\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "cc952041b4fa9031",
+                "48f31c2d591cf720"
+            ]
+        ]
+    },
+    {
+        "id": "c5a283144031abfa",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "UoM",
+        "func": "msg.payload = msg.payload.UoM\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "9297acee818b47fa"
+            ]
+        ]
+    },
+    {
+        "id": "9297acee818b47fa",
+        "type": "ui-text-input",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "UoM",
+        "label": "UoM",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 910,
+        "y": 300,
+        "wires": [
+            [
+                "6c813472037ff2b7"
+            ]
+        ]
+    },
+    {
+        "id": "6c813472037ff2b7",
+        "type": "change",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "UoM",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b06be21931ad860",
+        "type": "function",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "Format",
+        "func": "msg.payload = msg.payload.Format\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "aeb9865e127d7644"
+            ]
+        ]
+    },
+    {
+        "id": "aeb9865e127d7644",
+        "type": "ui-text-input",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "group": "c1cc14ec713ea0e3",
+        "name": "Format",
+        "label": "Format",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 920,
+        "y": 340,
+        "wires": [
+            [
+                "4873d5a47488114e"
+            ]
+        ]
+    },
+    {
+        "id": "4873d5a47488114e",
+        "type": "change",
+        "z": "10f68b5d132759c9",
+        "g": "44b275e0349a1dcf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Format",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a86a5ea13a87cb33",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Create",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6f6ec7b10b35d3fd",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 80,
+        "wires": [
+            [
+                "a86a5ea13a87cb33"
+            ]
+        ]
+    },
+    {
+        "id": "80f66cc4fd0b1c3f",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Create",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"string\",\"description\":\"string\",\"type\":\"string\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "4a139cf4c4f072e6"
+            ]
+        ]
+    },
+    {
+        "id": "7650e322843c5148",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Delete",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2b787b4174db256f",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 200,
+        "wires": [
+            [
+                "7650e322843c5148"
+            ]
+        ]
+    },
+    {
+        "id": "9fd519b13933b0f5",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Delete",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":14}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "9425d4ea0c2a7242"
+            ]
+        ]
+    },
+    {
+        "id": "7da995948fef3a99",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "90af44c1242fbceb",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "7da995948fef3a99"
+            ]
+        ]
+    },
+    {
+        "id": "6bc0c9f5abf5f3b9",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Update",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":14,\"description\":\"description\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "04ce8e91531b9c72"
+            ]
+        ]
+    },
+    {
+        "id": "40cd4cc37c20c39f",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8cd35b08be627d6c",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "40cd4cc37c20c39f"
+            ]
+        ]
+    },
+    {
+        "id": "e966f939e1b4595f",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Get",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":11}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "4ff56d1eb190d503"
+            ]
+        ]
+    },
+    {
+        "id": "4a139cf4c4f072e6",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\nmsg.url = \"backend:1880/equipment\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "6f6ec7b10b35d3fd"
+            ]
+        ]
+    },
+    {
+        "id": "4ff56d1eb190d503",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/equipment/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "8cd35b08be627d6c"
+            ]
+        ]
+    },
+    {
+        "id": "04ce8e91531b9c72",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Format Request",
+        "func": "msg.method = \"PATCH\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/equipment/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "90af44c1242fbceb"
+            ]
+        ]
+    },
+    {
+        "id": "9425d4ea0c2a7242",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/equipment/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "2b787b4174db256f"
+            ]
+        ]
+    },
+    {
+        "id": "bf5e03409fbdaa9a",
+        "type": "mqtt in",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "",
+        "topic": "Equipment/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "1a5b664baf3c4e9f"
+            ]
+        ]
+    },
+    {
+        "id": "1a5b664baf3c4e9f",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "77c6d4cc80f8731a",
+        "name": "All",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f487cb9e44968155",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Create",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "06f7473a098548f9",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 360,
+        "wires": [
+            [
+                "f487cb9e44968155"
+            ]
+        ]
+    },
+    {
+        "id": "87644ac860cd98c8",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Create",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Material\",\"description\":\"Some Description\",\"type\":\"Raw\",\"uom\":\"lbs\",\"number_format\":\"#,##0.00\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "5c1f9aebd06247a2"
+            ]
+        ]
+    },
+    {
+        "id": "607d2e668c5e073b",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Delete",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "fa542f7aac052a32",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 480,
+        "wires": [
+            [
+                "607d2e668c5e073b"
+            ]
+        ]
+    },
+    {
+        "id": "604b1395621db037",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Delete",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":11}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 480,
+        "wires": [
+            [
+                "8850177a09538d1d"
+            ]
+        ]
+    },
+    {
+        "id": "bb7840cf5b98573e",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "53c4f7a4b9b4d2c9",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "bb7840cf5b98573e"
+            ]
+        ]
+    },
+    {
+        "id": "f8d653c35df9e523",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Update",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":11,\"name\":\"Raw Material\",\"number_format\":\"#,##0\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "4ddf81880bba6dd0"
+            ]
+        ]
+    },
+    {
+        "id": "b8dd83aaac5bcde6",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ce611e6d03bee9d8",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "b8dd83aaac5bcde6"
+            ]
+        ]
+    },
+    {
+        "id": "1cf115e956879eb2",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Get",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":11}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 400,
+        "wires": [
+            [
+                "8bf1660c3c154cd1"
+            ]
+        ]
+    },
+    {
+        "id": "5c1f9aebd06247a2",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\nmsg.url = \"backend:1880/material\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "06f7473a098548f9"
+            ]
+        ]
+    },
+    {
+        "id": "8bf1660c3c154cd1",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/material/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "ce611e6d03bee9d8"
+            ]
+        ]
+    },
+    {
+        "id": "4ddf81880bba6dd0",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Format Request",
+        "func": "msg.method = \"PATCH\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/material/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "53c4f7a4b9b4d2c9"
+            ]
+        ]
+    },
+    {
+        "id": "8850177a09538d1d",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/material/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "fa542f7aac052a32"
+            ]
+        ]
+    },
+    {
+        "id": "23d40c4e8d99a68f",
+        "type": "mqtt in",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "",
+        "topic": "Materials/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "f5eade707e4cba5c"
+            ]
+        ]
+    },
+    {
+        "id": "f5eade707e4cba5c",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "561faa154a13dc09",
+        "name": "All",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "930582b938612877",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Create",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "5bbb7ec98416b8b1",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 640,
+        "wires": [
+            [
+                "930582b938612877"
+            ]
+        ]
+    },
+    {
+        "id": "d7fc8043efb63d4e",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Create",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Parameter\",\"description\":\"Some Description\",\"uom\":\"rpm\",\"number_format\":\"#,##0.00\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 640,
+        "wires": [
+            [
+                "bcd43e22a6af2bcf"
+            ]
+        ]
+    },
+    {
+        "id": "18b27a0ed4d71cee",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Delete",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "a7bf0a0f90de72ec",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 760,
+        "wires": [
+            [
+                "18b27a0ed4d71cee"
+            ]
+        ]
+    },
+    {
+        "id": "9e78a4025b1072e2",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Delete",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":6}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 760,
+        "wires": [
+            [
+                "2e346eef4ef2d1ea"
+            ]
+        ]
+    },
+    {
+        "id": "c292993fe2d27723",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ea953e08298590d6",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 720,
+        "wires": [
+            [
+                "c292993fe2d27723"
+            ]
+        ]
+    },
+    {
+        "id": "719a3c91cde9ab24",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Update",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":6,\"name\":\"Some Speed\",\"number_format\":\"#,000,000\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 720,
+        "wires": [
+            [
+                "d71df6b0b61c91f1"
+            ]
+        ]
+    },
+    {
+        "id": "26ceaf71aa683f35",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6199064e3432f3ef",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 680,
+        "wires": [
+            [
+                "26ceaf71aa683f35"
+            ]
+        ]
+    },
+    {
+        "id": "a402ffaa5ebaa8c4",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Get",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":6}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 680,
+        "wires": [
+            [
+                "9f56f623cae5dc70"
+            ]
+        ]
+    },
+    {
+        "id": "bcd43e22a6af2bcf",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\nmsg.url = \"backend:1880/parameter\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 640,
+        "wires": [
+            [
+                "5bbb7ec98416b8b1"
+            ]
+        ]
+    },
+    {
+        "id": "9f56f623cae5dc70",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/parameter/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 680,
+        "wires": [
+            [
+                "6199064e3432f3ef"
+            ]
+        ]
+    },
+    {
+        "id": "d71df6b0b61c91f1",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Format Request",
+        "func": "msg.method = \"PATCH\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/parameter/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 720,
+        "wires": [
+            [
+                "ea953e08298590d6"
+            ]
+        ]
+    },
+    {
+        "id": "2e346eef4ef2d1ea",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/parameter/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 760,
+        "wires": [
+            [
+                "a7bf0a0f90de72ec"
+            ]
+        ]
+    },
+    {
+        "id": "8d0a8b91fd07eb7d",
+        "type": "mqtt in",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "",
+        "topic": "Parameters/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 820,
+        "wires": [
+            [
+                "3cc7677c66bc8c47"
+            ]
+        ]
+    },
+    {
+        "id": "3cc7677c66bc8c47",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "8754411990682c53",
+        "name": "All",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0e6e4a2b4ff30886",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Create",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "426383e60788b1a0",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 920,
+        "wires": [
+            [
+                "0e6e4a2b4ff30886"
+            ]
+        ]
+    },
+    {
+        "id": "3254095d09c60711",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Create",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"outputMaterial_id\":7,\"equipmentType\":\"Mixer\",\"materials\":[{\"id\":1,\"quantity\":10.5},{\"id\":2,\"quantity\":3.8}],\"parameters\":[{\"id\":2,\"value\":1.5},{\"id\":3,\"value\":30}]}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 920,
+        "wires": [
+            [
+                "08d7064d30a15edc"
+            ]
+        ]
+    },
+    {
+        "id": "1cdbe83b13671c36",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Delete",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "c1dd55f55bef55cc",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1080,
+        "wires": [
+            [
+                "1cdbe83b13671c36"
+            ]
+        ]
+    },
+    {
+        "id": "5b9064bb5c454fae",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Delete",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 1080,
+        "wires": [
+            [
+                "bf2d0edf6d085290"
+            ]
+        ]
+    },
+    {
+        "id": "7f844bf3500ac351",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "d39b979e3fe53622",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1040,
+        "wires": [
+            [
+                "7f844bf3500ac351"
+            ]
+        ]
+    },
+    {
+        "id": "da340f38171751e2",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "f808d0e8e34acba0",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1000,
+        "wires": [
+            [
+                "da340f38171751e2"
+            ]
+        ]
+    },
+    {
+        "id": "669bb68d0f5305d9",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 1000,
+        "wires": [
+            [
+                "320697973290c6c4"
+            ]
+        ]
+    },
+    {
+        "id": "08d7064d30a15edc",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\nmsg.url = \"backend:1880/recipe\"\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 920,
+        "wires": [
+            [
+                "426383e60788b1a0"
+            ]
+        ]
+    },
+    {
+        "id": "320697973290c6c4",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1000,
+        "wires": [
+            [
+                "f808d0e8e34acba0"
+            ]
+        ]
+    },
+    {
+        "id": "bf2d0edf6d085290",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1080,
+        "wires": [
+            [
+                "c1dd55f55bef55cc"
+            ]
+        ]
+    },
+    {
+        "id": "397cb0bad58170f2",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"PATCH\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1040,
+        "wires": [
+            [
+                "d39b979e3fe53622"
+            ]
+        ]
+    },
+    {
+        "id": "a3ada01f5dc2d363",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Update",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30,\"equipment_type\":\"Mixer\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 1040,
+        "wires": [
+            [
+                "397cb0bad58170f2"
+            ]
+        ]
+    },
+    {
+        "id": "46afa326987cc4bd",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Add",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "2f27d3dad1c65068",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1200,
+        "wires": [
+            [
+                "46afa326987cc4bd"
+            ]
+        ]
+    },
+    {
+        "id": "33a756f899dad6c5",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Add Material",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30,\"material_id\":3,\"material_quantity\":1.5}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 1200,
+        "wires": [
+            [
+                "5a26b90d737f2051"
+            ]
+        ]
+    },
+    {
+        "id": "5a26b90d737f2051",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id + \"/material\";\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1200,
+        "wires": [
+            [
+                "2f27d3dad1c65068"
+            ]
+        ]
+    },
+    {
+        "id": "e7340473d966bff2",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "af05841559962232",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1240,
+        "wires": [
+            [
+                "e7340473d966bff2"
+            ]
+        ]
+    },
+    {
+        "id": "a4659388c6df0a0c",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Update Material",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30,\"material_id\":3,\"material_quantity\":3.3}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 1240,
+        "wires": [
+            [
+                "f5296a436ff1f237"
+            ]
+        ]
+    },
+    {
+        "id": "f5296a436ff1f237",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"PATCH\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id + \"/material/\" + msg.payload.material_id;\n    delete msg.payload.material_id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1240,
+        "wires": [
+            [
+                "af05841559962232"
+            ]
+        ]
+    },
+    {
+        "id": "5a5c57e537404e04",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Remove",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "4046079096723078",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1280,
+        "wires": [
+            [
+                "5a5c57e537404e04"
+            ]
+        ]
+    },
+    {
+        "id": "9041654d548be4a5",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Remove Material",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30,\"material_id\":3}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 1280,
+        "wires": [
+            [
+                "5e55d3fbd80c6dca"
+            ]
+        ]
+    },
+    {
+        "id": "5e55d3fbd80c6dca",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id + \"/material/\" + msg.payload.material_id;\n    delete msg.payload.material_id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "4046079096723078"
+            ]
+        ]
+    },
+    {
+        "id": "75b528a961405c0b",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Add",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "65353c75cd1cf6c1",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1320,
+        "wires": [
+            [
+                "75b528a961405c0b"
+            ]
+        ]
+    },
+    {
+        "id": "89a6ec9ccedbf680",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Add Parameter",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30,\"parameter_id\":4,\"parameter_value\":30}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 1320,
+        "wires": [
+            [
+                "1d9da8f64c0b2a1d"
+            ]
+        ]
+    },
+    {
+        "id": "1d9da8f64c0b2a1d",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"POST\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id + \"/parameter\";\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1320,
+        "wires": [
+            [
+                "65353c75cd1cf6c1"
+            ]
+        ]
+    },
+    {
+        "id": "4a95e3d26c7aa31d",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Update",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "01ef5eafd9cd802d",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1360,
+        "wires": [
+            [
+                "4a95e3d26c7aa31d"
+            ]
+        ]
+    },
+    {
+        "id": "04fef348272a6a6e",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Update Parameter",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30,\"parameter_id\":4,\"parameter_value\":45}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 1360,
+        "wires": [
+            [
+                "346702b25a78e46f"
+            ]
+        ]
+    },
+    {
+        "id": "346702b25a78e46f",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"PATCH\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id + \"/parameter/\" + msg.payload.parameter_id;\n    delete msg.payload.parameter_id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1360,
+        "wires": [
+            [
+                "01ef5eafd9cd802d"
+            ]
+        ]
+    },
+    {
+        "id": "7ba3b06aaefae463",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Remove",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "18402eae0f526eb1",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1400,
+        "wires": [
+            [
+                "7ba3b06aaefae463"
+            ]
+        ]
+    },
+    {
+        "id": "9b22eb4469668615",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Remove Parameter",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":30,\"parameter_id\":4}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 1400,
+        "wires": [
+            [
+                "951dd77295351d48"
+            ]
+        ]
+    },
+    {
+        "id": "951dd77295351d48",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"DELETE\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/\" + msg.payload.id + \"/parameter/\" + msg.payload.parameter_id;\n    delete msg.payload.parameter_id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1400,
+        "wires": [
+            [
+                "18402eae0f526eb1"
+            ]
+        ]
+    },
+    {
+        "id": "fb00849c486e3ac8",
+        "type": "mqtt in",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "topic": "Recipes/All",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "16d8818276faa3ad",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 1140,
+        "wires": [
+            [
+                "0cfc70041894c16b"
+            ]
+        ]
+    },
+    {
+        "id": "0cfc70041894c16b",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "All",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "1a76c370f71851b7",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "4e3fa2bb76456c23",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1460,
+        "wires": [
+            [
+                "1a76c370f71851b7"
+            ]
+        ]
+    },
+    {
+        "id": "c05fd9bee57e30c7",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get By Type",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"type\":\"Mixer\"}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 1460,
+        "wires": [
+            [
+                "8a8714dfab5a861b"
+            ]
+        ]
+    },
+    {
+        "id": "8a8714dfab5a861b",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload && msg.payload.type) {\n    msg.url = \"backend:1880/recipe/by-equipment-type/\" + msg.payload.type;\n    delete msg.payload.type;\n    return msg;\n} else {\n    node.error(\"No Type provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1460,
+        "wires": [
+            [
+                "4e3fa2bb76456c23"
+            ]
+        ]
+    },
+    {
+        "id": "ea1cfa5ec50ba49e",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get All",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 960,
+        "wires": [
+            [
+                "61aae8275b9de1dd"
+            ]
+        ]
+    },
+    {
+        "id": "47e443b76a56f967",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "27e213b41fcc1360",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 960,
+        "wires": [
+            [
+                "47e443b76a56f967"
+            ]
+        ]
+    },
+    {
+        "id": "61aae8275b9de1dd",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\nmsg.url = \"backend:1880/recipe\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 960,
+        "wires": [
+            [
+                "27e213b41fcc1360"
+            ]
+        ]
+    },
+    {
+        "id": "c467bb8b164ace31",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "d086ad8351a41307",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1500,
+        "wires": [
+            [
+                "c467bb8b164ace31"
+            ]
+        ]
+    },
+    {
+        "id": "f13bed1f6009da08",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get By Material",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":1}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 1500,
+        "wires": [
+            [
+                "6fd8d0704a6dfaa0"
+            ]
+        ]
+    },
+    {
+        "id": "6fd8d0704a6dfaa0",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/by-material/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1500,
+        "wires": [
+            [
+                "d086ad8351a41307"
+            ]
+        ]
+    },
+    {
+        "id": "19ca6cf23cb60533",
+        "type": "debug",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "69dc785d9165608f",
+        "type": "http request",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 1540,
+        "wires": [
+            [
+                "19ca6cf23cb60533"
+            ]
+        ]
+    },
+    {
+        "id": "f6e843afaedbaecf",
+        "type": "inject",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Get By Parameter",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":2}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 1540,
+        "wires": [
+            [
+                "c69313ea4dabd939"
+            ]
+        ]
+    },
+    {
+        "id": "c69313ea4dabd939",
+        "type": "function",
+        "z": "84f6f75a9be75934",
+        "g": "716e76ce338ab224",
+        "name": "Format Request",
+        "func": "msg.method = \"GET\"\n\nif (msg.payload && msg.payload.id) {\n    msg.url = \"backend:1880/recipe/by-parameter/\" + msg.payload.id;\n    delete msg.payload.id;\n    return msg;\n} else {\n    node.error(\"No ID provided in the payload\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1540,
+        "wires": [
+            [
+                "69dc785d9165608f"
+            ]
+        ]
     }
 ]

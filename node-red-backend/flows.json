@@ -284,7 +284,7 @@
         ],
         "x": 54,
         "y": 439,
-        "w": 1462,
+        "w": 1472,
         "h": 182
     },
     {
@@ -386,7 +386,7 @@
         ],
         "x": 54,
         "y": 239,
-        "w": 1462,
+        "w": 1472,
         "h": 182
     },
     {
@@ -615,7 +615,8 @@
             "75fa7915ebc73ef0",
             "3cf9b92bf699f912",
             "49c1866c84b44dc8",
-            "c744f73a1080a7e5"
+            "c744f73a1080a7e5",
+            "e393877c331f1a18"
         ],
         "x": 54,
         "y": 39,
@@ -638,7 +639,7 @@
             "8d8c1b058a0b16fa"
         ],
         "x": 54,
-        "y": 739,
+        "y": 939,
         "w": 1392,
         "h": 122
     },
@@ -666,7 +667,7 @@
             "a9f12a95342566a6"
         ],
         "x": 54,
-        "y": 519,
+        "y": 719,
         "w": 1412,
         "h": 202
     },
@@ -694,7 +695,7 @@
             "618a1168857cae5a"
         ],
         "x": 54,
-        "y": 1019,
+        "y": 1219,
         "w": 1452,
         "h": 202
     },
@@ -722,7 +723,7 @@
             "8cf0c911ad50a8dc"
         ],
         "x": 54,
-        "y": 1679,
+        "y": 1879,
         "w": 1472,
         "h": 202
     },
@@ -750,7 +751,7 @@
             "dcb2badc67bf4957"
         ],
         "x": 54,
-        "y": 1239,
+        "y": 1439,
         "w": 1472,
         "h": 202
     },
@@ -779,7 +780,7 @@
             "d658ab53d3713495"
         ],
         "x": 54,
-        "y": 1899,
+        "y": 2099,
         "w": 1492,
         "h": 202
     },
@@ -807,7 +808,7 @@
             "6d76b28d3326ccf5"
         ],
         "x": 54,
-        "y": 1459,
+        "y": 1659,
         "w": 1472,
         "h": 202
     },
@@ -836,7 +837,7 @@
             "506615bdc72f45cf"
         ],
         "x": 54,
-        "y": 2119,
+        "y": 2319,
         "w": 1492,
         "h": 202
     },
@@ -859,8 +860,137 @@
             "50494cec4bc848e5"
         ],
         "x": 54,
-        "y": 879,
+        "y": 1079,
         "w": 1392,
+        "h": 122
+    },
+    {
+        "id": "2c05e2f03b2e7cbe",
+        "type": "group",
+        "z": "49dd9a6e92e62904",
+        "name": "MQTT Listen for Notifications. Get and Publish the latest data from the modified table",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "0e6ef23f11ad7a36",
+            "aba2e0f81394a48d",
+            "81b4ca3f1441abd6",
+            "0f9c6d21928cd62e",
+            "f4798705fd938575",
+            "992846431f839c44",
+            "31ee10b1a22cc028",
+            "397e4d274485c451",
+            "891be4444a729dfa",
+            "1af3247f3ac71a8f",
+            "54d259641172d7c7",
+            "748dd299930dcbc5",
+            "780f7a97b87d856a",
+            "71805b3f0846934c"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 1052,
+        "h": 322
+    },
+    {
+        "id": "2d13dd5f2f92902b",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "PATCH: http://localhost:1880/recipe/:id (Update)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "24bac86de96e904f",
+            "0a211f0c4642d4b9",
+            "bca488dc70f64b4d",
+            "9c8fd6a0b66f46e7",
+            "ade1e5a8b8f6d1de",
+            "4f64da49ac8f0773",
+            "85e99fe2ececfb0f",
+            "d7cf5024aa5d7747",
+            "df086ca48177af52",
+            "04ff5d8226e6859c",
+            "1024335aa85355d3",
+            "50012a9c0936afdb",
+            "6ba0b056cb96b68e",
+            "6cc067eca113916a"
+        ],
+        "x": 54,
+        "y": 519,
+        "w": 1452,
+        "h": 182
+    },
+    {
+        "id": "e02bb6f1211df179",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "GET: http://localhost:1880/recipe/equipment-type/:type (Read Many)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "3a41932deec70846",
+            "321cc25fad1dacf8",
+            "9042508db1c57d9f",
+            "73a9cd5ccc77e755",
+            "72475f015ea7d0d2",
+            "2203c33c31b2fc2f",
+            "95da8f818be826f0"
+        ],
+        "x": 54,
+        "y": 2539,
+        "w": 1412,
+        "h": 122
+    },
+    {
+        "id": "fa10345680ea49bb",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "GET: http://localhost:1880/recipe/by-material/:id(Read Many)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "495d877a7752c1d8",
+            "b5af7040c06c8d5b",
+            "8cbe8c72ce21a76b",
+            "04efc7dd23456693",
+            "f4095fd361a03a68",
+            "994388589f5ded26",
+            "2f8401a80106eeaf"
+        ],
+        "x": 54,
+        "y": 2679,
+        "w": 1432,
+        "h": 122
+    },
+    {
+        "id": "d3d7fba2acdc10a4",
+        "type": "group",
+        "z": "c597369fd55a8b79",
+        "name": "GET: http://localhost:1880/recipe/by-parameter/:id(Read Many)",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "a1e26b26fe7af1cd",
+            "12c250d921d3d7a7",
+            "ffdd7a74f78f227c",
+            "892275bfe024da66",
+            "119541547cf359e7",
+            "95175b1f5da4aea9",
+            "1883392aa9781d17"
+        ],
+        "x": 54,
+        "y": 2819,
+        "w": 1452,
         "h": 122
     },
     {
@@ -1613,7 +1743,7 @@
         "z": "ef07378eb445016a",
         "g": "c32e557c335d826a",
         "name": "Debug Update",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1921,7 +2051,7 @@
         "z": "ef07378eb445016a",
         "g": "3ed275df32a66c63",
         "name": "Debug Update",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4578,7 +4708,7 @@
         "env": [
             {
                 "name": "expectedKeys",
-                "value": "[\"outputMaterial_id\",\"equipmentType\",\"material\",\"parameters\"]",
+                "value": "[\"outputMaterial_id\",\"equipmentType\",\"materials\",\"parameters\"]",
                 "type": "json"
             },
             {
@@ -4911,7 +5041,7 @@
         "z": "c597369fd55a8b79",
         "g": "89b683b5eaeec2c4",
         "name": "Query",
-        "func": "let materialIds = msg.payload.material.map(item => item.id);\n\nmsg.statusCode = 200\nmsg.query = \"SELECT id, name FROM materials WHERE id = ANY($1)\";\nmsg.params = [materialIds];\nmsg.recipe = msg.payload\n\nreturn msg;",
+        "func": "let materialIds = msg.payload.materials.map(item => item.id);\n\nmsg.statusCode = 200\nmsg.query = \"SELECT id, name FROM materials WHERE id = ANY($1)\";\nmsg.params = [materialIds];\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5108,7 +5238,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 140,
-        "y": 820,
+        "y": 1020,
         "wires": [
             [
                 "8d8c1b058a0b16fa"
@@ -5124,7 +5254,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 820,
+        "y": 1020,
         "wires": []
     },
     {
@@ -5142,7 +5272,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1310,
-        "y": 780,
+        "y": 980,
         "wires": []
     },
     {
@@ -5157,7 +5287,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 860,
-        "y": 820,
+        "y": 1020,
         "wires": [
             [
                 "eb5049bbe630e12a",
@@ -5199,11 +5329,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
+        "x": 580,
         "y": 200,
         "wires": [
             [
-                "c744f73a1080a7e5"
+                "e393877c331f1a18"
             ]
         ]
     },
@@ -5249,7 +5379,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 600,
+        "y": 800,
         "wires": [
             [
                 "d81aca34d5d94ef6"
@@ -5268,7 +5398,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 850,
-        "y": 580,
+        "y": 780,
         "wires": [
             [
                 "75691bca75d8e685"
@@ -5289,7 +5419,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 580,
+        "y": 780,
         "wires": [
             [
                 "e0d3434cdec6f768"
@@ -5324,7 +5454,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 600,
+        "y": 800,
         "wires": [
             [
                 "0e7065d77384cc40"
@@ -5346,7 +5476,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 310,
-        "y": 640,
+        "y": 840,
         "wires": [
             [
                 "0e7065d77384cc40"
@@ -5372,7 +5502,7 @@
             }
         ],
         "x": 480,
-        "y": 600,
+        "y": 800,
         "wires": [
             [
                 "ea6285291b034a55"
@@ -5391,7 +5521,7 @@
         "statusCode": "",
         "headers": {},
         "x": 850,
-        "y": 640,
+        "y": 840,
         "wires": []
     },
     {
@@ -5416,7 +5546,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 660,
+        "y": 860,
         "wires": [
             [
                 "fc64e4c563287228"
@@ -5442,7 +5572,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 910,
-        "y": 680,
+        "y": 880,
         "wires": []
     },
     {
@@ -5454,7 +5584,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 560,
+        "y": 760,
         "wires": []
     },
     {
@@ -5479,7 +5609,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 580,
+        "y": 780,
         "wires": [
             [
                 "6bf24d2c873db047"
@@ -5505,7 +5635,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 1330,
-        "y": 600,
+        "y": 800,
         "wires": []
     },
     {
@@ -5519,7 +5649,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1100,
+        "y": 1300,
         "wires": [
             [
                 "0ae5b1e352fc0383"
@@ -5538,7 +5668,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 850,
-        "y": 1080,
+        "y": 1280,
         "wires": [
             [
                 "3a266770262be116"
@@ -5559,7 +5689,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 1080,
+        "y": 1280,
         "wires": [
             [
                 "8f4b151ae0c34aa8"
@@ -5587,7 +5717,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 1100,
+        "y": 1300,
         "wires": [
             [
                 "c689b12983f546f7"
@@ -5609,7 +5739,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 290,
-        "y": 1140,
+        "y": 1340,
         "wires": [
             [
                 "c689b12983f546f7"
@@ -5635,7 +5765,7 @@
             }
         ],
         "x": 480,
-        "y": 1100,
+        "y": 1300,
         "wires": [
             [
                 "3f68ef75eb6a5432"
@@ -5654,7 +5784,7 @@
         "statusCode": "",
         "headers": {},
         "x": 850,
-        "y": 1140,
+        "y": 1340,
         "wires": []
     },
     {
@@ -5679,7 +5809,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 1160,
+        "y": 1360,
         "wires": [
             [
                 "5d4f7021a9ec7cb0"
@@ -5705,7 +5835,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 930,
-        "y": 1180,
+        "y": 1380,
         "wires": []
     },
     {
@@ -5717,7 +5847,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 1060,
+        "y": 1260,
         "wires": []
     },
     {
@@ -5742,7 +5872,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 1080,
+        "y": 1280,
         "wires": [
             [
                 "166d5ed4cffd99ef"
@@ -5768,7 +5898,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 1350,
-        "y": 1100,
+        "y": 1300,
         "wires": []
     },
     {
@@ -5782,7 +5912,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1760,
+        "y": 1960,
         "wires": [
             [
                 "efa6e66389ef5710"
@@ -5801,7 +5931,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 850,
-        "y": 1740,
+        "y": 1940,
         "wires": [
             [
                 "1aac2cb0e09073e4"
@@ -5822,7 +5952,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 1740,
+        "y": 1940,
         "wires": [
             [
                 "07423b05db2b2f7d"
@@ -5850,7 +5980,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 1760,
+        "y": 1960,
         "wires": [
             [
                 "12ee10b2782168c0"
@@ -5872,7 +6002,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 280,
-        "y": 1800,
+        "y": 2000,
         "wires": [
             [
                 "12ee10b2782168c0"
@@ -5898,7 +6028,7 @@
             }
         ],
         "x": 480,
-        "y": 1760,
+        "y": 1960,
         "wires": [
             [
                 "d34feb7d5b832297"
@@ -5917,7 +6047,7 @@
         "statusCode": "",
         "headers": {},
         "x": 850,
-        "y": 1800,
+        "y": 2000,
         "wires": []
     },
     {
@@ -5942,7 +6072,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 1820,
+        "y": 2020,
         "wires": [
             [
                 "a6d7c9a1d9ece64b"
@@ -5968,7 +6098,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 940,
-        "y": 1840,
+        "y": 2040,
         "wires": []
     },
     {
@@ -5980,7 +6110,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 1720,
+        "y": 1920,
         "wires": []
     },
     {
@@ -6005,7 +6135,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 1740,
+        "y": 1940,
         "wires": [
             [
                 "e28ebf737ad43de4"
@@ -6031,7 +6161,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 1360,
-        "y": 1760,
+        "y": 1960,
         "wires": []
     },
     {
@@ -6045,7 +6175,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1320,
+        "y": 1520,
         "wires": [
             [
                 "3ef4beeffbfcb0a9"
@@ -6064,7 +6194,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 860,
-        "y": 1300,
+        "y": 1500,
         "wires": [
             [
                 "7e1f2ba52fae01a5"
@@ -6085,7 +6215,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 1300,
+        "y": 1500,
         "wires": [
             [
                 "71eaf3f3a21b09b1"
@@ -6120,7 +6250,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 1320,
+        "y": 1520,
         "wires": [
             [
                 "3efeb017d45bc20d"
@@ -6142,7 +6272,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 280,
-        "y": 1360,
+        "y": 1560,
         "wires": [
             [
                 "3efeb017d45bc20d"
@@ -6168,7 +6298,7 @@
             }
         ],
         "x": 480,
-        "y": 1320,
+        "y": 1520,
         "wires": [
             [
                 "1283ce4221b4cace"
@@ -6187,7 +6317,7 @@
         "statusCode": "",
         "headers": {},
         "x": 850,
-        "y": 1360,
+        "y": 1560,
         "wires": []
     },
     {
@@ -6212,7 +6342,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 1380,
+        "y": 1580,
         "wires": [
             [
                 "7c8282aafc592e43"
@@ -6238,7 +6368,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 940,
-        "y": 1400,
+        "y": 1600,
         "wires": []
     },
     {
@@ -6250,7 +6380,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 1280,
+        "y": 1480,
         "wires": []
     },
     {
@@ -6275,7 +6405,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 1300,
+        "y": 1500,
         "wires": [
             [
                 "efa8d90afc4c3411"
@@ -6301,7 +6431,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 1360,
-        "y": 1320,
+        "y": 1520,
         "wires": []
     },
     {
@@ -6315,7 +6445,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1980,
+        "y": 2180,
         "wires": [
             [
                 "6f6ff1c5b8c0edbd"
@@ -6334,7 +6464,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 860,
-        "y": 1960,
+        "y": 2160,
         "wires": [
             [
                 "d658ab53d3713495"
@@ -6355,7 +6485,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 1960,
+        "y": 2160,
         "wires": [
             [
                 "9ebaadeb9bd8ee4e"
@@ -6390,7 +6520,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 1980,
+        "y": 2180,
         "wires": [
             [
                 "68b9a30805711352"
@@ -6412,7 +6542,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 270,
-        "y": 2020,
+        "y": 2220,
         "wires": [
             [
                 "68b9a30805711352"
@@ -6438,7 +6568,7 @@
             }
         ],
         "x": 480,
-        "y": 1980,
+        "y": 2180,
         "wires": [
             [
                 "622a5efa3c5a25c3"
@@ -6457,7 +6587,7 @@
         "statusCode": "",
         "headers": {},
         "x": 850,
-        "y": 2020,
+        "y": 2220,
         "wires": []
     },
     {
@@ -6482,7 +6612,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 2040,
+        "y": 2240,
         "wires": [
             [
                 "b77dcb5f72cf6f83"
@@ -6508,7 +6638,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 950,
-        "y": 2060,
+        "y": 2260,
         "wires": []
     },
     {
@@ -6520,7 +6650,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 1940,
+        "y": 2140,
         "wires": []
     },
     {
@@ -6545,7 +6675,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 1960,
+        "y": 2160,
         "wires": [
             [
                 "b95366710f515f4e"
@@ -6571,7 +6701,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 1370,
-        "y": 1980,
+        "y": 2180,
         "wires": []
     },
     {
@@ -6585,7 +6715,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1540,
+        "y": 1740,
         "wires": [
             [
                 "8e0f750f5e6ab7ea"
@@ -6604,7 +6734,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 850,
-        "y": 1520,
+        "y": 1720,
         "wires": [
             [
                 "58fb1003bc983bc7"
@@ -6625,7 +6755,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 1520,
+        "y": 1720,
         "wires": [
             [
                 "dc5e2ae4a3860b60"
@@ -6667,7 +6797,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 1540,
+        "y": 1740,
         "wires": [
             [
                 "cd7042ba92defae1"
@@ -6689,7 +6819,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 280,
-        "y": 1580,
+        "y": 1780,
         "wires": [
             [
                 "cd7042ba92defae1"
@@ -6715,7 +6845,7 @@
             }
         ],
         "x": 480,
-        "y": 1540,
+        "y": 1740,
         "wires": [
             [
                 "78ad319c3b9e7bf0"
@@ -6734,7 +6864,7 @@
         "statusCode": "",
         "headers": {},
         "x": 850,
-        "y": 1580,
+        "y": 1780,
         "wires": []
     },
     {
@@ -6759,7 +6889,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 1600,
+        "y": 1800,
         "wires": [
             [
                 "969e5c05bf8de968"
@@ -6785,7 +6915,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 940,
-        "y": 1620,
+        "y": 1820,
         "wires": []
     },
     {
@@ -6797,7 +6927,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 1500,
+        "y": 1700,
         "wires": []
     },
     {
@@ -6822,7 +6952,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 1520,
+        "y": 1720,
         "wires": [
             [
                 "e85d9507fcc70f5c"
@@ -6848,7 +6978,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 1360,
-        "y": 1540,
+        "y": 1740,
         "wires": []
     },
     {
@@ -6862,7 +6992,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 2200,
+        "y": 2400,
         "wires": [
             [
                 "17fb673c4b7a9fb9"
@@ -6881,7 +7011,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 850,
-        "y": 2180,
+        "y": 2380,
         "wires": [
             [
                 "506615bdc72f45cf"
@@ -6902,7 +7032,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 2180,
+        "y": 2380,
         "wires": [
             [
                 "53b0d560c50f398c"
@@ -6944,7 +7074,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 2200,
+        "y": 2400,
         "wires": [
             [
                 "69388d0ffd84ae81"
@@ -6966,7 +7096,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 270,
-        "y": 2240,
+        "y": 2440,
         "wires": [
             [
                 "69388d0ffd84ae81"
@@ -6992,7 +7122,7 @@
             }
         ],
         "x": 480,
-        "y": 2200,
+        "y": 2400,
         "wires": [
             [
                 "4432ee342ac2bac5"
@@ -7011,7 +7141,7 @@
         "statusCode": "",
         "headers": {},
         "x": 850,
-        "y": 2240,
+        "y": 2440,
         "wires": []
     },
     {
@@ -7036,7 +7166,7 @@
         "repair": false,
         "outputs": 2,
         "x": 710,
-        "y": 2260,
+        "y": 2460,
         "wires": [
             [
                 "e8f7b5f9216259d5"
@@ -7062,7 +7192,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 950,
-        "y": 2280,
+        "y": 2480,
         "wires": []
     },
     {
@@ -7074,7 +7204,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 2160,
+        "y": 2360,
         "wires": []
     },
     {
@@ -7099,7 +7229,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1130,
-        "y": 2180,
+        "y": 2380,
         "wires": [
             [
                 "161c2051f0861002"
@@ -7125,7 +7255,7 @@
         "expiry": "",
         "broker": "9de860f85bb6fd04",
         "x": 1370,
-        "y": 2200,
+        "y": 2400,
         "wires": []
     },
     {
@@ -7139,7 +7269,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 140,
-        "y": 960,
+        "y": 1160,
         "wires": [
             [
                 "730477c7e9668d07"
@@ -7155,7 +7285,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1270,
-        "y": 960,
+        "y": 1160,
         "wires": []
     },
     {
@@ -7173,7 +7303,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1310,
-        "y": 920,
+        "y": 1120,
         "wires": []
     },
     {
@@ -7188,7 +7318,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 870,
-        "y": 960,
+        "y": 1160,
         "wires": [
             [
                 "50494cec4bc848e5"
@@ -7209,7 +7339,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 960,
+        "y": 1160,
         "wires": [
             [
                 "c05164fe92566ae0"
@@ -7244,7 +7374,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 960,
+        "y": 1160,
         "wires": [
             [
                 "13c5353f41b4bf64"
@@ -7257,7 +7387,7 @@
         "z": "c597369fd55a8b79",
         "g": "925a6517ba6ef007",
         "name": "Transform",
-        "func": "// Extract the payload for transformation\nvar inputPayload = msg.payload;\n\n// Initialize the new structure for the payload\nvar newPayload = {\n    outputMaterial_id: inputPayload[0].recipe_id,\n    outputMaterial: inputPayload[0].product_material,   \n    equipmentType: inputPayload[0].equipment_type,\n    material: [],\n    parameters: []\n};\n\n// Iterate through each entry in the input payload\ninputPayload.forEach(function(item) {\n    if (item.field_type === \"Material\") {\n        // Add to the material array\n        newPayload.material.push({\n            id: item.field_id,\n            name: item.field_name,\n            quantity: item.field_value,\n            uom: item.uom,\n            numberFormat: item.number_format\n        });\n    } else if (item.field_type === \"Parameter\") {\n        // Add to the parameters array\n        newPayload.parameters.push({\n            id: item.field_id,\n            name: item.field_name,\n            quantity: item.field_value,\n            uom: item.uom,\n            numberFormat: item.number_format\n        });\n    }\n});\n\n// Set the transformed payload back to msg.payload\nmsg.payload = newPayload;\n\n// Return the modified message\nreturn msg;",
+        "func": "// Extract the payload for transformation\nvar inputPayload = msg.payload;\n\n// Initialize the new structure for the payload\nvar newPayload = {\n    outputMaterial_id: inputPayload[0].recipe_id,\n    outputMaterial: inputPayload[0].product_material,   \n    equipmentType: inputPayload[0].equipment_type,\n    materials: [],\n    parameters: []\n};\n\n// Iterate through each entry in the input payload\ninputPayload.forEach(function(item) {\n    if (item.field_type === \"Material\") {\n        // Add to the materials array\n        newPayload.materials.push({\n            id: item.field_id,\n            name: item.field_name,\n            quantity: item.field_value,\n            uom: item.uom,\n            numberFormat: item.number_format\n        });\n    } else if (item.field_type === \"Parameter\") {\n        // Add to the parameters array\n        newPayload.parameters.push({\n            id: item.field_id,\n            name: item.field_name,\n            value: item.field_value,\n            uom: item.uom,\n            numberFormat: item.number_format\n        });\n    }\n});\n\n// Set the transformed payload back to msg.payload\nmsg.payload = newPayload;\n\n// Return the modified message\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7265,7 +7395,7 @@
         "finalize": "",
         "libs": [],
         "x": 1050,
-        "y": 960,
+        "y": 1160,
         "wires": [
             [
                 "bfed8ce1024d06da",
@@ -7287,7 +7417,7 @@
         "finalize": "",
         "libs": [],
         "x": 1000,
-        "y": 2180,
+        "y": 2380,
         "wires": [
             [
                 "eac3d037c8d62f93"
@@ -7308,10 +7438,1106 @@
         "finalize": "",
         "libs": [],
         "x": 1000,
-        "y": 1960,
+        "y": 2160,
         "wires": [
             [
                 "328928654d82e216"
+            ]
+        ]
+    },
+    {
+        "id": "e393877c331f1a18",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "89b683b5eaeec2c4",
+        "name": "Set Recipe",
+        "func": "msg.recipe = msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 200,
+        "wires": [
+            [
+                "c744f73a1080a7e5"
+            ]
+        ]
+    },
+    {
+        "id": "24bac86de96e904f",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "Update",
+        "url": "/recipe/:id",
+        "method": "patch",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 580,
+        "wires": [
+            [
+                "6ba0b056cb96b68e"
+            ]
+        ]
+    },
+    {
+        "id": "0a211f0c4642d4b9",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "bca488dc70f64b4d",
+        "type": "debug",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "Debug Update",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9c8fd6a0b66f46e7",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "Update",
+        "query": "",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 860,
+        "y": 560,
+        "wires": [
+            [
+                "df086ca48177af52"
+            ]
+        ]
+    },
+    {
+        "id": "ade1e5a8b8f6d1de",
+        "type": "mqtt in",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "",
+        "topic": "Recipe/Update",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 620,
+        "wires": [
+            [
+                "1024335aa85355d3"
+            ]
+        ]
+    },
+    {
+        "id": "4f64da49ac8f0773",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1290,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "85e99fe2ececfb0f",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "",
+        "topic": "Recipe/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1360,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d7cf5024aa5d7747",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 640,
+        "wires": [
+            [
+                "4f64da49ac8f0773"
+            ],
+            [
+                "85e99fe2ececfb0f"
+            ]
+        ]
+    },
+    {
+        "id": "df086ca48177af52",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "Format",
+        "func": "msg.payload = msg.payload[0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 560,
+        "wires": [
+            [
+                "d7cf5024aa5d7747",
+                "bca488dc70f64b4d"
+            ]
+        ]
+    },
+    {
+        "id": "04ff5d8226e6859c",
+        "type": "mqtt out",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "",
+        "topic": "Recipe/Update/Response",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 920,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "1024335aa85355d3",
+        "type": "subflow:5777e384656ffee1",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "Validation",
+        "env": [
+            {
+                "name": "expectedKeys",
+                "value": "[\"id\",\"material_id\",\"equipment_type\"]",
+                "type": "json"
+            },
+            {
+                "name": "allowMissingKeys",
+                "value": "true",
+                "type": "bool"
+            },
+            {
+                "name": "includeId",
+                "value": "true",
+                "type": "bool"
+            }
+        ],
+        "x": 470,
+        "y": 580,
+        "wires": [
+            [
+                "6cc067eca113916a"
+            ],
+            [
+                "50012a9c0936afdb"
+            ]
+        ]
+    },
+    {
+        "id": "50012a9c0936afdb",
+        "type": "switch",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "",
+        "property": "req",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "object",
+                "vt": "object"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 640,
+        "wires": [
+            [
+                "0a211f0c4642d4b9"
+            ],
+            [
+                "04ff5d8226e6859c"
+            ]
+        ]
+    },
+    {
+        "id": "6ba0b056cb96b68e",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 580,
+        "wires": [
+            [
+                "1024335aa85355d3"
+            ]
+        ]
+    },
+    {
+        "id": "6cc067eca113916a",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "2d13dd5f2f92902b",
+        "name": "deconstruct",
+        "func": "// List of valid column names for the tasks table\nconst validColumns = ['material_id', 'equipment_type'];\n\n// Initialize the base update SQL statement\nlet sql = \"UPDATE recipe_master SET \";\nlet params = [];\nlet counter = 1;\n\n// Extract the 'id' from the payload if it exists\nconst id = msg.payload.id;\ndelete msg.payload.id; // Remove the 'id' from payload to avoid updating it\n\nif (!id || isNaN(Number(id))) {\n    node.error(\"Invalid or missing task ID.\");\n    return; // Stop execution if ID is invalid or missing\n}\n\n// Validate and dynamically add fields to update based on remaining msg.payload\nObject.keys(msg.payload).forEach(key => {\n    if (validColumns.includes(key)) { // Check if the key is a valid column\n        sql += `${key} = $${counter}, `;\n        params.push(msg.payload[key]);\n        counter++;\n    }\n});\n\n// Remove the trailing comma and space if there were valid columns\nif (params.length > 0) {\n    sql = sql.slice(0, -2); // Adjust for trailing characters\n} else {\n    // If no valid columns were included, handle as error or ignore\n    node.error(\"No valid columns provided in payload.\");\n    return; // Stop execution or handle accordingly\n}\n\n// Add the WHERE clause to target the correct task using the isolated 'id'\nsql += \" WHERE id = $\" + counter;\nsql += \" RETURNING id;\";\nparams.push(Number(id)); // Add the validated and converted id to the params\n\n// Correctly assign the SQL query and parameters for the PostgreSQL node\nmsg.query = sql;\nmsg.params = params; // Assign dynamic parameters to msg.params for the node-red-contrib-postgresql node\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 560,
+        "wires": [
+            [
+                "9c8fd6a0b66f46e7"
+            ]
+        ]
+    },
+    {
+        "id": "3a41932deec70846",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "e02bb6f1211df179",
+        "name": "Read Many",
+        "url": "/recipe/equipment-type/:type",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 2620,
+        "wires": [
+            [
+                "2203c33c31b2fc2f"
+            ]
+        ]
+    },
+    {
+        "id": "321cc25fad1dacf8",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "e02bb6f1211df179",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "9042508db1c57d9f",
+        "type": "debug",
+        "z": "c597369fd55a8b79",
+        "g": "e02bb6f1211df179",
+        "name": "Debug Read By Type",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "73a9cd5ccc77e755",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "e02bb6f1211df179",
+        "name": "Read Many",
+        "query": "SELECT DISTINCT recipe_id, material_name, equipment_type\nFROM view_recipe_header\nWHERE equipment_type = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 2620,
+        "wires": [
+            [
+                "95da8f818be826f0"
+            ]
+        ]
+    },
+    {
+        "id": "72475f015ea7d0d2",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "e02bb6f1211df179",
+        "name": "deconstruct",
+        "func": "const { type } = msg.req.params;\nmsg.params = [type];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 2620,
+        "wires": [
+            [
+                "73a9cd5ccc77e755"
+            ]
+        ]
+    },
+    {
+        "id": "2203c33c31b2fc2f",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "e02bb6f1211df179",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "req.params.type",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2620,
+        "wires": [
+            [
+                "72475f015ea7d0d2"
+            ]
+        ]
+    },
+    {
+        "id": "95da8f818be826f0",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "e02bb6f1211df179",
+        "name": "Transform",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2620,
+        "wires": [
+            [
+                "9042508db1c57d9f",
+                "321cc25fad1dacf8"
+            ]
+        ]
+    },
+    {
+        "id": "495d877a7752c1d8",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "fa10345680ea49bb",
+        "name": "Read Many",
+        "url": "/recipe/by-material/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 2760,
+        "wires": [
+            [
+                "994388589f5ded26"
+            ]
+        ]
+    },
+    {
+        "id": "b5af7040c06c8d5b",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "fa10345680ea49bb",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "8cbe8c72ce21a76b",
+        "type": "debug",
+        "z": "c597369fd55a8b79",
+        "g": "fa10345680ea49bb",
+        "name": "Debug Read By Material",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "04efc7dd23456693",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "fa10345680ea49bb",
+        "name": "Read Many",
+        "query": "SELECT \n\tDISTINCT recipe_id, \n\tproduct_material AS output_material, \n\tequipment_type, \n\tfield_name AS material,\n\tfield_value AS quantity,\n\tuom,\n\tnumber_format\nFROM public.view_recipe_details\nWHERE field_type = 'Material' AND field_id = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 2760,
+        "wires": [
+            [
+                "2f8401a80106eeaf"
+            ]
+        ]
+    },
+    {
+        "id": "f4095fd361a03a68",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "fa10345680ea49bb",
+        "name": "deconstruct",
+        "func": "const { id } = msg.req.params;\nmsg.params = [id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 2760,
+        "wires": [
+            [
+                "04efc7dd23456693"
+            ]
+        ]
+    },
+    {
+        "id": "994388589f5ded26",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "fa10345680ea49bb",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2760,
+        "wires": [
+            [
+                "f4095fd361a03a68"
+            ]
+        ]
+    },
+    {
+        "id": "2f8401a80106eeaf",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "fa10345680ea49bb",
+        "name": "Transform",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2760,
+        "wires": [
+            [
+                "8cbe8c72ce21a76b",
+                "b5af7040c06c8d5b"
+            ]
+        ]
+    },
+    {
+        "id": "a1e26b26fe7af1cd",
+        "type": "http in",
+        "z": "c597369fd55a8b79",
+        "g": "d3d7fba2acdc10a4",
+        "name": "Read Many",
+        "url": "/recipe/by-parameter/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 2900,
+        "wires": [
+            [
+                "95175b1f5da4aea9"
+            ]
+        ]
+    },
+    {
+        "id": "12c250d921d3d7a7",
+        "type": "http response",
+        "z": "c597369fd55a8b79",
+        "g": "d3d7fba2acdc10a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1270,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "ffdd7a74f78f227c",
+        "type": "debug",
+        "z": "c597369fd55a8b79",
+        "g": "d3d7fba2acdc10a4",
+        "name": "Debug Read By Parameter",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 2860,
+        "wires": []
+    },
+    {
+        "id": "892275bfe024da66",
+        "type": "postgresql",
+        "z": "c597369fd55a8b79",
+        "g": "d3d7fba2acdc10a4",
+        "name": "Read Many",
+        "query": "SELECT \n\tDISTINCT recipe_id, \n\tproduct_material AS output_material, \n\tequipment_type, \n\tfield_name AS parameter,\n\tfield_value AS value,\n\tuom,\n\tnumber_format\nFROM public.view_recipe_details\nWHERE field_type = 'Parameter' AND field_id = $1;",
+        "postgreSQLConfig": "a19b9ada5feb9e84",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 2900,
+        "wires": [
+            [
+                "1883392aa9781d17"
+            ]
+        ]
+    },
+    {
+        "id": "119541547cf359e7",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "d3d7fba2acdc10a4",
+        "name": "deconstruct",
+        "func": "const { id } = msg.req.params;\nmsg.params = [id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 2900,
+        "wires": [
+            [
+                "892275bfe024da66"
+            ]
+        ]
+    },
+    {
+        "id": "95175b1f5da4aea9",
+        "type": "change",
+        "z": "c597369fd55a8b79",
+        "g": "d3d7fba2acdc10a4",
+        "name": "Set Params",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload.id",
+                "pt": "msg",
+                "to": "req.params.id",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2900,
+        "wires": [
+            [
+                "119541547cf359e7"
+            ]
+        ]
+    },
+    {
+        "id": "1883392aa9781d17",
+        "type": "function",
+        "z": "c597369fd55a8b79",
+        "g": "d3d7fba2acdc10a4",
+        "name": "Transform",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2900,
+        "wires": [
+            [
+                "ffdd7a74f78f227c",
+                "12c250d921d3d7a7"
+            ]
+        ]
+    },
+    {
+        "id": "0e6ef23f11ad7a36",
+        "type": "mqtt in",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "topic": "Database/Notification",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9de860f85bb6fd04",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "992846431f839c44"
+            ]
+        ]
+    },
+    {
+        "id": "aba2e0f81394a48d",
+        "type": "function",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "Format Payload",
+        "func": "let now = new Date();\n\nif (Array.isArray(msg.payload)) {\n    msg.payload.sort((a, b) => a.id - b.id);\n}\n\nlet newPayload = {\n    timestamp: now.toISOString(),\n    equipment: msg.payload\n};\n\nmsg.payload = newPayload;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 80,
+        "wires": [
+            [
+                "81b4ca3f1441abd6"
+            ]
+        ]
+    },
+    {
+        "id": "81b4ca3f1441abd6",
+        "type": "mqtt out",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "topic": "Equipment/All",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1000,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "0f9c6d21928cd62e",
+        "type": "function",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "Format Payload",
+        "func": "let now = new Date();\n\nif (Array.isArray(msg.payload)) {\n    msg.payload.sort((a, b) => a.id - b.id);\n}\n\nlet newPayload = {\n    timestamp: now.toISOString(),\n    materials: msg.payload\n};\n\nmsg.payload = newPayload;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 160,
+        "wires": [
+            [
+                "f4798705fd938575"
+            ]
+        ]
+    },
+    {
+        "id": "f4798705fd938575",
+        "type": "mqtt out",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "topic": "Materials/All",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 990,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "992846431f839c44",
+        "type": "switch",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "property": "payload.table",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "equipment",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "materials",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "parameters",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "recipe_master",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "54d259641172d7c7"
+            ],
+            [
+                "748dd299930dcbc5"
+            ],
+            [
+                "780f7a97b87d856a"
+            ],
+            [
+                "71805b3f0846934c"
+            ]
+        ]
+    },
+    {
+        "id": "31ee10b1a22cc028",
+        "type": "function",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "Format Payload",
+        "func": "let now = new Date();\n\nif (Array.isArray(msg.payload)) {\n    msg.payload.sort((a, b) => a.id - b.id);\n}\n\nlet newPayload = {\n    timestamp: now.toISOString(),\n    parameters: msg.payload\n};\n\nmsg.payload = newPayload;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 240,
+        "wires": [
+            [
+                "397e4d274485c451"
+            ]
+        ]
+    },
+    {
+        "id": "397e4d274485c451",
+        "type": "mqtt out",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "topic": "Parameters/All",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 1000,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "891be4444a729dfa",
+        "type": "function",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "Format Payload",
+        "func": "let now = new Date();\n\nif (Array.isArray(msg.payload)) {\n    msg.payload.sort((a, b) => a.id - b.id);\n}\n\nlet newPayload = {\n    timestamp: now.toISOString(),\n    recipes: msg.payload\n};\n\nmsg.payload = newPayload;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 320,
+        "wires": [
+            [
+                "1af3247f3ac71a8f"
+            ]
+        ]
+    },
+    {
+        "id": "1af3247f3ac71a8f",
+        "type": "mqtt out",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "topic": "Recipes/All",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9de860f85bb6fd04",
+        "x": 990,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "54d259641172d7c7",
+        "type": "http request",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "localhost:1880/equipment",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 80,
+        "wires": [
+            [
+                "aba2e0f81394a48d"
+            ]
+        ]
+    },
+    {
+        "id": "748dd299930dcbc5",
+        "type": "http request",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "localhost:1880/material",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "0f9c6d21928cd62e"
+            ]
+        ]
+    },
+    {
+        "id": "780f7a97b87d856a",
+        "type": "http request",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "localhost:1880/parameter",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "31ee10b1a22cc028"
+            ]
+        ]
+    },
+    {
+        "id": "71805b3f0846934c",
+        "type": "http request",
+        "z": "49dd9a6e92e62904",
+        "g": "2c05e2f03b2e7cbe",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "localhost:1880/recipe",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 320,
+        "wires": [
+            [
+                "891be4444a729dfa"
             ]
         ]
     }
